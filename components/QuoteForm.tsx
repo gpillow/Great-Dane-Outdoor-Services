@@ -41,7 +41,7 @@ export default function QuoteForm() {
     const formData = new FormData(e.target)
 
     try {
-      const res = await fetch('https://formspree.io/f/YOUR_FORMSPREE_ID', { // ← replace this
+      const res = await fetch('https://formspree.io/f/xdavrvgn', { // ← replace this
         method:  'POST',
         body:    formData,
         headers: { Accept: 'application/json' },
