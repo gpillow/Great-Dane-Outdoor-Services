@@ -21,7 +21,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
         <SchemaMarkup/>
-        <nav style={{ backgroundColor: '#111', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+        <nav style={{ backgroundColor: '#3c3c3c', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <a href="/" style={{ color: '#fff', fontWeight: 'bold', textDecoration: 'none', fontSize: '1.2rem' }}>Great Dane Outdoor Services</a>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
             <a href="/services" style={{ color: '#ccc', textDecoration: 'none' }}>Services</a>

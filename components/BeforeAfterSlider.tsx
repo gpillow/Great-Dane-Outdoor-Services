@@ -36,13 +36,13 @@ export default function BeforeAfterSlider({ before, after, beforeAlt, afterAlt }
         <img src={before} alt={beforeAlt} style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block', filter: 'brightness(0.65) saturate(0.7)' }} />
       </div>
       <div style={{ position: 'absolute', inset: 0, left: `${pos}%`, transform: 'translateX(-50%)', width: '2px', background: 'linear-gradient(180deg, transparent, #7dff9e 15%, #7dff9e 85%, transparent)', filter: 'drop-shadow(0 0 10px #7dff9e)', pointerEvents: 'none' }} />
-      <div style={{ position: 'absolute', top: '50%', left: `${pos}%`, transform: 'translate(-50%, -50%)', width: '56px', height: '56px', borderRadius: '50%', background: '#0a0a0a', border: '2px solid #7dff9e', boxShadow: '0 0 0 5px rgba(125,255,158,0.12), 0 0 35px rgba(125,255,158,0.45)', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', gap: '4px' }}>
+      <div style={{ position: 'absolute', top: '50%', left: `${pos}%`, transform: 'translate(-50%, -50%)', width: '56px', height: '56px', borderRadius: '50%', background: '#303030', border: '2px solid #7dff9e', boxShadow: '0 0 0 5px rgba(125,255,158,0.12), 0 0 35px rgba(125,255,158,0.45)', display: 'flex', alignItems: 'center', justifyContent: 'center', pointerEvents: 'none', gap: '4px' }}>
         <span style={{ color: '#7dff9e', fontSize: '0.75rem' }}>◀</span>
         <span style={{ color: '#7dff9e', fontSize: '0.75rem' }}>▶</span>
       </div>
       <div style={{ position: 'absolute', top: '1.5rem', left: '1.5rem', background: 'rgba(0,0,0,0.8)', color: '#aaa', padding: '0.4rem 1.2rem', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', pointerEvents: 'none' }}>Before</div>
       <div style={{ position: 'absolute', top: '1.5rem', right: '1.5rem', background: 'rgba(74,124,89,0.9)', color: '#fff', padding: '0.4rem 1.2rem', borderRadius: '999px', fontSize: '0.75rem', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.15em', pointerEvents: 'none' }}>After</div>
-      <div style={{ position: 'absolute', bottom: '1.5rem', left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.7)', color: '#666', padding: '0.3rem 1rem', borderRadius: '999px', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', pointerEvents: 'none', whiteSpace: 'nowrap' }}>Drag to reveal</div>
+      <div style={{ position: 'absolute', bottom: '1.5rem', left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.7)', color: '#989898', padding: '0.3rem 1rem', borderRadius: '999px', fontSize: '0.7rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase', pointerEvents: 'none', whiteSpace: 'nowrap' }}>Drag to reveal</div>
     </div>
   )
 }

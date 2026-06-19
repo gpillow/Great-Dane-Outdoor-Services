@@ -18,23 +18,23 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 
 export default function GalleryPage() {
   return (
-    <main style={{ backgroundColor: '#0a0a0a', color: '#d0d0d0', fontFamily: 'sans-serif' }}>
+    <main style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
-      <section style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #0a0a0a 0%, #0f1a0f 100%)', borderBottom: '1px solid #1e2e1e' }}>
+      <section style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
         <ScrollReveal>
           <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Our Work</p>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem' }}>
             See the Great Dane<br /><span style={{ color: '#7dff9e' }}>Difference</span>
           </h1>
-          <p style={{ color: '#888', maxWidth: '480px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.7 }}>
+          <p style={{ color: '#b2b2b2', maxWidth: '480px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.7 }}>
             Real results from real NWA properties. Drag the sliders to reveal every transformation.
           </p>
         </ScrollReveal>
       </section>
 
       {/* PRESSURE WASHING */}
-      <section style={{ padding: '100px 20px', background: '#0d0d0d' }}>
+      <section style={{ padding: '100px 20px', background: '#3a3a3a' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Pressure Washing ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Surface Cleaning & Restoration</h2>
@@ -42,22 +42,22 @@ export default function GalleryPage() {
 
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '5rem' }}>
           <ScrollReveal direction="up">
-            <p style={{ color: '#888', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Brick &amp; Surface Cleaning</p>
+            <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Brick &amp; Surface Cleaning</p>
             <BeforeAfterSlider before="/beforebrick.jpg" after="/afterbrick.jpg" beforeAlt="Before pressure washing brick NWA" afterAlt="After pressure washing brick NWA" />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <p style={{ color: '#888', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Driveway Restoration</p>
+            <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Driveway Restoration</p>
             <BeforeAfterSlider before="/beforedriveway.jpg" after="/afterdriveway.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <p style={{ color: '#888', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Walkway Cleaning</p>
+            <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Walkway Cleaning</p>
             <BeforeAfterSlider before="/beforewalkway.jpg" after="/afterwalkway.jpg" beforeAlt="Before walkway pressure washing NWA" afterAlt="After walkway pressure washing NWA" />
           </ScrollReveal>
         </div>
       </section>
 
       {/* LANDSCAPING */}
-      <section style={{ padding: '100px 20px', background: '#0a0a0a', borderTop: '1px solid #1a1a1a' }}>
+      <section style={{ padding: '100px 20px', background: '#303030', borderTop: '1px solid #464646' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Landscaping ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Property Transformation</h2>
@@ -70,7 +70,7 @@ export default function GalleryPage() {
       </section>
 
       {/* BRUSH REMOVAL */}
-      <section style={{ padding: '100px 20px', background: '#0d0d0d', borderTop: '1px solid #1a1a1a' }}>
+      <section style={{ padding: '100px 20px', background: '#3a3a3a', borderTop: '1px solid #464646' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Brush Removal ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Land Clearing</h2>
@@ -90,11 +90,11 @@ export default function GalleryPage() {
 
       {/* CTA */}
       <ScrollReveal>
-        <section style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #0f1a0f 0%, #0a0a0a 100%)', borderTop: '1px solid #1e2e1e' }}>
+        <section style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Want Results Like These?</h2>
-          <p style={{ color: '#888', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Same day quotes. No obligation.</p>
+          <p style={{ color: '#b2b2b2', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Same day quotes. No obligation.</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" style={{ background: 'linear-gradient(135deg, #C0C0C0, #888)', color: '#0a0a0a', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
+            <a href="/contact" style={{ background: 'linear-gradient(135deg, #ebebeb, #b2b2b2)', color: '#303030', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
               Get a Free Quote
             </a>
             <a href="tel:8709951166" style={{ border: '2px solid #4a7c59', color: '#4a7c59', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
