@@ -1,65 +1,170 @@
 import Image from "next/image";
-
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
+    <main style={{
+      minHeight: "100vh",
+      backgroundColor: "#111111",
+      color: "white",
+      fontFamily: "Arial, sans-serif",
+    }}>
+      <nav style={{
+        display: "flex",
+        justifyContent: "space-between",
+        alignItems: "center",
+        padding: "24px 40px",
+        borderBottom: "1px solid #333",
+      }}>
+       <div style={{ display: "flex", alignItems: "center", gap: "12px" }}>
+  <Image
+    src="/logo.png"
+    alt="Great Dane Outdoor Services Logo"
+    width={110}
+    height={110}
+  />
+
+  <strong style={{ fontSize: "1.3rem" }}>
+    Great Dane Outdoor Services
+  </strong>
+</div>
+
+        <a
+          href="#contact"
+          style={{
+            backgroundColor: "#f97316",
+            color: "white",
+            textDecoration: "none",
+            padding: "12px 20px",
+            borderRadius: "8px",
+            fontWeight: "bold",
+          }}
+        >
+          Get a Free Quote
+        </a>
+      </nav>
+
+      <section style={{
+        padding: "90px 40px",
+        textAlign: "center",
+        maxWidth: "1000px",
+        margin: "0 auto",
+      }}>
+        <p style={{
+          color: "#f97316",
+          fontWeight: "bold",
+          letterSpacing: "2px",
+          textTransform: "uppercase",
+        }}>
+          Serving Northwest Arkansas
+        </p>
+
+        <h1 style={{
+          fontSize: "4rem",
+          lineHeight: "1.1",
+          marginBottom: "24px",
+        }}>
+          Reliable Outdoor Services Built on Hard Work
+        </h1>
+
+        <p style={{
+          fontSize: "1.3rem",
+          color: "#d1d5db",
+          maxWidth: "750px",
+          margin: "0 auto 36px",
+        }}>
+          Pressure washing, junk removal, landscaping, brush removal, leaf cleanups,
+          and Christmas lights for homeowners and businesses across Northwest Arkansas.
+        </p>
+
+        <a
+          href="#contact"
+          style={{
+            display: "inline-block",
+            backgroundColor: "#f97316",
+            color: "white",
+            textDecoration: "none",
+            padding: "16px 28px",
+            borderRadius: "10px",
+            fontWeight: "bold",
+            fontSize: "1.1rem",
+          }}
+        >
+          Request a Free Estimate
+        </a>
+      </section>
+
+      <section style={{
+        backgroundColor: "#1f1f1f",
+        padding: "70px 40px",
+      }}>
+        <h2 style={{
+          textAlign: "center",
+          fontSize: "2.5rem",
+          marginBottom: "40px",
+        }}>
+          What We Do
+        </h2>
+
+        <div style={{
+          display: "grid",
+          gridTemplateColumns: "repeat(auto-fit, minmax(220px, 1fr))",
+          gap: "20px",
+          maxWidth: "1100px",
+          margin: "0 auto",
+        }}>
+          {[
+            "Pressure Washing",
+            "Junk Removal",
+            "Landscaping",
+            "Brush Removal",
+            "Leaf Cleanups",
+            "Christmas Lights",
+          ].map((service) => (
+            <div
+              key={service}
+              style={{
+                backgroundColor: "#111111",
+                border: "1px solid #333",
+                borderRadius: "14px",
+                padding: "28px",
+                textAlign: "center",
+              }}
             >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
+              <h3 style={{ fontSize: "1.3rem" }}>{service}</h3>
+            </div>
+          ))}
         </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
-          </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Documentation
-          </a>
-        </div>
-      </main>
-    </div>
+      </section>
+
+      <section
+        id="contact"
+        style={{
+          padding: "70px 40px",
+          textAlign: "center",
+        }}
+      >
+        <h2 style={{ fontSize: "2.5rem", marginBottom: "16px" }}>
+          Ready to Clean Up Your Property?
+        </h2>
+
+        <p style={{ color: "#d1d5db", fontSize: "1.2rem", marginBottom: "28px" }}>
+          Call, text, or request a quote today.
+        </p>
+
+        <a
+          href="tel:"
+          style={{
+            display: "inline-block",
+            backgroundColor: "#f97316",
+            color: "white",
+            textDecoration: "none",
+            padding: "16px 30px",
+            borderRadius: "10px",
+            fontWeight: "bold",
+          }}
+        >
+          Call Now
+        </a>
+      </section>
+    </main>
   );
 }
