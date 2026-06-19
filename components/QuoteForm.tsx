@@ -27,14 +27,15 @@ export default function QuoteForm() {
 
   if (submitted) {
     return (
-      <div style={{ textAlign: 'center', padding: '2rem' }}>
-        <h3 style={{ color: '#4caf50' }}>Quote Request Received!</h3>
-        <p style={{ color: '#ccc' }}>We will get back to you fast. Call or text: (870) 995-1166</p>
+      <div style={{ textAlign: 'center', padding: '3rem 2rem', background: '#1a1a1a', border: '1px solid #2a3a2a', borderRadius: '12px' }}>
+        <p style={{ color: '#7dff9e', fontSize: '2rem', marginBottom: '0.75rem' }}>✓</p>
+        <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '1.3rem', marginBottom: '0.5rem' }}>Quote Request Received!</h3>
+        <p style={{ color: '#888' }}>We&apos;ll get back to you fast. Call or text: <a href="tel:8709951166" style={{ color: '#4a7c59', textDecoration: 'none', fontWeight: 600 }}>(870) 995-1166</a></p>
       </div>
     )
   }
 
-  const inputStyle = { background: '#2a2a2a', border: '1px solid #444', borderRadius: '8px', color: '#fff', padding: '0.75rem', fontSize: '1rem', width: '100%' }
+  const inputStyle = { background: '#1a1a1a', border: '1px solid #2a2a2a', borderRadius: '8px', color: '#fff', padding: '0.75rem', fontSize: '1rem', width: '100%' }
 
   return (
     <form onSubmit={handleSubmit} style={{ maxWidth: '700px', margin: '0 auto', display: 'flex', flexDirection: 'column' as const, gap: '1rem' }}>
@@ -50,7 +51,7 @@ export default function QuoteForm() {
       <input name="date" type="date" style={inputStyle} />
       <textarea name="description" required rows={5} placeholder="Describe the job..." style={{ ...inputStyle, fontFamily: 'inherit' }} />
       {error && <p style={{ color: '#ff6b6b' }}>{error}</p>}
-      <button type="submit" disabled={loading} style={{ background: '#E07B39', color: '#fff', border: 'none', borderRadius: '8px', padding: '1rem', fontSize: '1rem', fontWeight: 'bold', cursor: 'pointer' }}>
+      <button type="submit" disabled={loading} style={{ background: loading ? '#555' : 'linear-gradient(135deg, #e0e0e0, #aaa)', color: '#0a0a0a', border: 'none', borderRadius: '8px', padding: '1rem', fontSize: '1rem', fontWeight: 800, cursor: loading ? 'not-allowed' : 'pointer', boxShadow: '0 4px 24px rgba(0,0,0,0.4)' }}>
         {loading ? 'Sending...' : 'Send My Free Quote Request'}
       </button>
     </form>

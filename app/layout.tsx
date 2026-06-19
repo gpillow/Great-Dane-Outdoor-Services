@@ -27,7 +27,6 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
             <a href="/services" style={{ color: '#ccc', textDecoration: 'none' }}>Services</a>
             <a href="/about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
             <a href="/gallery" style={{ color: '#ccc', textDecoration: 'none' }}>Gallery</a>
-            <a href="/reviews" style={{ color: '#ccc', textDecoration: 'none' }}>Reviews</a>
             <a href="/faq" style={{ color: '#ccc', textDecoration: 'none' }}>FAQ</a>
             <a href="/contact" style={{ color: '#ccc', textDecoration: 'none' }}>Contact</a>
           </div>
