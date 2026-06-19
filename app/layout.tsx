@@ -12,8 +12,7 @@ export const metadata: Metadata = {
     default: "Great Dane Outdoor Services | NWA Pressure Washing, Junk Removal & Landscaping",
     template: "%s | Great Dane Outdoor Services",
   },
-  description:
-    "NWA's locally owned outdoor services company. Pressure washing, junk removal, and landscaping in Fayetteville, Rogers, Bentonville, Springdale & Farmington, AR. Free quotes. (870) 995-1166.",
+  description: "NWA's locally owned outdoor services company. Pressure washing, junk removal, and landscaping in Fayetteville, Rogers, Bentonville, Springdale & Farmington, AR. Free quotes. (870) 995-1166.",
   metadataBase: new URL("https://www.greatdaneoutdoorservices.com"),
 }
 
@@ -21,7 +20,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <SchemaMarkup />
+        <SchemaMarkup/>
         <nav style={{ backgroundColor: '#111', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
           <a href="/" style={{ color: '#fff', fontWeight: 'bold', textDecoration: 'none', fontSize: '1.2rem' }}>Great Dane Outdoor Services</a>
           <div style={{ display: 'flex', gap: '1.5rem' }}>
