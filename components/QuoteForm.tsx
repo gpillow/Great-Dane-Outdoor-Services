@@ -33,7 +33,7 @@ export default function QuoteForm() {
   const [loading, setLoading]     = useState(false)
   const [error, setError]         = useState(null)
 
-  async function handleSubmit(e) {
+async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault()
     setLoading(true)
     setError(null)
