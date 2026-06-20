@@ -39,7 +39,7 @@ export default function HomePage() {
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
           <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.95rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 24px rgba(106,191,128,0.9), 0 1px 8px rgba(0,0,0,1)' }}>Serving Northwest Arkansas</p>
           <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem', maxWidth: '900px', textShadow: '0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,0.9), 1px 1px 0 #000, -1px -1px 0 #000' }}>
-            NWA&apos;s Most Memorable<br /><span style={{ color: '#7dff9e', textShadow: '0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1), 0 0 40px rgba(125,255,158,0.4)' }}>Outdoor Services Company</span>
+            Big Results,<br /><span style={{ color: '#7dff9e', textShadow: '0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1), 0 0 40px rgba(125,255,158,0.4)' }}>Great Service.</span>
           </h1>
           <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
             <a href="/contact" style={{ background: 'linear-gradient(135deg, #e0e0e0, #aaa)', color: '#303030', padding: '1rem 2.2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem', boxShadow: '0 4px 24px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.1)' }}>
