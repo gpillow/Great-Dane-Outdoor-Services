@@ -15,7 +15,7 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
   return <div ref={ref} className={`reveal-${direction}`}>{children}</div>
 }
 
-const services = [
+const services: { name: string; desc: string; detail: string; image?: string; imageAlt?: string }[] = [
   {
     name: 'Pressure Washing',
     desc: 'Driveways, decks, siding, patios, and more — blasted clean and looking brand new. Serving all of NWA.',
@@ -40,6 +40,8 @@ const services = [
     name: 'Leaf Cleanups',
     desc: 'Fall in NWA hits hard. We handle the mess so you don\'t have to.',
     detail: 'Thorough leaf removal and disposal — we don\'t just blow them to the curb. Your yard stays clean all the way through late fall.',
+    image: '/leaf-cleanup.jpg',
+    imageAlt: 'Leaf cleanup job completed by Great Dane Outdoor Services in Northwest Arkansas',
   },
   {
     name: 'Christmas Lights',
@@ -83,14 +85,23 @@ export default function ServicesPage() {
           {services.map((s, i) => (
             <ScrollReveal key={s.name} direction={i % 3 === 0 ? 'left' : i % 3 === 2 ? 'right' : 'up'}>
               <div
-                style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2rem', transition: 'border-color 0.3s', height: '100%' }}
+                style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', overflow: 'hidden', transition: 'border-color 0.3s', height: '100%', display: 'flex', flexDirection: 'column' }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = '#4a7c59')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = '#565656')}
               >
-                <h2 style={{ color: '#ebebeb', fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.75rem' }}>{s.name}</h2>
-                <p style={{ color: '#b2b2b2', lineHeight: 1.7, fontSize: '0.95rem', marginBottom: '1rem' }}>{s.desc}</p>
-                <p style={{ color: '#989898', lineHeight: 1.7, fontSize: '0.9rem', marginBottom: '1.25rem' }}>{s.detail}</p>
-                <a href="/contact" style={{ display: 'inline-block', color: '#4a7c59', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem' }}>Get a Quote →</a>
+                {s.image && (
+                  <img
+                    src={s.image}
+                    alt={s.imageAlt ?? s.name}
+                    style={{ width: '100%', height: '200px', objectFit: 'cover', objectPosition: 'center', display: 'block' }}
+                  />
+                )}
+                <div style={{ padding: '2rem', flex: 1, display: 'flex', flexDirection: 'column' }}>
+                  <h2 style={{ color: '#ebebeb', fontSize: '1.25rem', fontWeight: 700, marginBottom: '0.75rem' }}>{s.name}</h2>
+                  <p style={{ color: '#b2b2b2', lineHeight: 1.7, fontSize: '0.95rem', marginBottom: '1rem' }}>{s.desc}</p>
+                  <p style={{ color: '#989898', lineHeight: 1.7, fontSize: '0.9rem', marginBottom: '1.25rem' }}>{s.detail}</p>
+                  <a href="/contact" style={{ display: 'inline-block', color: '#4a7c59', fontWeight: 600, textDecoration: 'none', fontSize: '0.9rem', marginTop: 'auto' }}>Get a Quote →</a>
+                </div>
               </div>
             </ScrollReveal>
           ))}
