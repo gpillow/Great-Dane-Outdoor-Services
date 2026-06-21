@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right' }) {
@@ -21,7 +22,7 @@ export default function GalleryPage() {
     <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
-      <section style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
+      <section className="hero-shaped" style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
         <ScrollReveal>
           <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Our Work</p>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem' }}>
@@ -34,7 +35,7 @@ export default function GalleryPage() {
       </section>
 
       {/* PRESSURE WASHING */}
-      <section style={{ padding: '100px 20px', background: '#3a3a3a' }}>
+      <section className="section-shaped section-band" style={{ padding: '100px 20px', background: '#3a3a3a' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Pressure Washing ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Surface Cleaning & Restoration</h2>
@@ -42,55 +43,63 @@ export default function GalleryPage() {
 
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '5rem' }}>
           <ScrollReveal direction="up">
+            <div className="gallery-frame">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Brick &amp; Surface Cleaning</p>
             <BeforeAfterSlider before="/beforebrick-optimized.jpg" after="/afterbrick-optimized.jpg" beforeAlt="Before pressure washing brick NWA" afterAlt="After pressure washing brick NWA" />
+            </div>
           </ScrollReveal>
           <ScrollReveal direction="up">
+            <div className="gallery-frame">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Driveway Restoration</p>
             <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
+            </div>
           </ScrollReveal>
           <ScrollReveal direction="up">
+            <div className="gallery-frame">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Walkway Cleaning</p>
             <BeforeAfterSlider before="/beforewalkway-optimized.jpg" after="/afterwalkway-optimized.jpg" beforeAlt="Before walkway pressure washing NWA" afterAlt="After walkway pressure washing NWA" />
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
       {/* LANDSCAPING */}
-      <section style={{ padding: '100px 20px', background: '#303030', borderTop: '1px solid #464646' }}>
+      <section className="section-shaped section-band-alt" style={{ padding: '100px 20px', background: '#303030', borderTop: '1px solid #464646' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Landscaping ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Property Transformation</h2>
         </ScrollReveal>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            <div className="gallery-frame">
+              <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            </div>
           </ScrollReveal>
         </div>
       </section>
 
       {/* BRUSH REMOVAL */}
-      <section style={{ padding: '100px 20px', background: '#3a3a3a', borderTop: '1px solid #464646' }}>
+      <section className="section-shaped section-band" style={{ padding: '100px 20px', background: '#3a3a3a', borderTop: '1px solid #464646' }}>
         <ScrollReveal>
           <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '0.75rem' }}>✦ Brush Removal ✦</p>
           <h2 style={{ fontSize: 'clamp(1.8rem, 3vw, 2.5rem)', fontWeight: 800, color: '#fff', textAlign: 'center', marginBottom: '4rem' }}>Land Clearing</h2>
         </ScrollReveal>
-        <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
+        <div className="gallery-frame photo-grid-3" style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
           <ScrollReveal direction="left">
-            <img src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <Image src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" width={1600} height={1200} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <img src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <Image src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" width={1600} height={2134} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
           <ScrollReveal direction="right">
-            <img src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <Image src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" width={1600} height={1200} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
         </div>
       </section>
 
       {/* CTA */}
       <ScrollReveal>
-        <section style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
+        <section className="cta-shaped" style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Want Results Like These?</h2>
           <p style={{ color: '#b2b2b2', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Same day quotes. No obligation.</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>

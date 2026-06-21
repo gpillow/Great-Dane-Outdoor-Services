@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right' }) {
@@ -31,9 +32,9 @@ export default function HomePage() {
     <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
-      <section aria-label="Hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
+      <section className="hero-shaped" aria-label="Hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
         {/* Background logo */}
-        <img src="/logo-optimized.jpg" alt="" aria-hidden="true" className="hero-bg-logo" width="640" height="640" decoding="async" fetchPriority="high" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
+        <Image src="/logo-optimized.jpg" alt="" aria-hidden="true" className="hero-bg-logo" width={640} height={640} priority unoptimized style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
 
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -54,7 +55,7 @@ export default function HomePage() {
 
       {/* TRUST BAR */}
       <ScrollReveal>
-        <section style={{ background: '#3c3c3c', borderTop: '1px solid #4a4a4a', borderBottom: '1px solid #4a4a4a', padding: '1.5rem 20px' }}>
+        <section className="section-shaped section-band-alt" style={{ background: '#3c3c3c', borderTop: '1px solid #4a4a4a', borderBottom: '1px solid #4a4a4a', padding: '1.5rem 20px' }}>
           <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', maxWidth: '900px', margin: '0 auto' }}>
             {['Locally Owned & Operated', 'Free Quotes — No Obligation', 'Licensed LLC', '2+ Years Serving NWA'].map((item) => (
               <span key={item} style={{ color: '#ebebeb', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.05em' }}>✦ {item}</span>
@@ -65,7 +66,7 @@ export default function HomePage() {
 
       {/* STATS */}
       <ScrollReveal>
-        <section style={{ padding: '80px 20px', background: '#3a3a3a', borderBottom: '1px solid #464646' }}>
+        <section className="section-shaped section-band" style={{ padding: '80px 20px', background: '#3a3a3a', borderBottom: '1px solid #464646' }}>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
             {[
               { stat: '2+', label: 'Years Serving NWA' },
@@ -73,7 +74,7 @@ export default function HomePage() {
               { stat: 'LLC', label: 'Licensed & Legitimate' },
               { stat: '100%', label: 'Free Estimates' },
             ].map((item) => (
-              <div key={item.label} style={{ padding: '1.5rem', border: '1px solid #425242', borderRadius: '12px', background: '#3c3c3c' }}>
+              <div key={item.label} className="ui-card" style={{ padding: '1.5rem', border: '1px solid #425242', borderRadius: '12px', background: '#3c3c3c' }}>
                 <p style={{ color: '#7dff9e', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 900, lineHeight: 1, marginBottom: '0.5rem', textShadow: '0 0 30px rgba(125,255,158,0.3)' }}>{item.stat}</p>
                 <p style={{ color: '#989898', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item.label}</p>
               </div>
@@ -83,7 +84,7 @@ export default function HomePage() {
       </ScrollReveal>
 
       {/* SERVICES */}
-      <section style={{ padding: '100px 20px', background: '#3a3a3a' }}>
+      <section className="section-shaped section-band" style={{ padding: '100px 20px', background: '#3a3a3a' }}>
         <ScrollReveal>
           <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
             <p style={{ color: '#4a7c59', fontWeight: 700, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem' }}>What We Do</p>
@@ -100,7 +101,7 @@ export default function HomePage() {
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
           {services.map((s, i) => (
             <ScrollReveal key={s.name}>
-              <div style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2rem', transition: 'border-color 0.3s', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }}
+              <div className="ui-card" style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2rem', transition: 'border-color 0.3s', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }}
                 onMouseEnter={e => (e.currentTarget.style.borderColor = '#4a7c59')}
                 onMouseLeave={e => (e.currentTarget.style.borderColor = '#565656')}>
                 <span style={{ color: '#3e5a48', fontSize: '3rem', fontWeight: 900, lineHeight: 1, marginBottom: '0.75rem', display: 'block' }}>
@@ -118,7 +119,7 @@ export default function HomePage() {
         </div>
       </section>
 {/* GALLERY PREVIEW */}
-      <section style={{ padding: '120px 20px', background: '#303030' }}>
+      <section className="section-shaped section-band-alt" style={{ padding: '120px 20px', background: '#303030' }}>
         <ScrollReveal direction="up">
           <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
             <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Our Work</p>
@@ -134,7 +135,9 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Brick &amp; Surface Cleaning</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforebrick-optimized.jpg" after="/afterbrick-optimized.jpg" beforeAlt="Before pressure washing Fayetteville AR" afterAlt="After pressure washing Fayetteville AR" />
+            <div className="gallery-frame">
+              <BeforeAfterSlider before="/beforebrick-optimized.jpg" after="/afterbrick-optimized.jpg" beforeAlt="Before pressure washing Fayetteville AR" afterAlt="After pressure washing Fayetteville AR" />
+            </div>
           </ScrollReveal>
         </div>
 
@@ -144,7 +147,9 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Driveway Restoration</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
+            <div className="gallery-frame">
+              <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
+            </div>
           </ScrollReveal>
         </div>
 
@@ -155,7 +160,9 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Property Transformation</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            <div className="gallery-frame">
+              <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            </div>
           </ScrollReveal>
         </div>
 
@@ -165,15 +172,15 @@ export default function HomePage() {
             <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '2rem' }}>✦ Brush Removal ✦</p>
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Land Clearing</h3>
           </ScrollReveal>
-          <div className="photo-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
+          <div className="gallery-frame photo-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
             <ScrollReveal direction="left">
-              <img src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <Image src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" width={1600} height={1200} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
             <ScrollReveal direction="up">
-              <img src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <Image src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" width={1600} height={2134} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
             <ScrollReveal direction="right">
-              <img src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <Image src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" width={1600} height={1200} sizes="(max-width: 768px) 100vw, 33vw" unoptimized style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
           </div>
         </div>

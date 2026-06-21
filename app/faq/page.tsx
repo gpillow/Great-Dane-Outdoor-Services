@@ -57,7 +57,7 @@ export default function FAQPage() {
     <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
-      <section style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
+      <section className="hero-shaped" style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
         <ScrollReveal>
           <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Got Questions?</p>
           <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem' }}>
@@ -70,11 +70,12 @@ export default function FAQPage() {
       </section>
 
       {/* FAQ ACCORDION */}
-      <section style={{ padding: '100px 20px', background: '#3a3a3a' }}>
+      <section className="section-shaped section-band" style={{ padding: '100px 20px', background: '#3a3a3a' }}>
         <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '0.75rem' }}>
           {faqs.map((faq, i) => (
             <ScrollReveal key={i} direction="up">
               <div
+                className="ui-card"
                 style={{ background: '#464646', border: `1px solid ${open === i ? '#4a7c59' : '#565656'}`, borderRadius: '12px', overflow: 'hidden', transition: 'border-color 0.3s' }}
               >
                 <button
@@ -97,7 +98,7 @@ export default function FAQPage() {
 
       {/* CTA */}
       <ScrollReveal>
-        <section style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
+        <section className="cta-shaped" style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
           <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Still Have Questions?</h2>
           <p style={{ color: '#b2b2b2', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Just call, text, or shoot us an email.</p>
           <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>

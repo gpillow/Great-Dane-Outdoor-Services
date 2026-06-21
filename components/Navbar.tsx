@@ -38,13 +38,15 @@ export default function Navbar() {
       <a href="#main-content" className="skip-link">Skip to main content</a>
 
       <div className="nav-inner">
-        {/* Logo */}
-        <Link href="/" className="nav-logo" aria-label="Great Dane Outdoor Services — home">
-          <span className="nav-logo-main">Great Dane</span>
-          <span className="nav-logo-sub">Outdoor Services</span>
+        <Link href="/" className="nav-logo" aria-label="Great Dane Outdoor Services home">
+          <span className="nav-logo-mark" aria-hidden="true">GD</span>
+          <span className="nav-logo-copy">
+            <span className="nav-logo-main">Great Dane</span>
+            <span className="nav-logo-sub">Outdoor Services</span>
+          </span>
+          <span className="nav-logo-area">NWA</span>
         </Link>
 
-        {/* Desktop nav */}
         <nav role="navigation" aria-label="Main navigation" className="nav-desktop">
           <ul className="nav-links" role="list">
             {navLinks.map((link) => (
@@ -73,13 +75,16 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile menu */}
       <nav
         id="mobile-menu"
         role="navigation"
         aria-label="Main navigation"
         className={`nav-mobile${menuOpen ? ' open' : ''}`}
       >
+        <div className="nav-mobile-heading">
+          <span>Northwest Arkansas</span>
+          <strong>Outdoor services, ready when your property needs it.</strong>
+        </div>
         <ul role="list">
           {navLinks.map((link) => (
             <li key={link.href}>

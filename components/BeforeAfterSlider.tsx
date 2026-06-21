@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 
 export default function BeforeAfterSlider({ before, after, beforeAlt, afterAlt }: {
   before: string; after: string; beforeAlt: string; afterAlt: string
@@ -45,14 +46,14 @@ export default function BeforeAfterSlider({ before, after, beforeAlt, afterAlt }
       onMouseDown={(e) => { dragging.current = true; calcPos(e.clientX) }}
       onTouchStart={(e) => calcPos(e.touches[0].clientX)}
       onTouchMove={(e) => calcPos(e.touches[0].clientX)}
-      style={{ position: 'relative', cursor: 'ew-resize', userSelect: 'none', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}
+      style={{ position: 'relative', cursor: 'ew-resize', userSelect: 'none', borderRadius: '20px', overflow: 'hidden', height: 'clamp(380px, 50vw, 680px)', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}
     >
       {/* After — full background */}
-      <img src={after} alt={afterAlt} loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block' }} />
+      <Image src={after} alt={afterAlt} fill loading="lazy" sizes="(max-width: 768px) 100vw, 1400px" unoptimized style={{ objectFit: 'cover' }} />
 
       {/* Before — clipped, direct DOM update via ref */}
       <div ref={clipRef} style={{ position: 'absolute', inset: 0, clipPath: 'inset(0 50% 0 0)', willChange: 'clip-path' }}>
-        <img src={before} alt={beforeAlt} loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block', filter: 'brightness(0.65) saturate(0.7)' }} />
+        <Image src={before} alt={beforeAlt} fill loading="lazy" sizes="(max-width: 768px) 100vw, 1400px" unoptimized style={{ objectFit: 'cover', filter: 'brightness(0.65) saturate(0.7)' }} />
       </div>
 
       {/* Divider line */}
