@@ -1034,8 +1034,10 @@
 .home-hero-overlay {
   background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.38));
 }
-.home-hero-grid {
-  grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.62fr);
+@media (min-width: 981px) {
+  .home-hero-grid {
+    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.62fr);
+  }
 }
 .home-kicker {
   color: #9bd3a5;
