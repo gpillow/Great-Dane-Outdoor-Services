@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const pricingItems = [
   {
     name: 'Pressure Washing',
-    startingAt: '$150',
+    startingAt: '$149',
     unit: 'starting at',
     bullets: [
       'Small patios, walkways, and spot cleaning usually start near the minimum.',
@@ -32,7 +32,7 @@ const pricingItems = [
   },
   {
     name: 'Landscaping Refresh',
-    startingAt: '$250',
+    startingAt: '$149',
     unit: 'starting at',
     bullets: [
       'Mulch, weed removal, trimming, flower bed cleanup, and small bed refreshes.',
@@ -42,7 +42,7 @@ const pricingItems = [
   },
   {
     name: 'Brush Removal',
-    startingAt: '$300',
+    startingAt: '$225',
     unit: 'starting at',
     bullets: [
       'Fence lines, overgrown beds, saplings, and rough yard areas.',
@@ -52,7 +52,7 @@ const pricingItems = [
   },
   {
     name: 'Leaf Cleanup',
-    startingAt: '$150',
+    startingAt: '$175',
     unit: 'starting at',
     bullets: [
       'Small residential leaf cleanups start near the base rate.',
@@ -62,7 +62,7 @@ const pricingItems = [
   },
   {
     name: 'Christmas Lights',
-    startingAt: '$350',
+    startingAt: '$499',
     unit: 'starting at',
     bullets: [
       'Basic roofline installs start near the base rate.',
