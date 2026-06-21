@@ -1648,3 +1648,291 @@ main#main-content {
     height: 280px;
   }
 }
+
+/* ─── Full Site Blueprint Layout ─── */
+.blueprint-page {
+  background: #f3f5ef;
+  color: #243024;
+  font-family: sans-serif;
+}
+.blueprint-shell {
+  width: min(1160px, calc(100% - 40px));
+  margin: 0 auto;
+}
+.blueprint-hero {
+  background:
+    linear-gradient(90deg, rgba(24,30,24,0.92), rgba(24,30,24,0.66)),
+    url("/afterdriveway-optimized.jpg") center / cover;
+  color: #fff;
+  padding: clamp(5rem, 8vw, 7rem) 0;
+}
+.blueprint-hero-grid {
+  display: grid;
+  grid-template-columns: minmax(0, 0.92fr) minmax(320px, 0.68fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.blueprint-kicker {
+  color: #9bd3a5;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: 0.9rem;
+}
+.blueprint-hero h1,
+.blueprint-heading h2,
+.blueprint-detail-row h2,
+.blueprint-story-layout h2,
+.blueprint-cta h2 {
+  font-size: clamp(2.25rem, 5vw, 4.8rem);
+  line-height: 1;
+  font-weight: 850;
+  letter-spacing: 0;
+  margin-bottom: 1rem;
+}
+.blueprint-hero p,
+.blueprint-cta p {
+  max-width: 680px;
+  color: #dfe5da;
+  line-height: 1.75;
+  font-size: 1.08rem;
+}
+.blueprint-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.85rem;
+  margin-top: 2rem;
+}
+.blueprint-actions a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  border-radius: 8px;
+  padding: 0.85rem 1.15rem;
+  font-weight: 850;
+  text-decoration: none;
+}
+.blueprint-actions a:first-child {
+  background: #f3f5ef;
+  color: #1d211d;
+}
+.blueprint-actions a:last-child {
+  color: #d8f3dd;
+  border: 1px solid rgba(216,243,221,0.42);
+  background: rgba(16,20,16,0.42);
+}
+.blueprint-hero-image,
+.blueprint-story-layout > img {
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 30px 80px rgba(0,0,0,0.32);
+}
+.blueprint-hero-image img,
+.blueprint-story-layout > img {
+  display: block;
+  width: 100%;
+  height: clamp(320px, 38vw, 520px);
+  object-fit: cover;
+}
+.blueprint-section {
+  padding: clamp(4rem, 7vw, 6rem) 0;
+  background: #2f352f;
+}
+.blueprint-light {
+  background: #f3f5ef;
+}
+.blueprint-heading {
+  max-width: 760px;
+  margin-bottom: 2.5rem;
+}
+.blueprint-heading h2,
+.blueprint-light h2,
+.blueprint-light h3 {
+  color: #1f271f;
+}
+.blueprint-heading p,
+.blueprint-light p {
+  color: #556052;
+  line-height: 1.75;
+}
+.blueprint-service-grid,
+.blueprint-project-grid,
+.blueprint-value-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+.blueprint-service-card,
+.blueprint-project-card,
+.blueprint-value-grid article {
+  background: #fff;
+  border: 1px solid rgba(38,48,38,0.12);
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 16px 36px rgba(36,42,36,0.08);
+}
+.blueprint-service-card img,
+.blueprint-project-card img {
+  display: block;
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+.blueprint-service-card div,
+.blueprint-project-card div,
+.blueprint-value-grid article {
+  padding: 1.35rem;
+}
+.blueprint-service-card h3,
+.blueprint-project-card h3,
+.blueprint-value-grid h3 {
+  color: #1f271f;
+  font-size: 1.2rem;
+  margin-bottom: 0.65rem;
+}
+.blueprint-service-card p,
+.blueprint-value-grid p {
+  color: #556052;
+  line-height: 1.65;
+}
+.blueprint-service-card a,
+.blueprint-detail-row a,
+.contact-info-panel a {
+  display: inline-flex;
+  margin-top: 1rem;
+  color: #315b3c;
+  font-weight: 850;
+  text-decoration: none;
+}
+.blueprint-project-card span {
+  color: #416a4a;
+  font-size: 0.76rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+.blueprint-detail-list {
+  display: grid;
+  gap: 1.25rem;
+}
+.blueprint-detail-row,
+.blueprint-story-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.1fr);
+  gap: clamp(2rem, 5vw, 4rem);
+  align-items: center;
+}
+.blueprint-detail-row {
+  background: #f3f5ef;
+  border-radius: 8px;
+  padding: 1rem;
+}
+.blueprint-detail-row img {
+  width: 100%;
+  height: clamp(300px, 34vw, 470px);
+  object-fit: cover;
+  border-radius: 8px;
+}
+.blueprint-detail-row div,
+.blueprint-story-layout div {
+  padding: clamp(0.5rem, 2vw, 1.5rem);
+}
+.blueprint-detail-row h2,
+.blueprint-story-layout h2 {
+  color: #1f271f;
+  font-size: clamp(1.8rem, 4vw, 3.2rem);
+}
+.blueprint-detail-row p,
+.blueprint-story-layout p {
+  color: #556052;
+  line-height: 1.75;
+}
+.blueprint-slider-stack {
+  display: grid;
+  gap: 1.25rem;
+}
+.blueprint-cta {
+  background:
+    linear-gradient(90deg, rgba(31,39,31,0.94), rgba(31,39,31,0.78)),
+    url("/afterbrick-optimized.jpg") center / cover;
+  color: #fff;
+  padding: clamp(4rem, 7vw, 6rem) 0;
+}
+.contact-blueprint-hero {
+  text-align: left;
+}
+.contact-blueprint-grid {
+  display: grid;
+  grid-template-columns: minmax(280px, 0.7fr) minmax(0, 1fr);
+  gap: 1.25rem;
+  align-items: start;
+}
+.contact-info-panel,
+.contact-form-panel {
+  background: #fff;
+  border: 1px solid rgba(38,48,38,0.12);
+  border-radius: 8px;
+  padding: clamp(1.25rem, 3vw, 2rem);
+  box-shadow: 0 16px 36px rgba(36,42,36,0.08);
+}
+.contact-info-panel h2 {
+  color: #1f271f;
+  font-size: clamp(1.6rem, 3vw, 2.4rem);
+  margin-bottom: 1.25rem;
+}
+.contact-info-panel div {
+  border-top: 1px solid rgba(38,48,38,0.1);
+  padding: 1rem 0;
+}
+.contact-info-panel span {
+  display: block;
+  color: #416a4a;
+  font-size: 0.74rem;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  margin-bottom: 0.35rem;
+}
+.contact-info-panel p,
+.contact-info-panel li {
+  color: #556052;
+  line-height: 1.65;
+}
+.contact-info-panel ul {
+  display: grid;
+  gap: 0.55rem;
+  padding-left: 1.1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 980px) {
+  .blueprint-hero-grid,
+  .blueprint-detail-row,
+  .blueprint-story-layout,
+  .contact-blueprint-grid {
+    grid-template-columns: 1fr;
+  }
+  .blueprint-service-grid,
+  .blueprint-project-grid,
+  .blueprint-value-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 640px) {
+  .blueprint-shell {
+    width: min(100% - 28px, 1160px);
+  }
+  .blueprint-service-grid,
+  .blueprint-project-grid,
+  .blueprint-value-grid {
+    grid-template-columns: 1fr;
+  }
+  .blueprint-actions,
+  .blueprint-actions a {
+    width: 100%;
+  }
+}

@@ -1,13 +1,15 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
+import Link from 'next/link'
 
 function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right' }) {
   const ref = useRef<HTMLDivElement>(null)
   useEffect(() => {
     const observer = new IntersectionObserver(
       ([entry]) => { if (entry.isIntersecting) entry.target.classList.add('visible') },
-      { threshold: 0.15 }
+      { threshold: 0.12 }
     )
     if (ref.current) observer.observe(ref.current)
     return () => observer.disconnect()
@@ -17,88 +19,65 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 
 export default function AboutPage() {
   return (
-    <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
-
-      {/* HERO */}
-      <section className="hero-shaped" style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>
-        <ScrollReveal>
-          <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Our Story</p>
-          <h1 style={{ fontSize: 'clamp(2.5rem, 5vw, 4rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem', maxWidth: '800px', margin: '0 auto 1.5rem' }}>
-            Built From the<br /><span style={{ color: '#7dff9e' }}>Ground Up</span>
-          </h1>
-          <p style={{ color: '#b2b2b2', maxWidth: '580px', margin: '0 auto', fontSize: '1.1rem', lineHeight: 1.8 }}>
-            Great Dane Outdoor Services started as a college side hustle and grew into something real — a business built on hard work, honest pricing, and a name people actually remember.
-          </p>
-        </ScrollReveal>
-      </section>
-
-      {/* STORY */}
-      <section className="section-shaped section-band" style={{ padding: '100px 20px', background: '#3a3a3a' }}>
-        <div style={{ maxWidth: '760px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '3rem' }}>
+    <main id="main-content" className="blueprint-page">
+      <section className="blueprint-hero">
+        <div className="blueprint-shell blueprint-hero-grid">
           <ScrollReveal direction="left">
-            <div className="ui-card" style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2.5rem' }}>
-              <h2 style={{ color: '#ebebeb', fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem' }}>Where It Started</h2>
-              <p style={{ color: '#b2b2b2', lineHeight: 1.8, fontSize: '1rem' }}>
-                What began as a way to make extra money during college turned into a full operation with real equipment, real clients, and real results. We built this thing from nothing — no family business to inherit, no big startup capital. Just hustle, a truck, and a commitment to showing up and doing the job right.
-              </p>
+            <div>
+              <p className="blueprint-kicker">About Great Dane</p>
+              <h1>A local outdoor service company built around showing up</h1>
+              <p>Great Dane Outdoor Services was built for practical property work: clear communication, honest quotes, and cleanup results homeowners can actually see.</p>
+              <div className="blueprint-actions">
+                <Link href="/contact">Get started now</Link>
+                <a href="tel:8709951166">Call us</a>
+              </div>
             </div>
           </ScrollReveal>
-
           <ScrollReveal direction="right">
-            <div className="ui-card" style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2.5rem' }}>
-              <h2 style={{ color: '#ebebeb', fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem' }}>What We Stand For</h2>
-              <p style={{ color: '#b2b2b2', lineHeight: 1.8, fontSize: '1rem' }}>
-                Affordable doesn&apos;t mean cutting corners. It means you get premium work without the premium markup. Every job we take on gets the same attention to detail — whether it&apos;s a quick leaf cleanup or a full property transformation. We&apos;re proud of the work we put out, and we want you to be too.
-              </p>
-            </div>
-          </ScrollReveal>
-
-          <ScrollReveal direction="left">
-            <div className="ui-card" style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2.5rem' }}>
-              <h2 style={{ color: '#ebebeb', fontSize: '1.4rem', fontWeight: 700, marginBottom: '1rem' }}>Why Northwest Arkansas</h2>
-              <p style={{ color: '#b2b2b2', lineHeight: 1.8, fontSize: '1rem' }}>
-                NWA is home. We know the communities, we know the properties, and we know the seasons. Fayetteville, Rogers, Bentonville, Springdale, Farmington — this is where we live and where we work. Supporting local means everything to us, and we bring that same energy to every yard, driveway, and property we touch.
-              </p>
+            <div className="blueprint-hero-image">
+              <Image src="/logo-optimized.jpg" alt="Great Dane Outdoor Services logo" width={640} height={640} priority unoptimized />
             </div>
           </ScrollReveal>
         </div>
       </section>
 
-      {/* STATS / FACTS */}
-      <ScrollReveal>
-        <section className="section-shaped section-band-alt" style={{ padding: '80px 20px', background: '#3c3c3c', borderTop: '1px solid #425242', borderBottom: '1px solid #425242' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '3rem', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
+      <section className="blueprint-section blueprint-light">
+        <div className="blueprint-shell blueprint-story-layout">
+          <ScrollReveal direction="left">
+            <Image src="/cutdown-optimized.jpg" alt="Cleaned landscape bed after Great Dane service" width={1600} height={1200} loading="lazy" unoptimized />
+          </ScrollReveal>
+          <ScrollReveal direction="right">
+            <div>
+              <p className="blueprint-kicker">How It Started</p>
+              <h2>Small company, direct standards</h2>
+              <p>What started as a way to take on local outdoor work has grown into a focused service business for Northwest Arkansas homeowners.</p>
+              <p>The goal is simple: quote clearly, show up, do the work right, and leave the property better than it was.</p>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+
+      <section className="blueprint-section">
+        <div className="blueprint-shell">
+          <div className="blueprint-heading">
+            <p className="blueprint-kicker">What Matters</p>
+            <h2>The standards behind the work</h2>
+          </div>
+          <div className="blueprint-value-grid">
             {[
-              { stat: '2+ Years', label: 'Serving NWA' },
-              { stat: 'Licensed LLC', label: 'Fully Legitimate' },
-              { stat: 'Free Quotes', label: 'No Obligation' },
-              { stat: 'Local', label: 'Fayetteville, AR' },
-            ].map((item) => (
-              <div key={item.stat}>
-                <p style={{ color: '#7dff9e', fontSize: '1.6rem', fontWeight: 900, marginBottom: '0.25rem' }}>{item.stat}</p>
-                <p style={{ color: '#989898', fontSize: '0.85rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item.label}</p>
-              </div>
+              ['Clear quotes', 'You know what the job is expected to cost before work starts.'],
+              ['Local service', 'Built for Fayetteville and surrounding Northwest Arkansas communities.'],
+              ['Photo-friendly estimates', 'Send photos first so the quote process is faster and more accurate.'],
+              ['Practical results', 'Focused on the cleanup, maintenance, and outdoor work homeowners actually need.'],
+            ].map(([title, text]) => (
+              <article key={title}>
+                <h3>{title}</h3>
+                <p>{text}</p>
+              </article>
             ))}
           </div>
-        </section>
-      </ScrollReveal>
-
-      {/* CTA */}
-      <ScrollReveal>
-        <section className="cta-shaped" style={{ padding: '100px 20px', textAlign: 'center', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', borderTop: '1px solid #425242' }}>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Ready to Work With Us?</h2>
-          <p style={{ color: '#b2b2b2', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Reach out for a free quote — no pressure, no obligation.</p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" style={{ background: 'linear-gradient(135deg, #ebebeb, #b2b2b2)', color: '#303030', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
-              Get a Free Quote
-            </a>
-            <a href="tel:8709951166" style={{ border: '2px solid #4a7c59', color: '#4a7c59', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-              Call (870) 995-1166
-            </a>
-          </div>
-        </section>
-      </ScrollReveal>
-
+        </div>
+      </section>
     </main>
   )
 }
