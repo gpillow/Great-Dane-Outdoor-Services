@@ -21,19 +21,19 @@ const cities = ['Fayetteville', 'Rogers', 'Bentonville', 'Springdale', 'Farmingt
 
 const serviceGroups = [
   {
-    label: 'Residential',
-    title: 'Home exterior help',
-    text: 'Pressure washing, brush removal, yard cleanups, and small landscaping projects for homeowners who want the property looking sharp.',
+    label: 'Homes',
+    title: 'Clean, usable outdoor spaces',
+    text: 'Driveways, beds, yards, and rough edges cleaned up so the property feels maintained again.',
   },
   {
-    label: 'Property Cleanup',
-    title: 'Cleanups that make a difference',
-    text: 'Overgrowth, leaves, junk, and seasonal messes handled with clear communication and a free quote before work starts.',
+    label: 'Cleanups',
+    title: 'Overgrowth, debris, and seasonal mess',
+    text: 'Brush, leaves, junk, and yard waste removed with clear pricing before work begins.',
   },
   {
-    label: 'Seasonal',
-    title: 'Ready for every season',
-    text: 'Fall cleanups, spring refreshes, and Christmas light installs for Northwest Arkansas homes.',
+    label: 'Seasonal Work',
+    title: 'Property help when the season changes',
+    text: 'Fall leaf removal, spring refreshes, and holiday light installs for local homes.',
   },
 ]
 
@@ -71,10 +71,10 @@ export default function HomePage() {
         <div className="home-shell home-hero-grid">
           <ScrollReveal direction="left">
             <div className="home-hero-copy">
-              <p className="home-kicker">Great Dane Outdoor Services</p>
-              <h1>Lawn care and outdoor services in Northwest Arkansas</h1>
+              <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
+              <h1>Outdoor services for cleaner, better-kept properties</h1>
               <p className="home-hero-lede">
-                Pressure washing, landscaping, brush removal, junk hauling, leaf cleanups, and seasonal outdoor work for local properties that need a reset.
+                Pressure washing, brush removal, junk hauling, landscaping, leaf cleanups, and seasonal work for homeowners who want the job handled without the runaround.
               </p>
               <div className="home-hero-actions">
                 <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
@@ -97,8 +97,8 @@ export default function HomePage() {
                 unoptimized
               />
               <div className="home-hero-card-caption">
-                <span>Popular service</span>
-                <strong>Pressure washing and property cleanup</strong>
+                <span>Recent work</span>
+                <strong>Surface cleaning and property cleanup</strong>
               </div>
             </div>
           </ScrollReveal>
@@ -116,8 +116,8 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="home-section-heading">
               <p className="home-kicker">What We Handle</p>
-              <h2>Outdoor services that keep your property ready</h2>
-              <p>Simple quote process, practical service options, and real project photos so you can see the kind of work Great Dane does.</p>
+              <h2>Practical outdoor work, done cleanly</h2>
+              <p>Start with one project or combine a few. Every quote is based on your property, your photos, and the actual scope of work.</p>
             </div>
           </ScrollReveal>
 
@@ -146,13 +146,13 @@ export default function HomePage() {
 
           <ScrollReveal direction="right">
             <div className="home-story-copy">
-              <p className="home-kicker">Built Locally</p>
-              <h2>Grounded outdoor work for NWA homes</h2>
+              <p className="home-kicker">Local and Direct</p>
+              <h2>A small outdoor service company built around showing up</h2>
               <p>
-                Great Dane is starting with the kind of work homeowners actually need: clean driveways, reclaimed yards, cleared brush, hauled junk, and properties that feel usable again.
+                Great Dane is starting with the kind of work homeowners actually need: clean driveways, reclaimed yards, cleared brush, hauled junk, and yards that feel usable again.
               </p>
               <p>
-                You do not need a giant commercial contract to get professional communication. Call, text, or send photos and you will get a straightforward quote.
+                You do not need a big maintenance contract to get professional communication. Call, text, or send photos and you will get a straightforward quote.
               </p>
               <a href="/about" className="home-text-link">Learn about Great Dane →</a>
             </div>
@@ -165,8 +165,8 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="home-section-heading">
               <p className="home-kicker">Services</p>
-              <h2>Comprehensive outdoor service options</h2>
-              <p>Pick one job or bundle a few together. Every estimate is free and based on the actual scope of your property.</p>
+              <h2>The core work homeowners ask for most</h2>
+              <p>Clear service options, no inflated promises, and a direct path to getting on the schedule.</p>
             </div>
           </ScrollReveal>
 
@@ -190,8 +190,8 @@ export default function HomePage() {
           <ScrollReveal>
             <div className="home-section-heading">
               <p className="home-kicker">Project Proof</p>
-              <h2>See the difference before you book</h2>
-              <p>Drag the sliders to compare real before-and-after work from Great Dane Outdoor Services.</p>
+              <h2>Before and after work you can inspect</h2>
+              <p>Real property photos say more than stock imagery ever could.</p>
             </div>
           </ScrollReveal>
 
