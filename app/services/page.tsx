@@ -23,7 +23,7 @@ const serviceCards = [
   { name: 'Brush Removal', image: '/brushcompost-optimized.jpg', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
   { name: 'Junk Removal', image: '/IMG_8222-optimized.jpg', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
   { name: 'Leaf Cleanups', image: '/leaf-cleanup.jpg', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.' },
-  { name: 'Christmas Lights', image: '/logo-optimized.jpg', text: 'Holiday light installation and takedown for homes that want the season handled.' },
+  { name: 'Christmas Lights', image: '/christmas-lights.jpg', text: 'Holiday light installation and takedown for homes that want the season handled.' },
 ]
 
 const detailSections = [
