@@ -1233,3 +1233,177 @@
     border-radius: 8px;
   }
 }
+
+/* ─── Premium Inner Page System ─── */
+main#main-content {
+  background: #f3f5ef !important;
+  color: #243024 !important;
+}
+
+.hero-shaped {
+  padding: clamp(5rem, 8vw, 7rem) 20px clamp(4rem, 7vw, 5.5rem) !important;
+  background:
+    linear-gradient(90deg, rgba(24, 30, 24, 0.9), rgba(24, 30, 24, 0.64)),
+    url("/afterdriveway-optimized.jpg") center / cover !important;
+  border-bottom: 0 !important;
+  text-align: center;
+}
+.hero-shaped::before,
+.hero-shaped::after,
+.section-shaped::before,
+.section-shaped::after,
+.cta-shaped::before,
+.cta-shaped::after,
+.ui-card::before {
+  display: none !important;
+}
+.hero-shaped p:first-child,
+.section-shaped p:first-child,
+.cta-shaped p:first-child,
+.section-kicker {
+  color: #9bd3a5 !important;
+  text-shadow: none !important;
+}
+.hero-shaped h1,
+.hero-shaped h2 {
+  color: #fff !important;
+  font-weight: 850 !important;
+  letter-spacing: 0 !important;
+}
+.hero-shaped h1 span,
+.hero-shaped h2 span {
+  color: #d8f3dd !important;
+}
+.hero-shaped p {
+  color: #dfe5da !important;
+}
+.hero-shaped a {
+  border-radius: 8px !important;
+}
+
+.section-shaped,
+.section-band,
+.section-band-alt {
+  background: #f3f5ef !important;
+  border-top: 1px solid rgba(38, 48, 38, 0.1) !important;
+  border-bottom: 0 !important;
+}
+.section-band-alt {
+  background: #e8ece5 !important;
+}
+.section-shaped h1,
+.section-shaped h2,
+.section-shaped h3 {
+  color: #1f271f !important;
+}
+.section-shaped p,
+.section-shaped li {
+  color: #556052 !important;
+}
+.section-shaped a {
+  color: #315b3c !important;
+}
+.section-shaped span {
+  border-radius: 6px !important;
+}
+
+.ui-card,
+.quote-panel {
+  border-radius: 8px !important;
+  background: #fff !important;
+  border: 1px solid rgba(38, 48, 38, 0.12) !important;
+  box-shadow: 0 16px 36px rgba(36, 42, 36, 0.08) !important;
+}
+.ui-card h1,
+.ui-card h2,
+.ui-card h3,
+.quote-panel h1,
+.quote-panel h2,
+.quote-panel h3,
+.quote-panel a {
+  color: #1f271f !important;
+}
+.ui-card p,
+.quote-panel p {
+  color: #556052 !important;
+}
+.ui-card > span,
+.quote-panel > span,
+.quote-panel p:first-child {
+  color: #416a4a !important;
+}
+
+.gallery-frame {
+  border-radius: 8px !important;
+  background: #fff !important;
+  border: 1px solid rgba(38, 48, 38, 0.12) !important;
+  box-shadow: 0 22px 48px rgba(36, 42, 36, 0.12) !important;
+}
+.gallery-frame p {
+  color: #273027 !important;
+}
+
+.cta-shaped {
+  background:
+    linear-gradient(90deg, rgba(31, 39, 31, 0.94), rgba(31, 39, 31, 0.78)),
+    url("/afterbrick-optimized.jpg") center / cover !important;
+  border-top: 0 !important;
+}
+.cta-shaped h2 {
+  color: #fff !important;
+}
+.cta-shaped p {
+  color: #dce3d8 !important;
+}
+.cta-shaped a {
+  border-radius: 8px !important;
+}
+.cta-shaped a:first-of-type,
+.hero-shaped a:first-of-type {
+  background: #f3f5ef !important;
+  color: #1d211d !important;
+  border: 1px solid rgba(255,255,255,0.1) !important;
+}
+.cta-shaped a[href^="tel"],
+.hero-shaped a[href^="tel"] {
+  color: #d8f3dd !important;
+  border-color: rgba(216, 243, 221, 0.45) !important;
+  background: rgba(16, 20, 16, 0.42) !important;
+}
+
+.quote-panel form {
+  max-width: none !important;
+}
+.quote-panel input,
+.quote-panel select,
+.quote-panel textarea {
+  background: #f7f8f4 !important;
+  border: 1px solid rgba(38, 48, 38, 0.18) !important;
+  border-radius: 6px !important;
+  color: #1f271f !important;
+}
+.quote-panel input::placeholder,
+.quote-panel textarea::placeholder {
+  color: #6d7669 !important;
+}
+.quote-panel button[type="submit"] {
+  background: #263026 !important;
+  color: #fff !important;
+  border-radius: 8px !important;
+  box-shadow: none !important;
+}
+
+/* Services page grid and facts should feel like structured service blocks, not neon tiles. */
+.section-shaped [style*="grid-template-columns"] > .reveal-up,
+.section-shaped [style*="grid-template-columns"] > .reveal-left,
+.section-shaped [style*="grid-template-columns"] > .reveal-right {
+  min-width: 0;
+}
+
+@media (max-width: 640px) {
+  .hero-shaped {
+    background:
+      linear-gradient(180deg, rgba(24, 30, 24, 0.92), rgba(24, 30, 24, 0.76)),
+      url("/afterdriveway-optimized.jpg") center / cover !important;
+  }
+}
