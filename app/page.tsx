@@ -33,7 +33,7 @@ export default function HomePage() {
       {/* HERO */}
       <section aria-label="Hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
         {/* Background logo */}
-        <img src="/logo.png" alt="" aria-hidden="true" className="hero-bg-logo" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
+        <img src="/logo-optimized.jpg" alt="" aria-hidden="true" className="hero-bg-logo" width="640" height="640" decoding="async" fetchPriority="high" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
 
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -134,7 +134,7 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Brick &amp; Surface Cleaning</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforebrick.jpg" after="/afterbrick.jpg" beforeAlt="Before pressure washing Fayetteville AR" afterAlt="After pressure washing Fayetteville AR" />
+            <BeforeAfterSlider before="/beforebrick-optimized.jpg" after="/afterbrick-optimized.jpg" beforeAlt="Before pressure washing Fayetteville AR" afterAlt="After pressure washing Fayetteville AR" />
           </ScrollReveal>
         </div>
 
@@ -144,7 +144,7 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Driveway Restoration</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforedriveway.jpg" after="/afterdriveway.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
+            <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
           </ScrollReveal>
         </div>
 
@@ -155,7 +155,7 @@ export default function HomePage() {
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Property Transformation</h3>
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/overgrown.jpg" after="/cutdown.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
           </ScrollReveal>
         </div>
 
@@ -167,13 +167,13 @@ export default function HomePage() {
           </ScrollReveal>
           <div className="photo-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
             <ScrollReveal direction="left">
-              <img src="/brushcompost.jpg" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <img src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
             <ScrollReveal direction="up">
-              <img src="/morebrush.jpg" alt="Brush removal results NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <img src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
             <ScrollReveal direction="right">
-              <img src="/IMG_8222.png" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <img src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>
           </div>
         </div>

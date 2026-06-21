@@ -43,15 +43,15 @@ export default function GalleryPage() {
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'flex', flexDirection: 'column', gap: '5rem' }}>
           <ScrollReveal direction="up">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Brick &amp; Surface Cleaning</p>
-            <BeforeAfterSlider before="/beforebrick.jpg" after="/afterbrick.jpg" beforeAlt="Before pressure washing brick NWA" afterAlt="After pressure washing brick NWA" />
+            <BeforeAfterSlider before="/beforebrick-optimized.jpg" after="/afterbrick-optimized.jpg" beforeAlt="Before pressure washing brick NWA" afterAlt="After pressure washing brick NWA" />
           </ScrollReveal>
           <ScrollReveal direction="up">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Driveway Restoration</p>
-            <BeforeAfterSlider before="/beforedriveway.jpg" after="/afterdriveway.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
+            <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
           </ScrollReveal>
           <ScrollReveal direction="up">
             <p style={{ color: '#b2b2b2', fontSize: '0.9rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.15em', marginBottom: '1.5rem' }}>Walkway Cleaning</p>
-            <BeforeAfterSlider before="/beforewalkway.jpg" after="/afterwalkway.jpg" beforeAlt="Before walkway pressure washing NWA" afterAlt="After walkway pressure washing NWA" />
+            <BeforeAfterSlider before="/beforewalkway-optimized.jpg" after="/afterwalkway-optimized.jpg" beforeAlt="Before walkway pressure washing NWA" afterAlt="After walkway pressure washing NWA" />
           </ScrollReveal>
         </div>
       </section>
@@ -64,7 +64,7 @@ export default function GalleryPage() {
         </ScrollReveal>
         <div style={{ maxWidth: '1400px', margin: '0 auto' }}>
           <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/overgrown.jpg" after="/cutdown.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
+            <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
           </ScrollReveal>
         </div>
       </section>
@@ -77,13 +77,13 @@ export default function GalleryPage() {
         </ScrollReveal>
         <div style={{ maxWidth: '1400px', margin: '0 auto', display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
           <ScrollReveal direction="left">
-            <img src="/brushcompost.jpg" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <img src="/brushcompost-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
           <ScrollReveal direction="up">
-            <img src="/morebrush.jpg" alt="Brush removal results NWA" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <img src="/morebrush-optimized.jpg" alt="Brush removal results NWA" loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
           <ScrollReveal direction="right">
-            <img src="/IMG_8222.png" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
+            <img src="/IMG_8222-optimized.jpg" alt="Brush removal NWA" loading="lazy" decoding="async" width="1600" height="1200" style={{ width: '100%', height: 'clamp(260px, 28vw, 480px)', objectFit: 'cover', display: 'block' }} />
           </ScrollReveal>
         </div>
       </section>

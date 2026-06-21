@@ -48,11 +48,11 @@ export default function BeforeAfterSlider({ before, after, beforeAlt, afterAlt }
       style={{ position: 'relative', cursor: 'ew-resize', userSelect: 'none', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}
     >
       {/* After — full background */}
-      <img src={after} alt={afterAlt} style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block' }} />
+      <img src={after} alt={afterAlt} loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block' }} />
 
       {/* Before — clipped, direct DOM update via ref */}
       <div ref={clipRef} style={{ position: 'absolute', inset: 0, clipPath: 'inset(0 50% 0 0)', willChange: 'clip-path' }}>
-        <img src={before} alt={beforeAlt} style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block', filter: 'brightness(0.65) saturate(0.7)' }} />
+        <img src={before} alt={beforeAlt} loading="lazy" decoding="async" width="1600" height="2134" style={{ width: '100%', height: 'clamp(380px, 50vw, 680px)', objectFit: 'cover', display: 'block', filter: 'brightness(0.65) saturate(0.7)' }} />
       </div>
 
       {/* Divider line */}
