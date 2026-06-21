@@ -28,12 +28,12 @@ const services = [
 
 export default function HomePage() {
   return (
-    <main style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
+    <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
-      <section style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
+      <section aria-label="Hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
         {/* Background logo */}
-        <img src="/logo.png" alt="" aria-hidden="true" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
+        <img src="/logo.png" alt="" aria-hidden="true" className="hero-bg-logo" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
 
         {/* Content */}
         <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
@@ -165,7 +165,7 @@ export default function HomePage() {
             <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '2rem' }}>✦ Brush Removal ✦</p>
             <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Land Clearing</h3>
           </ScrollReveal>
-          <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
+          <div className="photo-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
             <ScrollReveal direction="left">
               <img src="/brushcompost.jpg" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
             </ScrollReveal>

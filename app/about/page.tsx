@@ -17,7 +17,7 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 
 export default function AboutPage() {
   return (
-    <main style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
+    <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
 
       {/* HERO */}
       <section style={{ padding: '120px 20px 80px', textAlign: 'center', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', borderBottom: '1px solid #425242' }}>

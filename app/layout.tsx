@@ -3,6 +3,8 @@ import type { Metadata } from "next"
 import { Geist, Geist_Mono } from "next/font/google"
 import "./globals.css"
 import SchemaMarkup from '@/components/SchemaMarkup'
+import Navbar from '@/components/Navbar'
+import SiteFooter from '@/components/SiteFooter'
 
 const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
 const geistMono = Geist_Mono({ variable: "--font-geist-mono", subsets: ["latin"] })
@@ -12,26 +14,33 @@ export const metadata: Metadata = {
     default: "Great Dane Outdoor Services | NWA Pressure Washing, Junk Removal & Landscaping",
     template: "%s | Great Dane Outdoor Services",
   },
-  description: "NWA's locally owned outdoor services company. Pressure washing, junk removal, and landscaping in Fayetteville, Rogers, Bentonville, Springdale & Farmington, AR. Free quotes. (870) 995-1166.",
+  description: "Locally owned outdoor services in Northwest Arkansas. Pressure washing, junk removal, landscaping, brush removal & more. Fayetteville, Rogers, Bentonville, Springdale & surrounding NWA. Free quotes. (870) 995-1166.",
   metadataBase: new URL("https://www.greatdaneoutdoorservices.com"),
+  alternates: { canonical: "https://www.greatdaneoutdoorservices.com" },
+  openGraph: {
+    type: "website",
+    siteName: "Great Dane Outdoor Services",
+    title: "Great Dane Outdoor Services | NWA Outdoor Services",
+    description: "Locally owned outdoor services in Northwest Arkansas. Pressure washing, junk removal, landscaping, brush removal & more. Free quotes. (870) 995-1166.",
+    url: "https://www.greatdaneoutdoorservices.com",
+    locale: "en_US",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Great Dane Outdoor Services | NWA Pressure Washing, Junk Removal & Landscaping",
+    description: "Locally owned outdoor services in Northwest Arkansas. Free quotes. (870) 995-1166.",
+  },
+  robots: { index: true, follow: true },
 }
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <SchemaMarkup/>
-        <nav style={{ backgroundColor: '#3c3c3c', padding: '1rem 2rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-          <a href="/" style={{ color: '#fff', fontWeight: 'bold', textDecoration: 'none', fontSize: '1.2rem' }}>Great Dane Outdoor Services</a>
-          <div style={{ display: 'flex', gap: '1.5rem' }}>
-            <a href="/services" style={{ color: '#ccc', textDecoration: 'none' }}>Services</a>
-            <a href="/about" style={{ color: '#ccc', textDecoration: 'none' }}>About</a>
-            <a href="/gallery" style={{ color: '#ccc', textDecoration: 'none' }}>Gallery</a>
-            <a href="/faq" style={{ color: '#ccc', textDecoration: 'none' }}>FAQ</a>
-            <a href="/contact" style={{ color: '#ccc', textDecoration: 'none' }}>Contact</a>
-          </div>
-        </nav>
+        <SchemaMarkup />
+        <Navbar />
         {children}
+        <SiteFooter />
       </body>
     </html>
   )
