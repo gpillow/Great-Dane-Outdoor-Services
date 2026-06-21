@@ -18,6 +18,7 @@ export default function SiteFooter() {
         <nav aria-label="Footer navigation" className="footer-links">
           <ul>
             <li><Link href="/services">Services</Link></li>
+            <li><Link href="/pricing">Pricing</Link></li>
             <li><Link href="/about">About</Link></li>
             <li><Link href="/gallery">Gallery</Link></li>
             <li><Link href="/faq">FAQ</Link></li>

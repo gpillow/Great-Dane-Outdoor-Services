@@ -1,6 +1,7 @@
 'use client'
 
 import React, { useEffect, useRef } from 'react'
+import Image from 'next/image'
 import BeforeAfterSlider from '@/components/BeforeAfterSlider'
 
 function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right' }) {
@@ -16,231 +17,216 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
   return <div ref={ref} className={`reveal-${direction}`}>{children}</div>
 }
 
+const cities = ['Fayetteville', 'Rogers', 'Bentonville', 'Springdale', 'Farmington', 'Lowell', 'Centerton', 'Bella Vista']
+
+const serviceGroups = [
+  {
+    label: 'Homes',
+    title: 'Clean, usable outdoor spaces',
+    text: 'Driveways, beds, yards, and rough edges cleaned up so the property feels maintained again.',
+  },
+  {
+    label: 'Cleanups',
+    title: 'Overgrowth, debris, and seasonal mess',
+    text: 'Brush, leaves, junk, and yard waste removed with clear pricing before work begins.',
+  },
+  {
+    label: 'Seasonal Work',
+    title: 'Property help when the season changes',
+    text: 'Fall leaf removal, spring refreshes, and holiday light installs for local homes.',
+  },
+]
 
 const services = [
-  { name: 'Pressure Washing', desc: 'Driveways, decks, siding, patios — blasted clean and looking brand new.' },
-  { name: 'Junk Removal', desc: 'We haul it away so you don\'t have to. Fast and affordable.' },
-  { name: 'Landscaping', desc: 'Mowing, trimming, cleanup and more. Your yard, upgraded.' },
-  { name: 'Brush Removal', desc: 'Overgrown property? We clear it out clean and efficient.' },
-  { name: 'Leaf Cleanups', desc: 'Fall in NWA hits hard. We handle the mess.' },
-  { name: 'Christmas Lights', desc: 'Professional holiday light installation. Let your home shine.' },
+  { name: 'Pressure Washing', desc: 'Driveways, walkways, brick, decks, siding, and patios cleaned with care.' },
+  { name: 'Junk Removal', desc: 'Old furniture, yard debris, clutter, and unwanted items hauled off fast.' },
+  { name: 'Landscaping', desc: 'Mulch, trimming, flower beds, weed removal, and property refresh work.' },
+  { name: 'Brush Removal', desc: 'Dense overgrowth, fence lines, saplings, and rough areas cleared out.' },
+  { name: 'Leaf Cleanups', desc: 'Seasonal leaf removal and disposal so your yard stays under control.' },
+  { name: 'Christmas Lights', desc: 'Holiday light installation and takedown without the ladder headache.' },
+]
+
+const trustPoints = [
+  'Free quotes',
+  'Licensed LLC',
+  'Call or text directly',
+  'Serving Northwest Arkansas',
 ]
 
 export default function HomePage() {
   return (
-    <main id="main-content" style={{ backgroundColor: '#303030', color: '#f0f0f0', fontFamily: 'sans-serif' }}>
-
-      {/* HERO */}
-      <section aria-label="Hero" style={{ minHeight: '100vh', display: 'flex', flexDirection: 'column', alignItems: 'center', justifyContent: 'center', textAlign: 'center', padding: '80px 20px', background: 'linear-gradient(180deg, #303030 0%, #3e4e3e 100%)', position: 'relative', overflow: 'hidden' }}>
-        {/* Background logo */}
-        <img src="/logo.png" alt="" aria-hidden="true" className="hero-bg-logo" style={{ position: 'absolute', width: '640px', height: '640px', borderRadius: '50%', objectFit: 'cover', opacity: 0.38, top: '50%', left: '50%', transform: 'translate(-50%, -50%)', pointerEvents: 'none', filter: 'drop-shadow(0 0 40px rgba(125,255,158,0.12))' }} />
-
-        {/* Content */}
-        <div style={{ position: 'relative', zIndex: 1, display: 'flex', flexDirection: 'column', alignItems: 'center' }}>
-          <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.95rem', textTransform: 'uppercase', marginBottom: '1rem', textShadow: '0 0 24px rgba(106,191,128,0.9), 0 1px 8px rgba(0,0,0,1)' }}>Serving Northwest Arkansas</p>
-          <h1 style={{ fontSize: 'clamp(2.5rem, 6vw, 5rem)', fontWeight: 900, color: '#ffffff', lineHeight: 1.1, marginBottom: '1.5rem', maxWidth: '900px', textShadow: '0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1), 0 0 60px rgba(0,0,0,0.9), 1px 1px 0 #000, -1px -1px 0 #000' }}>
-            Big Results,<br /><span style={{ color: '#7dff9e', textShadow: '0 0 8px rgba(0,0,0,1), 0 0 30px rgba(0,0,0,1), 0 0 40px rgba(125,255,158,0.4)' }}>Great Service.</span>
-          </h1>
-          <div style={{ display: 'flex', gap: '1rem', flexWrap: 'wrap', justifyContent: 'center' }}>
-            <a href="/contact" style={{ background: 'linear-gradient(135deg, #e0e0e0, #aaa)', color: '#303030', padding: '1rem 2.2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem', boxShadow: '0 4px 24px rgba(0,0,0,0.8), 0 0 0 1px rgba(255,255,255,0.1)' }}>
-              Get a Free Quote
-            </a>
-            <a href="tel:8709951166" style={{ background: 'rgba(10,10,10,0.75)', border: '2px solid #4a9c69', color: '#7dff9e', padding: '1rem 2.2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem', boxShadow: '0 4px 24px rgba(0,0,0,0.8), 0 0 20px rgba(74,156,105,0.2)', backdropFilter: 'blur(4px)' }}>
-              Call (870) 995-1166
-            </a>
-          </div>
-        </div>
-      </section>
-
-      {/* TRUST BAR */}
-      <ScrollReveal>
-        <section style={{ background: '#3c3c3c', borderTop: '1px solid #4a4a4a', borderBottom: '1px solid #4a4a4a', padding: '1.5rem 20px' }}>
-          <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '2rem', maxWidth: '900px', margin: '0 auto' }}>
-            {['Locally Owned & Operated', 'Free Quotes — No Obligation', 'Licensed LLC', '2+ Years Serving NWA'].map((item) => (
-              <span key={item} style={{ color: '#ebebeb', fontSize: '0.9rem', fontWeight: 600, letterSpacing: '0.05em' }}>✦ {item}</span>
-            ))}
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* STATS */}
-      <ScrollReveal>
-        <section style={{ padding: '80px 20px', background: '#3a3a3a', borderBottom: '1px solid #464646' }}>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(180px, 1fr))', gap: '2rem', maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-            {[
-              { stat: '2+', label: 'Years Serving NWA' },
-              { stat: '6', label: 'Services Offered' },
-              { stat: 'LLC', label: 'Licensed & Legitimate' },
-              { stat: '100%', label: 'Free Estimates' },
-            ].map((item) => (
-              <div key={item.label} style={{ padding: '1.5rem', border: '1px solid #425242', borderRadius: '12px', background: '#3c3c3c' }}>
-                <p style={{ color: '#7dff9e', fontSize: 'clamp(2rem, 4vw, 2.8rem)', fontWeight: 900, lineHeight: 1, marginBottom: '0.5rem', textShadow: '0 0 30px rgba(125,255,158,0.3)' }}>{item.stat}</p>
-                <p style={{ color: '#989898', fontSize: '0.8rem', fontWeight: 600, letterSpacing: '0.1em', textTransform: 'uppercase' }}>{item.label}</p>
+    <main id="main-content" className="home-page">
+      <section className="home-hero" aria-label="Great Dane Outdoor Services hero">
+        <Image
+          src="/logo-optimized.jpg"
+          alt=""
+          aria-hidden="true"
+          className="home-hero-bg"
+          width={640}
+          height={640}
+          priority
+          unoptimized
+        />
+        <div className="home-hero-overlay" />
+        <div className="home-shell home-hero-grid">
+          <ScrollReveal direction="left">
+            <div className="home-hero-copy">
+              <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
+              <h1>Outdoor services for cleaner, better-kept properties</h1>
+              <p className="home-hero-lede">
+                Pressure washing, brush removal, junk hauling, landscaping, leaf cleanups, and seasonal work for homeowners who want the job handled without the runaround.
+              </p>
+              <div className="home-hero-actions">
+                <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
+                <a href="tel:8709951166" className="home-btn home-btn-secondary">Call (870) 995-1166</a>
               </div>
-            ))}
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* SERVICES */}
-      <section style={{ padding: '100px 20px', background: '#3a3a3a' }}>
-        <ScrollReveal>
-          <div style={{ textAlign: 'center', marginBottom: '3rem' }}>
-            <p style={{ color: '#4a7c59', fontWeight: 700, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem' }}>What We Do</p>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1.5rem' }}>Built for Northwest Arkansas</h2>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.6rem', maxWidth: '700px', margin: '0 auto' }}>
-              {['Fayetteville', 'Rogers', 'Bentonville', 'Springdale', 'Farmington', 'Lowell', 'Centerton', 'Bella Vista', 'Cave Springs', 'Siloam Springs', 'Elkins', 'Prairie Grove'].map((city) => (
-                <span key={city} style={{ background: 'rgba(74,124,89,0.1)', border: '1px solid #3e5a48', color: '#6abf80', padding: '0.35rem 1rem', borderRadius: '999px', fontSize: '0.8rem', fontWeight: 500 }}>
-                  {city}
-                </span>
-              ))}
+              <div className="home-city-row" aria-label="Service areas">
+                {cities.map((city) => <span key={city}>{city}</span>)}
+              </div>
             </div>
-          </div>
-        </ScrollReveal>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '1.5rem', maxWidth: '1100px', margin: '0 auto' }}>
-          {services.map((s, i) => (
-            <ScrollReveal key={s.name}>
-              <div style={{ background: '#464646', border: '1px solid #565656', borderRadius: '12px', padding: '2rem', transition: 'border-color 0.3s', cursor: 'pointer', height: '100%', display: 'flex', flexDirection: 'column' }}
-                onMouseEnter={e => (e.currentTarget.style.borderColor = '#4a7c59')}
-                onMouseLeave={e => (e.currentTarget.style.borderColor = '#565656')}>
-                <span style={{ color: '#3e5a48', fontSize: '3rem', fontWeight: 900, lineHeight: 1, marginBottom: '0.75rem', display: 'block' }}>
-                  {String(i + 1).padStart(2, '0')}
-                </span>
-                <h3 style={{ color: '#ebebeb', fontSize: '1.2rem', fontWeight: 700, marginBottom: '0.75rem' }}>{s.name}</h3>
-                <p style={{ color: '#b2b2b2', lineHeight: 1.7, fontSize: '0.95rem', flex: 1 }}>{s.desc}</p>
-                <div style={{ display: 'flex', gap: '1rem', marginTop: '1.5rem', flexWrap: 'wrap' }}>
-                  <a href="/contact" style={{ background: 'linear-gradient(135deg, #ebebeb, #b2b2b2)', color: '#303030', padding: '0.5rem 1.2rem', borderRadius: '6px', fontWeight: 700, textDecoration: 'none', fontSize: '0.85rem' }}>Book Now</a>
-                  <a href="/services" style={{ color: '#4a7c59', fontWeight: 600, textDecoration: 'none', fontSize: '0.85rem', display: 'flex', alignItems: 'center' }}>Details →</a>
-                </div>
+          </ScrollReveal>
+
+          <ScrollReveal direction="right">
+            <div className="home-hero-card">
+              <Image
+                src="/afterdriveway-optimized.jpg"
+                alt="Clean driveway after pressure washing in Northwest Arkansas"
+                width={1600}
+                height={1200}
+                priority
+                unoptimized
+              />
+              <div className="home-hero-card-caption">
+                <span>Recent work</span>
+                <strong>Surface cleaning and property cleanup</strong>
               </div>
-            </ScrollReveal>
-          ))}
+            </div>
+          </ScrollReveal>
         </div>
       </section>
-{/* GALLERY PREVIEW */}
-      <section style={{ padding: '120px 20px', background: '#303030' }}>
-        <ScrollReveal direction="up">
-          <div style={{ textAlign: 'center', marginBottom: '6rem' }}>
-            <p style={{ color: '#6abf80', fontWeight: 800, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem', textShadow: '0 0 20px rgba(106,191,128,0.6)' }}>Our Work</p>
-            <h2 style={{ fontSize: 'clamp(2.5rem, 5vw, 4.5rem)', fontWeight: 900, color: '#fff', marginBottom: '1rem' }}>See the Great Dane Difference</h2>
-            <p style={{ color: '#b2b2b2', maxWidth: '500px', margin: '0 auto', fontSize: '1.1rem' }}>Drag the slider to reveal the transformation</p>
+
+      <section className="home-trust-strip">
+        <div className="home-shell home-trust-inner">
+          {trustPoints.map((point) => <span key={point}>{point}</span>)}
+        </div>
+      </section>
+
+      <section className="home-section home-section-light">
+        <div className="home-shell">
+          <ScrollReveal>
+            <div className="home-section-heading">
+              <p className="home-kicker">What We Handle</p>
+              <h2>Practical outdoor work, done cleanly</h2>
+              <p>Start with one project or combine a few. Every quote is based on your property, your photos, and the actual scope of work.</p>
+            </div>
+          </ScrollReveal>
+
+          <div className="home-category-grid">
+            {serviceGroups.map((group) => (
+              <ScrollReveal key={group.label}>
+                <article className="home-category-card">
+                  <span>{group.label}</span>
+                  <h3>{group.title}</h3>
+                  <p>{group.text}</p>
+                </article>
+              </ScrollReveal>
+            ))}
           </div>
-        </ScrollReveal>
+        </div>
+      </section>
 
-        {/* Pressure Washing — Brick */}
-        <div style={{ maxWidth: '1400px', margin: '0 auto 8rem' }}>
-          <ScrollReveal direction="up">
-            <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '2rem' }}>✦ Pressure Washing ✦</p>
-            <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Brick &amp; Surface Cleaning</h3>
+      <section className="home-section home-story-section">
+        <div className="home-shell home-story-grid">
+          <ScrollReveal direction="left">
+            <div className="home-image-stack">
+              <Image src="/overgrown-optimized.jpg" alt="Overgrown property before cleanup" width={1600} height={1200} loading="lazy" unoptimized />
+              <Image src="/cutdown-optimized.jpg" alt="Property after brush and landscaping cleanup" width={1600} height={1200} loading="lazy" unoptimized />
+            </div>
           </ScrollReveal>
-          <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforebrick.jpg" after="/afterbrick.jpg" beforeAlt="Before pressure washing Fayetteville AR" afterAlt="After pressure washing Fayetteville AR" />
+
+          <ScrollReveal direction="right">
+            <div className="home-story-copy">
+              <p className="home-kicker">Local and Direct</p>
+              <h2>A small outdoor service company built around showing up</h2>
+              <p>
+                Great Dane is starting with the kind of work homeowners actually need: clean driveways, reclaimed yards, cleared brush, hauled junk, and yards that feel usable again.
+              </p>
+              <p>
+                You do not need a big maintenance contract to get professional communication. Call, text, or send photos and you will get a straightforward quote.
+              </p>
+              <a href="/about" className="home-text-link">Learn about Great Dane →</a>
+            </div>
           </ScrollReveal>
         </div>
+      </section>
 
-        {/* Pressure Washing — Driveway */}
-        <div style={{ maxWidth: '1400px', margin: '0 auto 8rem' }}>
-          <ScrollReveal direction="up">
-            <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Driveway Restoration</h3>
+      <section className="home-section home-section-light">
+        <div className="home-shell">
+          <ScrollReveal>
+            <div className="home-section-heading">
+              <p className="home-kicker">Services</p>
+              <h2>The core work homeowners ask for most</h2>
+              <p>Clear service options, no inflated promises, and a direct path to getting on the schedule.</p>
+            </div>
           </ScrollReveal>
-          <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/beforedriveway.jpg" after="/afterdriveway.jpg" beforeAlt="Before driveway pressure washing NWA" afterAlt="After driveway pressure washing NWA" />
-          </ScrollReveal>
+
+          <div className="home-service-grid">
+            {services.map((service, index) => (
+              <ScrollReveal key={service.name}>
+                <article className="home-service-card">
+                  <span>{String(index + 1).padStart(2, '0')}</span>
+                  <h3>{service.name}</h3>
+                  <p>{service.desc}</p>
+                  <a href="/contact">Get a quote →</a>
+                </article>
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
+      </section>
 
-        {/* Landscaping */}
-        <div style={{ maxWidth: '1400px', margin: '0 auto 8rem' }}>
-          <ScrollReveal direction="up">
-            <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '2rem' }}>✦ Landscaping ✦</p>
-            <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Property Transformation</h3>
+      <section className="home-section home-project-section">
+        <div className="home-shell">
+          <ScrollReveal>
+            <div className="home-section-heading">
+              <p className="home-kicker">Project Proof</p>
+              <h2>Before and after work you can inspect</h2>
+              <p>Real property photos say more than stock imagery ever could.</p>
+            </div>
           </ScrollReveal>
-          <ScrollReveal direction="up">
-            <BeforeAfterSlider before="/overgrown.jpg" after="/cutdown.jpg" beforeAlt="Before landscaping NWA" afterAlt="After landscaping NWA" />
-          </ScrollReveal>
-        </div>
 
-        {/* Brush Removal */}
-        <div style={{ maxWidth: '1400px', margin: '0 auto 5rem' }}>
-          <ScrollReveal direction="up">
-            <p style={{ color: '#4a7c59', fontWeight: 700, fontSize: '0.85rem', textTransform: 'uppercase', letterSpacing: '0.25em', textAlign: 'center', marginBottom: '2rem' }}>✦ Brush Removal ✦</p>
-            <h3 style={{ color: '#ebebeb', fontWeight: 700, fontSize: 'clamp(1.2rem, 2vw, 1.6rem)', textAlign: 'center', marginBottom: '3rem' }}>Land Clearing</h3>
-          </ScrollReveal>
-          <div className="photo-grid-3" style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: '6px', borderRadius: '20px', overflow: 'hidden', boxShadow: '0 50px 120px rgba(0,0,0,0.9)' }}>
+          <div className="home-project-grid">
             <ScrollReveal direction="left">
-              <img src="/brushcompost.jpg" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
-            </ScrollReveal>
-            <ScrollReveal direction="up">
-              <img src="/morebrush.jpg" alt="Brush removal results NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-frame">
+                <p className="home-project-label">Driveway Restoration</p>
+                <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing in Northwest Arkansas" afterAlt="After driveway pressure washing in Northwest Arkansas" />
+              </div>
             </ScrollReveal>
             <ScrollReveal direction="right">
-              <img src="/IMG_8222.png" alt="Brush removal NWA" style={{ width: '100%', height: 'clamp(280px, 30vw, 500px)', objectFit: 'cover', display: 'block' }} />
+              <div className="gallery-frame">
+                <p className="home-project-label">Brush and Yard Cleanup</p>
+                <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before overgrown yard cleanup in Northwest Arkansas" afterAlt="After overgrown yard cleanup in Northwest Arkansas" />
+              </div>
             </ScrollReveal>
           </div>
+
+          <div className="home-center-action">
+            <a href="/gallery" className="home-btn home-btn-secondary">View More Projects</a>
+          </div>
         </div>
+      </section>
 
-        <ScrollReveal direction="up">
-          <div style={{ textAlign: 'center', marginTop: '4rem' }}>
-            <a href="/gallery" style={{ border: '2px solid #ebebeb', color: '#ebebeb', padding: '1rem 2.5rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem', letterSpacing: '0.05em' }}>
-              See Full Gallery →
-            </a>
+      <section className="home-section home-cta-section">
+        <div className="home-shell home-cta-panel">
+          <p className="home-kicker">Ready When You Are</p>
+          <h2>Tell us what needs done. We&apos;ll quote it clearly.</h2>
+          <p>Call, text, or use the quote form. Photos are welcome and can help speed up the estimate.</p>
+          <div className="home-hero-actions">
+            <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
+            <a href="tel:8709951166" className="home-btn home-btn-secondary">Call (870) 995-1166</a>
           </div>
-        </ScrollReveal>
-      </section>      {/* WHY US */}
-      <ScrollReveal>
-        <section style={{ padding: '100px 20px', background: 'linear-gradient(180deg, #3e4e3e 0%, #303030 100%)', textAlign: 'center' }}>
-          <p style={{ color: '#4a7c59', fontWeight: 700, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Why Choose Us</p>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '0.75rem' }}>Why NWA Trusts Great Dane</h2>
-          <p style={{ color: '#b2b2b2', fontSize: '1rem', marginBottom: '3rem' }}>You won&apos;t forget the Great Dane Guy.</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '2rem', maxWidth: '900px', margin: '0 auto' }}>
-            {[
-              { title: 'Precision Work', desc: 'Every job done right — clean, thorough, and built to impress.' },
-              { title: 'Locally Owned', desc: 'We live and work here in NWA.' },
-              { title: 'Free Quotes', desc: 'No obligation, always free.' },
-              { title: 'Quality Work', desc: 'Detailed results at fair prices.' },
-            ].map((item) => (
-              <div key={item.title} style={{ padding: '1.5rem', border: '1px solid #425242', borderRadius: '12px', background: '#3c3c3c' }}>
-                <h3 style={{ color: '#ebebeb', fontWeight: 700, marginBottom: '0.5rem' }}>{item.title}</h3>
-                <p style={{ color: '#a0a0a0', fontSize: '0.9rem' }}>{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* SERVICE AREAS */}
-      <ScrollReveal>
-        <section style={{ padding: '100px 20px', background: '#3a3a3a', borderTop: '1px solid #464646' }}>
-          <div style={{ maxWidth: '900px', margin: '0 auto', textAlign: 'center' }}>
-            <p style={{ color: '#4a7c59', fontWeight: 700, letterSpacing: '0.2em', fontSize: '0.85rem', textTransform: 'uppercase', marginBottom: '0.75rem' }}>Where We Work</p>
-            <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Serving All of Northwest Arkansas</h2>
-            <p style={{ color: '#b2b2b2', marginBottom: '3rem', fontSize: '1rem' }}>If you&apos;re in NWA, we&apos;ve got you covered.</p>
-            <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center', gap: '0.75rem' }}>
-              {['Fayetteville', 'Rogers', 'Bentonville', 'Springdale', 'Farmington', 'Lowell', 'Centerton', 'Bella Vista', 'Cave Springs', 'Siloam Springs', 'Elkins', 'Prairie Grove'].map((city) => (
-                <span key={city} style={{ background: '#464646', border: '1px solid #565656', color: '#ebebeb', padding: '0.5rem 1.25rem', borderRadius: '999px', fontSize: '0.9rem', fontWeight: 500 }}>
-                  {city}
-                </span>
-              ))}
-            </div>
-          </div>
-        </section>
-      </ScrollReveal>
-
-      {/* CTA */}
-      <ScrollReveal>
-        <section style={{ padding: '100px 20px', textAlign: 'center', background: '#3c3c3c', borderTop: '1px solid #425242' }}>
-          <h2 style={{ fontSize: 'clamp(2rem, 4vw, 3rem)', fontWeight: 800, color: '#fff', marginBottom: '1rem' }}>Ready to Get Started?</h2>
-          <p style={{ color: '#b2b2b2', marginBottom: '2.5rem', fontSize: '1.1rem' }}>Call, text, or fill out our quick quote form. Same day quotes.</p>
-          <div style={{ display: 'flex', gap: '1rem', justifyContent: 'center', flexWrap: 'wrap' }}>
-            <a href="/contact" style={{ background: 'linear-gradient(135deg, #ebebeb, #b2b2b2)', color: '#303030', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
-              Get a Free Quote
-            </a>
-            <a href="tel:8709951166" style={{ border: '2px solid #4a7c59', color: '#4a7c59', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-              Call (870) 995-1166
-            </a>
-          </div>
-        </section>
-      </ScrollReveal>
-
+        </div>
+      </section>
     </main>
   )
 }
