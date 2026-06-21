@@ -2,6 +2,7 @@
 
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
+import Image from 'next/image'
 
 const navLinks = [
   { label: 'Services', href: '/services' },
@@ -39,12 +40,13 @@ export default function Navbar() {
 
       <div className="nav-inner">
         <Link href="/" className="nav-logo" aria-label="Great Dane Outdoor Services home">
-          <span className="nav-logo-mark" aria-hidden="true">GD</span>
+          <span className="nav-logo-mark" aria-hidden="true">
+            <Image src="/logo-optimized.jpg" alt="" width={42} height={42} sizes="42px" />
+          </span>
           <span className="nav-logo-copy">
             <span className="nav-logo-main">Great Dane</span>
             <span className="nav-logo-sub">Outdoor Services</span>
           </span>
-          <span className="nav-logo-area">NWA</span>
         </Link>
 
         <nav role="navigation" aria-label="Main navigation" className="nav-desktop">

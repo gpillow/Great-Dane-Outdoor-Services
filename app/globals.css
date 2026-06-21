@@ -118,20 +118,20 @@
   color: #fff;
 }
 .nav-logo-mark {
-  display: grid;
-  place-items: center;
+  display: block;
   width: 42px;
   height: 42px;
   border: 1px solid rgba(125, 255, 158, 0.35);
   border-radius: 14px 6px 14px 6px;
-  background:
-    linear-gradient(135deg, rgba(125, 255, 158, 0.18), rgba(74, 124, 89, 0.08)),
-    #202520;
-  color: #7dff9e;
-  font-size: 0.72rem;
-  font-weight: 900;
-  letter-spacing: 0.08em;
+  background: #202520;
+  overflow: hidden;
   box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 10px 30px rgba(0,0,0,0.3);
+}
+.nav-logo-mark img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
 }
 .nav-logo-copy {
   display: flex;
@@ -151,17 +151,6 @@
   letter-spacing: 0.15em;
   margin-top: 0.2rem;
 }
-.nav-logo-area {
-  color: #c8d0c8;
-  font-size: 0.68rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  background: rgba(255, 255, 255, 0.04);
-  border-radius: 999px;
-  padding: 0.32rem 0.48rem;
-}
-
 .nav-desktop {
   display: none;
   align-items: center;
@@ -450,9 +439,6 @@
 }
 
 @media (max-width: 980px) {
-  .nav-logo-area {
-    display: none;
-  }
   .nav-links a {
     padding-inline: 0.68rem;
   }
