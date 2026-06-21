@@ -1843,6 +1843,18 @@ main#main-content {
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
+/* Constrain ScrollReveal wrappers inside story layout to their grid columns */
+.blueprint-story-layout > div {
+  min-width: 0;
+  width: 100%;
+}
+.blueprint-story-layout > div img {
+  display: block;
+  width: 100%;
+  height: clamp(280px, 36vw, 500px);
+  object-fit: cover;
+  border-radius: 8px;
+}
 .blueprint-detail-row {
   background: #f3f5ef;
   border-radius: 8px;
@@ -2035,6 +2047,12 @@ main#main-content {
   .blueprint-story-layout,
   .contact-blueprint-grid {
     grid-template-columns: 1fr;
+  }
+  .blueprint-story-layout > div img {
+    height: clamp(240px, 55vw, 380px);
+  }
+  .blueprint-story-layout > div:last-child {
+    text-align: center;
   }
   .blueprint-service-grid,
   .blueprint-project-grid,
