@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div>
               <span>Service area</span>
-              <p>Fayetteville, Rogers, Bentonville, Springdale, Farmington, Lowell, Centerton, Bella Vista, and surrounding Northwest Arkansas.</p>
+              <p>Fayetteville, Springdale, Rogers, Bentonville, Farmington, Johnson, and Lowell.</p>
             </div>
             <ul>
               <li>Free estimates</li>

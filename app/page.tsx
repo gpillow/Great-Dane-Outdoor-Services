@@ -17,7 +17,7 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
   return <div ref={ref} className={`reveal-${direction}`}>{children}</div>
 }
 
-const cities = ['Fayetteville', 'Rogers', 'Bentonville', 'Springdale', 'Farmington', 'Lowell', 'Centerton', 'Bella Vista']
+const cities = ['Fayetteville', 'Springdale', 'Rogers', 'Bentonville', 'Farmington', 'Johnson', 'Lowell']
 
 const serviceGroups = [
   {

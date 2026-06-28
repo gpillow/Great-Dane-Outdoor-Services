@@ -191,7 +191,7 @@ export default function PricingPage() {
         <div className="pricing-shell">
           <h2>Service Area</h2>
           <p>
-            Great Dane Outdoor Services provides pressure washing, brush removal, junk removal, landscaping refreshes, leaf cleanups, and seasonal outdoor work across Northwest Arkansas, including Fayetteville, Rogers, Bentonville, Springdale, Farmington, Lowell, Centerton, Bella Vista, Cave Springs, Siloam Springs, Elkins, and Prairie Grove.
+            Great Dane Outdoor Services provides pressure washing, brush removal, junk removal, landscaping refreshes, leaf cleanups, and seasonal outdoor work across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, Farmington, Johnson, and Lowell.
           </p>
           <Link href="/contact">Request a free quote</Link>
         </div>
