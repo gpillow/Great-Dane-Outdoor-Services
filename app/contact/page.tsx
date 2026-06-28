@@ -38,7 +38,7 @@ export default function ContactPage() {
             </div>
             <div>
               <span>Service area</span>
-              <p>Fayetteville, Springdale, Rogers, Bentonville, Farmington, Johnson, and Lowell.</p>
+              <p>Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.</p>
             </div>
             <ul>
               <li>Free estimates</li>

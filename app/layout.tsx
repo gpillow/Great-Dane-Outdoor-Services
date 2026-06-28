@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     default: "Great Dane Outdoor Services | NWA Pressure Washing, Junk Removal & Landscaping",
     template: "%s | Great Dane Outdoor Services",
   },
-  description: "Locally owned outdoor services in Northwest Arkansas. Pressure washing, junk removal, landscaping, brush removal & more. Fayetteville, Springdale, Rogers, Bentonville, Farmington, Johnson & Lowell. Free quotes. (870) 995-1166.",
+  description: "Locally owned outdoor services in Northwest Arkansas. Pressure washing, junk removal, landscaping, brush removal & more. Fayetteville, Springdale, Rogers, Bentonville, Farmington & Johnson. Free quotes. (870) 995-1166.",
   metadataBase: new URL("https://www.greatdaneoutdoorservices.com"),
   alternates: { canonical: "https://www.greatdaneoutdoorservices.com" },
   openGraph: {

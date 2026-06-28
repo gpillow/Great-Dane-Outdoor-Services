@@ -19,7 +19,6 @@ const schemas = [
       { '@type': 'City', name: 'Bentonville' },
       { '@type': 'City', name: 'Farmington' },
       { '@type': 'City', name: 'Johnson' },
-      { '@type': 'City', name: 'Lowell' },
     ],
     address: {
       '@type': 'PostalAddress',
