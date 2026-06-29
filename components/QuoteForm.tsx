@@ -15,12 +15,28 @@ export default function QuoteForm() {
     setError(null)
     const formData = new FormData(e.currentTarget)
     try {
-      const res = await fetch('https://formspree.io/f/xdavrvgn', {
-        method: 'POST',
-        body: formData,
-        headers: { Accept: 'application/json' },
-      })
-      if (res.ok) { setSubmitted(true) } else { setError('Something went wrong. Call (870) 995-1166.') }
+      const data = Object.fromEntries(formData.entries())
+      const [crmRes] = await Promise.all([
+        fetch('https://great-dane-crm.vercel.app/api/inquiries', {
+          method: 'POST',
+          body: JSON.stringify({
+            name: data.name,
+            phone: data.phone,
+            email: data.email,
+            service: data.service,
+            city: data.city,
+            preferred_date: data.date || null,
+            description: data.description,
+          }),
+          headers: { 'Content-Type': 'application/json' },
+        }),
+        fetch('https://formspree.io/f/xdavrvgn', {
+          method: 'POST',
+          body: formData,
+          headers: { Accept: 'application/json' },
+        }),
+      ])
+      if (crmRes.ok) { setSubmitted(true) } else { setError('Something went wrong. Call (870) 995-1166.') }
     } catch { setError('Something went wrong. Call (870) 995-1166.') }
     setLoading(false)
   }
