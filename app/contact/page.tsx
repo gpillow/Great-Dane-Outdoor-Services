@@ -19,7 +19,7 @@ export default function ContactPage() {
           <p>Call, text, or fill out the form. Photos are welcome and usually help speed up the estimate.</p>
           <div className="blueprint-actions">
             <a href="tel:8709951166">Call (870) 995-1166</a>
-            <a href="mailto:leads@greatdaneoutdoorservices.com">Email us</a>
+            <a href="mailto:gibson@greatdaneoutdoorservices.com">Email us</a>
           </div>
         </div>
       </section>
@@ -34,7 +34,7 @@ export default function ContactPage() {
             </div>
             <div>
               <span>Email</span>
-              <a href="mailto:leads@greatdaneoutdoorservices.com">leads@greatdaneoutdoorservices.com</a>
+              <a href="mailto:gibson@greatdaneoutdoorservices.com">gibson@greatdaneoutdoorservices.com</a>
             </div>
             <div>
               <span>Service area</span>
