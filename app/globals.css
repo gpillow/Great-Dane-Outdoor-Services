@@ -2102,17 +2102,17 @@ main#main-content {
 .blueprint-prose p {
   font-size: 1.05rem;
   line-height: 1.85;
-  color: var(--ink);
-  opacity: 0.92;
+  color: #1f271f;
 }
 .blueprint-signoff {
   font-size: 1.05rem;
   line-height: 1.85;
   padding-top: 0.5rem;
-  border-top: 1px solid var(--line);
+  border-top: 1px solid rgba(74,124,89,0.25);
+  color: #1f271f;
 }
 .blueprint-signoff strong {
-  color: var(--green-bright);
+  color: #2a5a38;
 }
 
 .geo-direct-answer {
