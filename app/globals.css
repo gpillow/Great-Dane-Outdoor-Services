@@ -2115,6 +2115,56 @@ main#main-content {
   color: #2a5a38;
 }
 
+.home-reviews-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  margin-top: 2.5rem;
+}
+.home-review-card {
+  background: #fff;
+  border: 1px solid rgba(74,124,89,0.15);
+  border-radius: 12px;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+}
+.home-review-stars {
+  color: #f5a623;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+}
+.home-review-text {
+  font-size: 1rem;
+  line-height: 1.75;
+  color: #2a3328;
+  flex: 1;
+}
+.home-review-author {
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+  padding-top: 0.75rem;
+  border-top: 1px solid rgba(74,124,89,0.12);
+}
+.home-review-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+  color: #1f271f;
+}
+.home-review-source {
+  font-size: 0.82rem;
+  color: #4a7c59;
+  font-weight: 500;
+}
+@media (max-width: 640px) {
+  .home-reviews-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .geo-direct-answer {
   max-width: 860px;
   margin-bottom: 2.5rem;

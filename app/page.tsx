@@ -115,6 +115,39 @@ export default function HomePage() {
         <div className="home-shell">
           <ScrollReveal>
             <div className="home-section-heading">
+              <p className="home-kicker">Google Reviews</p>
+              <h2>What customers are saying</h2>
+            </div>
+          </ScrollReveal>
+          <div className="home-reviews-grid">
+            <ScrollReveal direction="left">
+              <article className="home-review-card">
+                <div className="home-review-stars">★★★★★</div>
+                <p className="home-review-text">&ldquo;Gibson has been a hard-working help to me, with maintaining my properties with power washing and yard work. He communicates well and is professional in his interactions; he is punctual and fair in pricing. He and his teammate completed all the tasks within the timeframe we agreed upon.&rdquo;</p>
+                <div className="home-review-author">
+                  <span className="home-review-name">Michelle Rofkahr</span>
+                  <span className="home-review-source">Google Review</span>
+                </div>
+              </article>
+            </ScrollReveal>
+            <ScrollReveal direction="right">
+              <article className="home-review-card">
+                <div className="home-review-stars">★★★★★</div>
+                <p className="home-review-text">&ldquo;Gibson did a great job of ordering and installing and removing my Christmas lights! He also did power washing for me and some yard maintenance. I will be using Great Dane in the future for sure.&rdquo;</p>
+                <div className="home-review-author">
+                  <span className="home-review-name">Becky Maxwell</span>
+                  <span className="home-review-source">Google Review</span>
+                </div>
+              </article>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      <section className="home-section home-section-light">
+        <div className="home-shell">
+          <ScrollReveal>
+            <div className="home-section-heading">
               <p className="home-kicker">What We Handle</p>
               <h2>Practical outdoor work, done cleanly</h2>
               <p>Start with one project or combine a few. Every quote is based on your property, your photos, and the actual scope of work.</p>
