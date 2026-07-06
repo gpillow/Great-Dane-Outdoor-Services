@@ -18,10 +18,10 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 }
 
 const serviceCards = [
+  { name: 'Junk Removal', image: '/junk-removal.jpg', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
+  { name: 'Brush Removal', image: '/brushcompost-optimized.jpg', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
   { name: 'Pressure Washing', image: '/afterdriveway-optimized.jpg', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.' },
   { name: 'Landscaping', image: '/cutdown-optimized.jpg', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.' },
-  { name: 'Brush Removal', image: '/brushcompost-optimized.jpg', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
-  { name: 'Junk Removal', image: '/junk-removal.jpg', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
   { name: 'Leaf Cleanups', image: '/leaf-cleanup.jpg', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.' },
   { name: 'Christmas Lights', image: '/christmas-lights.jpg', text: 'Holiday light installation and takedown for homes that want the season handled.' },
 ]
