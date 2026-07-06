@@ -2093,6 +2093,28 @@ main#main-content {
 
 
 /* ─── GEO / AI Search Direct Answer ─── */
+.blueprint-prose {
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+.blueprint-prose p {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  color: var(--ink);
+  opacity: 0.92;
+}
+.blueprint-signoff {
+  font-size: 1.05rem;
+  line-height: 1.85;
+  padding-top: 0.5rem;
+  border-top: 1px solid var(--line);
+}
+.blueprint-signoff strong {
+  color: var(--green-bright);
+}
+
 .geo-direct-answer {
   max-width: 860px;
   margin-bottom: 2.5rem;

@@ -24,12 +24,12 @@ export default function AboutPage() {
         <div className="blueprint-shell blueprint-hero-grid">
           <ScrollReveal direction="left">
             <div>
-              <p className="blueprint-kicker">About Great Dane</p>
-              <h1>A local outdoor service company built around showing up</h1>
-              <p>Great Dane Outdoor Services was built for practical property work: clear communication, honest quotes, and cleanup results homeowners can actually see.</p>
+              <p className="blueprint-kicker">About Great Dane Outdoor Services</p>
+              <h1>A truck, some free time, and a willingness to get my hands dirty</h1>
+              <p>Great Dane Outdoor Services didn&apos;t start with a business plan. It started with honest work and grew into something real.</p>
               <div className="blueprint-actions">
-                <Link href="/contact">Get started now</Link>
-                <a href="tel:8709951166">Call us</a>
+                <Link href="/contact">Get a free quote</Link>
+                <a href="tel:8709951166">Call (870) 995-1166</a>
               </div>
             </div>
           </ScrollReveal>
@@ -42,18 +42,24 @@ export default function AboutPage() {
       </section>
 
       <section className="blueprint-section blueprint-light">
-        <div className="blueprint-shell blueprint-story-layout">
-          <ScrollReveal direction="left">
-            <Image src="/cutdown-optimized.jpg" alt="Cleaned landscape bed after Great Dane service" width={1600} height={1200} loading="lazy" unoptimized />
-          </ScrollReveal>
-          <ScrollReveal direction="right">
-            <div>
-              <p className="blueprint-kicker">How It Started</p>
-              <h2>Small company, direct standards</h2>
-              <p>What started as a way to take on local outdoor work has grown into a focused service business for Northwest Arkansas homeowners.</p>
-              <p>The goal is simple: quote clearly, show up, do the work right, and leave the property better than it was.</p>
-            </div>
-          </ScrollReveal>
+        <div className="blueprint-shell">
+          <div className="blueprint-prose">
+            <ScrollReveal direction="up">
+              <p>I&apos;m Gibson Pillow, the owner and founder. Back in 2024, I was a college student looking for a way to make some extra cash on the side. I started picking up odd jobs — hauling junk, clearing brush, cleaning driveways — nothing fancy, just honest work. But somewhere along the way, something clicked. I started noticing the look on people&apos;s faces when a cluttered garage became clean again, or when a driveway that hadn&apos;t seen its original color in years came back to life after a good pressure wash. Customers started telling me how much it meant to them. That feedback stuck with me.</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up">
+              <p>By the time I finished college in May 2026, I knew I didn&apos;t want to stop. I wanted to build something real around the work I&apos;d grown to love — so I made it official and launched Great Dane Outdoor Services LLC.</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up">
+              <p>The name wasn&apos;t chosen at random. I&apos;ve grown up around Great Danes my entire life. They&apos;re strong, loyal, and dependable — and honestly, those are the same qualities I want every customer to associate with my work. When I show up to your property, you&apos;re getting someone who takes pride in what they do and won&apos;t leave until the job is done right.</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up">
+              <p>Today, Great Dane Outdoor Services provides junk removal, brush clearing, pressure washing, landscaping, and Christmas light installation across the Fayetteville area and throughout NW Arkansas. Whether you need a one-time cleanout or ongoing outdoor maintenance, I&apos;m here to handle the work you don&apos;t have time for — and make your property something you&apos;re proud of again.</p>
+            </ScrollReveal>
+            <ScrollReveal direction="up">
+              <p className="blueprint-signoff">Thanks for supporting a locally owned, NW Arkansas business. It means more than you know.<br /><strong>— Gibson, Owner &amp; Founder</strong></p>
+            </ScrollReveal>
+          </div>
         </div>
       </section>
 
