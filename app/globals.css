@@ -498,6 +498,22 @@
   text-wrap: balance;
   text-shadow: 0 24px 70px rgba(0,0,0,0.7);
 }
+.home-hero-services {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-bottom: 1.5rem;
+}
+.home-hero-services span {
+  background: rgba(125,255,158,0.12);
+  border: 1px solid rgba(125,255,158,0.35);
+  color: #7dff9e;
+  font-size: 0.95rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  padding: 0.45rem 1rem;
+  border-radius: 999px;
+}
 .home-hero-lede {
   max-width: 650px;
   color: #d6d8d4;

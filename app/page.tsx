@@ -73,8 +73,14 @@ export default function HomePage() {
             <div className="home-hero-copy">
               <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
               <h1>Outdoor services for cleaner, better-kept properties</h1>
+              <div className="home-hero-services">
+                <span>Junk Removal</span>
+                <span>Brush Removal</span>
+                <span>Pressure Washing</span>
+                <span>Landscaping</span>
+              </div>
               <p className="home-hero-lede">
-                Pressure washing, brush removal, junk hauling, landscaping, leaf cleanups, and seasonal work for homeowners who want the job handled without the runaround.
+                Locally owned and operated in NW Arkansas. Free quotes, fair pricing, and work that gets done right.
               </p>
               <div className="home-hero-actions">
                 <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
