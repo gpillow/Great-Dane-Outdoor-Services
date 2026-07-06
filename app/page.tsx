@@ -89,16 +89,16 @@ export default function HomePage() {
           <ScrollReveal direction="right">
             <div className="home-hero-card">
               <Image
-                src="/afterdriveway-optimized.jpg"
-                alt="Clean driveway after pressure washing in Northwest Arkansas"
-                width={1600}
-                height={1200}
+                src="/junk-removal.jpg"
+                alt="Great Dane Outdoor Services truck and dump trailer ready for junk removal"
+                width={3024}
+                height={4032}
                 priority
                 unoptimized
               />
               <div className="home-hero-card-caption">
                 <span>Recent work</span>
-                <strong>Surface cleaning and property cleanup</strong>
+                <strong>Junk removal and hauling</strong>
               </div>
             </div>
           </ScrollReveal>
