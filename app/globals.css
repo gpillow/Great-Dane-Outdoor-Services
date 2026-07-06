@@ -2090,3 +2090,17 @@ main#main-content {
     padding: 0 1rem 1.1rem;
   }
 }
+
+
+/* ─── GEO / AI Search Direct Answer ─── */
+.geo-direct-answer {
+  max-width: 860px;
+  margin-bottom: 2.5rem;
+  color: #4a5a46;
+  font-size: 0.95rem;
+  line-height: 1.8;
+  padding: 1.25rem 1.5rem;
+  background: rgba(74,124,89,0.06);
+  border-left: 3px solid #4a7c59;
+  border-radius: 0 6px 6px 0;
+}
