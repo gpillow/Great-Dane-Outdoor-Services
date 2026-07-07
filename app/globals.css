@@ -2197,6 +2197,60 @@ main#main-content {
   }
 }
 
+.legal-page {
+  max-width: 740px;
+}
+.legal-page h1 {
+  font-size: clamp(1.8rem, 3vw, 2.4rem);
+  font-weight: 800;
+  color: #1f271f;
+  margin-bottom: 0.4rem;
+}
+.legal-updated {
+  font-size: 0.85rem;
+  color: #888;
+  margin-bottom: 3rem;
+}
+.legal-section {
+  margin-bottom: 2.5rem;
+  padding-bottom: 2.5rem;
+  border-bottom: 1px solid rgba(74,124,89,0.12);
+}
+.legal-section:last-child {
+  border-bottom: none;
+}
+.legal-section h2 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: #1f271f;
+  margin-bottom: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.legal-section p {
+  font-size: 0.97rem;
+  line-height: 1.8;
+  color: #3a4a3a;
+  margin-bottom: 0.75rem;
+}
+.legal-section ul {
+  padding-left: 1.4rem;
+  margin-top: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.4rem;
+}
+.legal-section li {
+  font-size: 0.97rem;
+  line-height: 1.7;
+  color: #3a4a3a;
+}
+.legal-contact {
+  font-weight: 600;
+  color: #1f271f !important;
+  line-height: 1.9 !important;
+}
+
 .geo-direct-answer {
   max-width: 860px;
   margin-bottom: 2.5rem;
