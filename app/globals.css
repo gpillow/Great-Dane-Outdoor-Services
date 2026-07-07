@@ -896,6 +896,22 @@
   text-align: center;
   font-size: 0.8rem;
   color: #666;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.6rem;
+}
+.footer-legal {
+  display: flex;
+  gap: 1.5rem;
+}
+.footer-legal a {
+  color: #666;
+  text-decoration: none;
+  font-size: 0.8rem;
+}
+.footer-legal a:hover {
+  color: #aaa;
 }
 
 /* ─── Responsive Utilities ─── */

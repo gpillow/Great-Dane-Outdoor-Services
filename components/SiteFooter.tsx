@@ -1,4 +1,3 @@
-import React from 'react'
 import Link from 'next/link'
 
 const year = new Date().getFullYear()
@@ -36,6 +35,10 @@ export default function SiteFooter() {
 
       <div className="footer-bottom">
         <p>&copy; {year} Great Dane Outdoor Services LLC. All rights reserved.</p>
+        <div className="footer-legal">
+          <Link href="/privacy">Privacy Policy</Link>
+          <Link href="/terms">Terms of Service</Link>
+        </div>
       </div>
     </footer>
   )
