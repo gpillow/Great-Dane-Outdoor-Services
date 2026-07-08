@@ -36,7 +36,19 @@ export default function QuoteForm() {
           headers: { Accept: 'application/json' },
         }),
       ])
-      if (crmRes.ok) { setSubmitted(true) } else { setError('Something went wrong. Call (870) 995-1166.') }
+      if (crmRes.ok) {
+        setSubmitted(true)
+        // Fire Google Ads conversion event
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        const w = window as any
+        if (typeof w.gtag === 'function') {
+          w.gtag('event', 'conversion', {
+            send_to: 'AW-18245231091/1u22CJmyj80cEPPDgPxD',
+            value: 1.0,
+            currency: 'USD',
+          })
+        }
+      } else { setError('Something went wrong. Call (870) 995-1166.') }
     } catch { setError('Something went wrong. Call (870) 995-1166.') }
     setLoading(false)
   }
