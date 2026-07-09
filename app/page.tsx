@@ -75,7 +75,7 @@ export default function HomePage() {
               </p>
               <p className="home-hero-trust-line">Same-day service available · Free quotes in minutes</p>
               <div className="home-hero-actions">
-                <a href="tel:8709951166" className="home-btn home-btn-call">Call (870) 995-1166</a>
+                <a href="tel:8709951166" className="home-btn home-btn-call">Call or Text (870) 995-1166</a>
                 <a href="/contact" className="home-btn home-btn-secondary">Get a Free Quote</a>
               </div>
               <div className="home-city-row" aria-label="Service areas">
@@ -254,7 +254,7 @@ export default function HomePage() {
           <p>Call, text, or use the quote form. Photos are welcome and can help speed up the estimate.</p>
           <div className="home-hero-actions">
             <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
-            <a href="tel:8709951166" className="home-btn home-btn-secondary">Call (870) 995-1166</a>
+            <a href="tel:8709951166" className="home-btn home-btn-secondary">Call or Text (870) 995-1166</a>
           </div>
         </div>
       </section>

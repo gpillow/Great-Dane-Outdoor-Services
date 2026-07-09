@@ -59,7 +59,7 @@ export default function Navbar() {
             ))}
           </ul>
           <div className="nav-actions">
-            <a href="tel:8709951166" className="nav-call">Call (870) 995-1166</a>
+            <a href="tel:8709951166" className="nav-call">Call or Text (870) 995-1166</a>
             <Link href="/contact" className="nav-cta">Free Quote</Link>
           </div>
         </nav>
@@ -99,7 +99,7 @@ export default function Navbar() {
         </ul>
         <div className="nav-mobile-actions">
           <a href="tel:8709951166" className="nav-mobile-call nav-mobile-a" onClick={() => setMenuOpen(false)}>
-            Call (870) 995-1166
+            Call or Text (870) 995-1166
           </a>
           <Link href="/contact" className="nav-mobile-cta nav-mobile-a" onClick={() => setMenuOpen(false)}>
             Get a Free Quote

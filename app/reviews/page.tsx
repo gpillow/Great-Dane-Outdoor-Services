@@ -51,7 +51,7 @@ export default function ReviewsPage() {
             Get a Free Quote
           </a>
           <a href="tel:8709951166" style={{ border: '2px solid #4a7c59', color: '#7dff9e', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-            Call (870) 995-1166
+            Call or Text (870) 995-1166
           </a>
         </div>
       </section>

@@ -18,7 +18,7 @@ export default function ContactPage() {
           <h1>Send the details. Get a clear quote.</h1>
           <p>Call, text, or fill out the form. Photos are welcome and usually help speed up the estimate.</p>
           <div className="blueprint-actions">
-            <a href="tel:8709951166">Call (870) 995-1166</a>
+            <a href="tel:8709951166">Call or Text (870) 995-1166</a>
             <a href="mailto:gibson@greatdaneoutdoorservices.com">Email us</a>
           </div>
         </div>

@@ -124,7 +124,7 @@ export default function PricingPage() {
             </p>
             <div className="pricing-actions">
               <Link href="/contact">Get an Estimate</Link>
-              <a href="tel:8709951166">Call (870) 995-1166</a>
+              <a href="tel:8709951166">Call or Text (870) 995-1166</a>
             </div>
           </div>
           <div className="pricing-hero-photo">

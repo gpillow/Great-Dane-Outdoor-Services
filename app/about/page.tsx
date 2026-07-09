@@ -29,7 +29,7 @@ export default function AboutPage() {
               <p>Great Dane Outdoor Services didn&apos;t start with a business plan. It started with honest work and grew into something real.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get a free quote</Link>
-                <a href="tel:8709951166">Call (870) 995-1166</a>
+                <a href="tel:8709951166">Call or Text (870) 995-1166</a>
               </div>
             </div>
           </ScrollReveal>
