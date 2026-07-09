@@ -1321,8 +1321,11 @@
   }
   .home-hero::before {
     background:
-      linear-gradient(180deg, rgba(22, 27, 22, 0.88), rgba(22, 27, 22, 0.72)),
+      linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
       url("/hero-mobile.webp") center top / cover;
+  }
+  .home-hero-overlay {
+    background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
   }
   .home-hero-card {
     display: none;
