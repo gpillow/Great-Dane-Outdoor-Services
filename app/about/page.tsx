@@ -35,7 +35,7 @@ export default function AboutPage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="blueprint-hero-image about-logo-circle">
-              <Image src="/logo-optimized.jpg" alt="Great Dane Outdoor Services logo" width={640} height={640} priority unoptimized />
+              <Image src="/logo.webp" alt="Great Dane Outdoor Services logo" width={640} height={640} priority />
             </div>
           </ScrollReveal>
         </div>

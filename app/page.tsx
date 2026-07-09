@@ -58,14 +58,14 @@ export default function HomePage() {
     <main id="main-content" className="home-page">
       <section className="home-hero" aria-label="Great Dane Outdoor Services hero">
         <Image
-          src="/logo-optimized.jpg"
+          src="/logo.webp"
           alt=""
           aria-hidden="true"
           className="home-hero-bg"
           width={640}
           height={640}
           priority
-          unoptimized
+         
         />
         <div className="home-hero-overlay" />
         <div className="home-shell home-hero-grid">
@@ -95,12 +95,12 @@ export default function HomePage() {
           <ScrollReveal direction="right">
             <div className="home-hero-card">
               <Image
-                src="/junk-removal.jpg"
+                src="/junk-removal.webp"
                 alt="Great Dane Outdoor Services truck and dump trailer ready for junk removal"
                 width={3024}
                 height={4032}
                 priority
-                unoptimized
+                sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="home-hero-card-caption">
                 <span>Recent work</span>
@@ -178,8 +178,8 @@ export default function HomePage() {
         <div className="home-shell home-story-grid">
           <ScrollReveal direction="left">
             <div className="home-image-stack">
-              <Image src="/overgrown-optimized.jpg" alt="Overgrown property before cleanup" width={1600} height={1200} loading="lazy" unoptimized />
-              <Image src="/cutdown-optimized.jpg" alt="Property after brush and landscaping cleanup" width={1600} height={1200} loading="lazy" unoptimized />
+              <Image src="/overgrown.webp" alt="Overgrown property before cleanup" width={1600} height={1200} loading="lazy" />
+              <Image src="/cutdown.webp" alt="Property after brush and landscaping cleanup" width={1600} height={1200} loading="lazy" />
             </div>
           </ScrollReveal>
 
@@ -238,13 +238,13 @@ export default function HomePage() {
             <ScrollReveal direction="left">
               <div className="gallery-frame">
                 <p className="home-project-label">Driveway Restoration</p>
-                <BeforeAfterSlider before="/beforedriveway-optimized.jpg" after="/afterdriveway-optimized.jpg" beforeAlt="Before driveway pressure washing in Northwest Arkansas" afterAlt="After driveway pressure washing in Northwest Arkansas" />
+                <BeforeAfterSlider before="/beforedriveway.webp" after="/afterdriveway.webp" beforeAlt="Before driveway pressure washing in Northwest Arkansas" afterAlt="After driveway pressure washing in Northwest Arkansas" />
               </div>
             </ScrollReveal>
             <ScrollReveal direction="right">
               <div className="gallery-frame">
                 <p className="home-project-label">Brush and Yard Cleanup</p>
-                <BeforeAfterSlider before="/overgrown-optimized.jpg" after="/cutdown-optimized.jpg" beforeAlt="Before overgrown yard cleanup in Northwest Arkansas" afterAlt="After overgrown yard cleanup in Northwest Arkansas" />
+                <BeforeAfterSlider before="/overgrown.webp" after="/cutdown.webp" beforeAlt="Before overgrown yard cleanup in Northwest Arkansas" afterAlt="After overgrown yard cleanup in Northwest Arkansas" />
               </div>
             </ScrollReveal>
           </div>

@@ -129,12 +129,12 @@ export default function PricingPage() {
           </div>
           <div className="pricing-hero-photo">
             <Image
-              src="/afterbrick-optimized.jpg"
+              src="/afterbrick.webp"
               alt="Clean brick surface after pressure washing"
               width={1600}
               height={1200}
               priority
-              unoptimized
+             
             />
           </div>
         </div>
@@ -181,8 +181,8 @@ export default function PricingPage() {
             </p>
           </div>
           <div className="pricing-photo-pair">
-            <Image src="/overgrown-optimized.jpg" alt="Overgrown yard before cleanup" width={1600} height={1200} loading="lazy" unoptimized />
-            <Image src="/cutdown-optimized.jpg" alt="Yard after brush removal and cleanup" width={1600} height={1200} loading="lazy" unoptimized />
+            <Image src="/overgrown.webp" alt="Overgrown yard before cleanup" width={1600} height={1200} loading="lazy" />
+            <Image src="/cutdown.webp" alt="Yard after brush removal and cleanup" width={1600} height={1200} loading="lazy" />
           </div>
         </div>
       </section>

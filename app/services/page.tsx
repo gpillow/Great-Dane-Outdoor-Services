@@ -18,29 +18,29 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 }
 
 const serviceCards = [
-  { name: 'Junk Removal', image: '/junk-removal.jpg', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
-  { name: 'Brush Removal', image: '/brushcompost-optimized.jpg', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
-  { name: 'Pressure Washing', image: '/afterdriveway-optimized.jpg', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.' },
-  { name: 'Landscaping', image: '/cutdown-optimized.jpg', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.' },
-  { name: 'Leaf Cleanups', image: '/leaf-cleanup.jpg', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.' },
-  { name: 'Christmas Lights', image: '/christmas-lights.jpg', text: 'Holiday light installation and takedown for homes that want the season handled.' },
+  { name: 'Junk Removal', image: '/junk-removal.webp', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
+  { name: 'Brush Removal', image: '/brushcompost.webp', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
+  { name: 'Pressure Washing', image: '/afterdriveway.webp', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.' },
+  { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.' },
+  { name: 'Leaf Cleanups', image: '/leaf-cleanup.webp', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.' },
+  { name: 'Christmas Lights', image: '/christmas-lights.webp', text: 'Holiday light installation and takedown for homes that want the season handled.' },
 ]
 
 const detailSections = [
   {
     title: 'Exterior cleaning that changes how the property feels',
     text: 'Pressure washing is often the fastest way to make a home look maintained again. Great Dane handles the common surfaces homeowners call about: driveways, walkways, patios, brick, decks, and siding.',
-    image: '/beforewalkway-optimized.jpg',
+    image: '/beforewalkway.webp',
   },
   {
     title: 'Cleanups for overgrown and overlooked areas',
     text: 'Brush, weeds, leaves, and yard debris can get away from a property quickly in Northwest Arkansas. We help clear the mess and haul off what needs to go.',
-    image: '/overgrown-optimized.jpg',
+    image: '/overgrown.webp',
   },
   {
     title: 'Small landscaping projects with clear communication',
     text: 'Not every job needs a large landscape firm. Mulch, trimming, bed cleanup, weed removal, and light refresh work are quoted clearly before the job starts.',
-    image: '/cutdown-optimized.jpg',
+    image: '/cutdown.webp',
   },
 ]
 
@@ -62,7 +62,7 @@ export default function ServicesPage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="blueprint-hero-image">
-              <Image src="/afterdriveway-optimized.jpg" alt="Clean driveway after pressure washing" width={1600} height={1200} priority unoptimized />
+              <Image src="/afterdriveway.webp" alt="Clean driveway after pressure washing" width={1600} height={1200} priority />
             </div>
           </ScrollReveal>
         </div>
@@ -83,7 +83,7 @@ export default function ServicesPage() {
             {serviceCards.map((service) => (
               <ScrollReveal key={service.name}>
                 <article className="blueprint-service-card">
-                  <Image src={service.image} alt={`${service.name} service example`} width={900} height={700} loading="lazy" unoptimized />
+                  <Image src={service.image} alt={`${service.name} service example`} width={900} height={700} loading="lazy" />
                   <div>
                     <h3>{service.name}</h3>
                     <p>{service.text}</p>
@@ -101,7 +101,7 @@ export default function ServicesPage() {
           {detailSections.map((section, index) => (
             <ScrollReveal key={section.title} direction={index % 2 === 0 ? 'left' : 'right'}>
               <article className="blueprint-detail-row">
-                <Image src={section.image} alt={section.title} width={1600} height={1200} loading="lazy" unoptimized />
+                <Image src={section.image} alt={section.title} width={1600} height={1200} loading="lazy" />
                 <div>
                   <p className="blueprint-kicker">Service Detail</p>
                   <h2>{section.title}</h2>
