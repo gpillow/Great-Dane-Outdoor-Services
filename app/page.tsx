@@ -57,21 +57,12 @@ export default function HomePage() {
   return (
     <main id="main-content" className="home-page">
       <section className="home-hero" aria-label="Great Dane Outdoor Services hero">
-        <Image
-          src="/logo.webp"
-          alt=""
-          aria-hidden="true"
-          className="home-hero-bg"
-          width={640}
-          height={640}
-          priority
-         
-        />
         <div className="home-hero-overlay" />
         <div className="home-shell home-hero-grid">
           <ScrollReveal direction="left">
             <div className="home-hero-copy">
               <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
+              <p className="home-hero-stars">⭐⭐⭐⭐⭐ 5-Star Rated on Google</p>
               <h1>Outdoor services for cleaner, better-kept properties</h1>
               <div className="home-hero-services">
                 <span>Junk Removal</span>
@@ -82,9 +73,10 @@ export default function HomePage() {
               <p className="home-hero-lede">
                 Locally owned and operated in NW Arkansas. Free quotes, fair pricing, and work that gets done right.
               </p>
+              <p className="home-hero-trust-line">Same-day service available · Free quotes in minutes</p>
               <div className="home-hero-actions">
-                <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
-                <a href="tel:8709951166" className="home-btn home-btn-secondary">Call (870) 995-1166</a>
+                <a href="tel:8709951166" className="home-btn home-btn-call">Call (870) 995-1166</a>
+                <a href="/contact" className="home-btn home-btn-secondary">Get a Free Quote</a>
               </div>
               <div className="home-city-row" aria-label="Service areas">
                 {cities.map((city) => <span key={city}>{city}</span>)}

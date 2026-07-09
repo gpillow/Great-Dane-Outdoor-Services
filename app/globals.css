@@ -514,32 +514,59 @@
   padding: 0.45rem 1rem;
   border-radius: 999px;
 }
+.home-hero-stars {
+  color: #f4f5f2;
+  font-size: 0.95rem;
+  font-weight: 700;
+  margin-bottom: 0.9rem;
+  letter-spacing: 0.01em;
+}
 .home-hero-lede {
   max-width: 650px;
   color: #d6d8d4;
   font-size: clamp(1rem, 1.8vw, 1.22rem);
   line-height: 1.75;
-  margin-bottom: 2rem;
+  margin-bottom: 0.75rem;
+}
+.home-hero-trust-line {
+  color: #7dff9e;
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  margin-bottom: 1.75rem;
 }
 .home-hero-actions {
   display: flex;
-  flex-wrap: wrap;
-  gap: 0.9rem;
-  align-items: center;
+  flex-direction: column;
+  gap: 0.75rem;
+  max-width: 400px;
 }
 .home-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  min-height: 52px;
+  min-height: 56px;
   padding: 0.95rem 1.35rem;
   border-radius: 999px;
   font-weight: 900;
   text-decoration: none;
-  transition: transform 0.2s, border-color 0.2s, background 0.2s;
+  transition: transform 0.2s, border-color 0.2s, background 0.2s, box-shadow 0.2s;
+  width: 100%;
+  font-size: 1.05rem;
 }
 .home-btn:hover {
-  transform: translateY(-1px);
+  transform: translateY(-2px);
+}
+.home-btn-call {
+  color: #0a1a0e;
+  background: #7dff9e;
+  box-shadow: 0 8px 32px rgba(125,255,158,0.38);
+  font-size: 1.1rem;
+}
+.home-btn-call:hover {
+  background: #9cfdb5;
+  box-shadow: 0 12px 40px rgba(125,255,158,0.5);
 }
 .home-btn-primary {
   color: #202020;
@@ -547,13 +574,15 @@
   box-shadow: 0 22px 60px rgba(0,0,0,0.32);
 }
 .home-btn-secondary {
-  color: #7dff9e;
-  border: 1.5px solid rgba(125,255,158,0.42);
+  color: #d6d8d4;
+  border: 1.5px solid rgba(214,216,212,0.35);
   background: rgba(14,18,14,0.55);
+  text-align: center;
 }
 .home-btn-secondary:hover {
-  border-color: rgba(125,255,158,0.72);
-  background: rgba(125,255,158,0.08);
+  border-color: rgba(214,216,212,0.65);
+  background: rgba(214,216,212,0.08);
+  color: #fff;
 }
 .home-city-row {
   display: flex;
@@ -1057,11 +1086,8 @@
   inset: 0;
   background:
     linear-gradient(90deg, rgba(22, 27, 22, 0.92) 0%, rgba(22, 27, 22, 0.74) 44%, rgba(22, 27, 22, 0.36) 100%),
-    url("/cutdown-optimized.jpg") center / cover;
+    url("/cutdown.webp") center / cover;
   opacity: 1;
-}
-.home-hero-bg {
-  display: none;
 }
 .home-hero-overlay {
   background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.38));
@@ -1096,8 +1122,8 @@
   box-shadow: 0 18px 42px rgba(0,0,0,0.24);
 }
 .home-btn-secondary {
-  color: #7dff9e;
-  border-color: rgba(125, 255, 158, 0.45);
+  color: #d6d8d4;
+  border-color: rgba(214, 216, 212, 0.35);
   background: rgba(16, 20, 16, 0.42);
 }
 .home-city-row span {
@@ -1256,7 +1282,7 @@
   .home-hero::before {
     background:
       linear-gradient(180deg, rgba(22, 27, 22, 0.93), rgba(22, 27, 22, 0.76)),
-      url("/cutdown-optimized.jpg") center / cover;
+      url("/cutdown.webp") center / cover;
   }
   .home-hero-card {
     display: none;
