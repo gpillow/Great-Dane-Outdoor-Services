@@ -37,7 +37,9 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
   return (
     <html lang="en" className={`${geistSans.variable} h-full antialiased`}>
       <head>
-        <link rel="preload" as="image" href="/cutdown.webp" fetchPriority="high" type="image/webp" />
+        {/* Preload the correct hero background per screen width */}
+        <link rel="preload" as="image" href="/hero-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
+        <link rel="preload" as="image" href="/cutdown.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body className="min-h-full flex flex-col">
