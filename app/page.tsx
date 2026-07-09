@@ -2,7 +2,9 @@
 
 import React, { useEffect, useRef } from 'react'
 import Image from 'next/image'
-import BeforeAfterSlider from '@/components/BeforeAfterSlider'
+import dynamic from 'next/dynamic'
+
+const BeforeAfterSlider = dynamic(() => import('@/components/BeforeAfterSlider'))
 
 function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNode, direction?: 'up' | 'left' | 'right' }) {
   const ref = useRef<HTMLDivElement>(null)
