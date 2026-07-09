@@ -33,6 +33,15 @@ export default function SiteFooter() {
         </div>
       </div>
 
+      <div className="footer-cities">
+        <p className="footer-cities-label">Serving</p>
+        <div className="footer-cities-list">
+          {['Fayetteville', 'Springdale', 'Rogers', 'Bentonville', 'Farmington', 'Johnson'].map((city) => (
+            <span key={city}>{city}</span>
+          ))}
+        </div>
+      </div>
+
       <div className="footer-bottom">
         <p>&copy; {year} Great Dane Outdoor Services LLC. All rights reserved.</p>
         <div className="footer-legal">

@@ -19,7 +19,6 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
   return <div ref={ref} className={`reveal-${direction}`}>{children}</div>
 }
 
-const cities = ['Fayetteville', 'Springdale', 'Rogers', 'Bentonville', 'Farmington', 'Johnson']
 
 const serviceGroups = [
   {
@@ -66,6 +65,7 @@ export default function HomePage() {
               <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
               <p className="home-hero-stars">⭐⭐⭐⭐⭐ 5-Star Rated on Google</p>
               <h1>Outdoor services for cleaner, better-kept properties</h1>
+              <p className="home-hero-trust-line">Same-day service available · Free quotes in minutes</p>
               <div className="home-hero-services">
                 <span>Junk Removal</span>
                 <span>Brush Removal</span>
@@ -75,14 +75,11 @@ export default function HomePage() {
               <p className="home-hero-lede">
                 Locally owned and operated in NW Arkansas. Free quotes, fair pricing, and work that gets done right.
               </p>
-              <p className="home-hero-trust-line">Same-day service available · Free quotes in minutes</p>
               <div className="home-hero-actions">
                 <a href="tel:8709951166" className="home-btn home-btn-call">Call or Text (870) 995-1166</a>
                 <a href="/contact" className="home-btn home-btn-secondary">Get a Free Quote</a>
               </div>
-              <div className="home-city-row" aria-label="Service areas">
-                {cities.map((city) => <span key={city}>{city}</span>)}
-              </div>
+              <p className="home-hero-services-text">Junk Removal · Pressure Washing · Landscaping · Brush Removal</p>
             </div>
           </ScrollReveal>
 
