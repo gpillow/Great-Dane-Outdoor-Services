@@ -27,6 +27,7 @@ export default function QuoteForm() {
             city: data.city,
             preferred_date: data.date || null,
             description: data.description,
+            sms_consent: data.sms_consent === 'on',
           }),
           headers: { 'Content-Type': 'application/json' },
         }),
@@ -78,6 +79,16 @@ export default function QuoteForm() {
       <input name="city" required placeholder="City / ZIP Code" style={inputStyle} />
       <input name="date" type="date" style={inputStyle} />
       <textarea name="description" required rows={5} placeholder="Describe the job..." style={{ ...inputStyle, fontFamily: 'inherit' }} />
+      <label style={{ display: 'flex', gap: '0.75rem', alignItems: 'flex-start', cursor: 'pointer' }}>
+        <input
+          name="sms_consent"
+          type="checkbox"
+          style={{ marginTop: '3px', accentColor: '#7dff9e', width: '16px', height: '16px', flexShrink: 0, cursor: 'pointer' }}
+        />
+        <span style={{ color: '#b2b2b2', fontSize: '0.85rem', lineHeight: 1.5 }}>
+          I agree to receive SMS messages from Great Dane Outdoor Services related to my upcoming job, including confirmations, reminders, crew updates, invoices, and review requests. Message and data rates may apply. Reply STOP to opt out at any time.
+        </span>
+      </label>
       {error && <p style={{ color: '#ff6b6b' }}>{error}</p>}
       <button type="submit" disabled={loading} style={{ background: loading ? '#555' : 'linear-gradient(135deg, #e0e0e0, #aaa)', color: '#303030', border: 'none', borderRadius: '8px', padding: '1rem', fontSize: '1rem', fontWeight: 800, cursor: loading ? 'not-allowed' : 'pointer', boxShadow: '0 4px 24px rgba(0,0,0,0.4)' }}>
         {loading ? 'Sending...' : 'Send My Free Quote Request'}
