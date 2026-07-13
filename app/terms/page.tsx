@@ -8,7 +8,7 @@ export default function TermsPage() {
       <section className="blueprint-section blueprint-light">
         <div className="blueprint-shell legal-page">
           <h1>Terms &amp; Conditions</h1>
-          <p className="legal-updated">Last updated: June 2025</p>
+          <p className="legal-updated">Last updated: July 2026</p>
 
           <div className="legal-section">
             <h2>Services</h2>
@@ -32,7 +32,14 @@ export default function TermsPage() {
 
           <div className="legal-section">
             <h2>SMS Communications</h2>
-            <p>By providing your phone number when requesting a quote, you consent to receive text messages from Great Dane Outdoor Services LLC related to your service requests. Message and data rates may apply. Message frequency varies. Reply STOP to opt out at any time. Reply HELP for assistance.</p>
+            <p>By checking the SMS consent box on our quote request form, you explicitly opt in to receive text messages from Great Dane Outdoor Services LLC at the phone number you provide. Messages may include quote confirmations, appointment reminders, crew updates, invoices, and review requests. SMS consent is not required as a condition of purchasing any goods or services.</p>
+            <ul>
+              <li>Message frequency varies based on your service requests.</li>
+              <li>Message and data rates may apply.</li>
+              <li>We do not share your mobile number with third parties for marketing purposes.</li>
+              <li>Reply STOP to opt out at any time.</li>
+              <li>Reply HELP for assistance or contact us at (870) 995-1166.</li>
+            </ul>
           </div>
 
           <div className="legal-section">
