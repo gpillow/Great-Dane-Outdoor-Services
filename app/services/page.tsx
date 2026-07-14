@@ -65,7 +65,7 @@ export default function ServicesPage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="blueprint-hero-image">
-              <Image src="/truck-hero.webp" alt="Great Dane truck and dump trailer ready for junk removal" width={900} height={744} priority />
+              <Image src="/junk-removal.webp" alt="Great Dane truck and dump trailer ready for junk removal" width={525} height={700} priority />
             </div>
           </ScrollReveal>
         </div>
