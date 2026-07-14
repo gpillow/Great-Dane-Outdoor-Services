@@ -28,19 +28,22 @@ const serviceCards = [
 
 const detailSections = [
   {
-    title: 'Exterior cleaning that changes how the property feels',
-    text: 'Pressure washing is often the fastest way to make a home look maintained again. Great Dane handles the common surfaces homeowners call about: driveways, walkways, patios, brick, decks, and siding.',
-    image: '/beforewalkway.webp',
+    title: 'Junk removal done the same week you call',
+    text: 'Old furniture, appliances, yard debris, construction scraps, and general clutter — hauled off fast. We load it, we haul it, and we leave the space clean. No dumping fees passed to you.',
+    image: '/junk-removal.webp',
+    kicker: 'Junk Removal',
   },
   {
-    title: 'Cleanups for overgrown and overlooked areas',
-    text: 'Brush, weeds, leaves, and yard debris can get away from a property quickly in Northwest Arkansas. We help clear the mess and haul off what needs to go.',
+    title: 'Brush and overgrowth cleared to the ground',
+    text: 'Dense fence lines, overgrown back yards, saplings taking over, and rough areas that haven\'t been touched in years. We clear it out and haul off the debris so the property is usable again.',
     image: '/overgrown.webp',
+    kicker: 'Brush Removal',
   },
   {
-    title: 'Small landscaping projects with clear communication',
-    text: 'Not every job needs a large landscape firm. Mulch, trimming, bed cleanup, weed removal, and light refresh work are quoted clearly before the job starts.',
-    image: '/cutdown.webp',
+    title: 'Pressure washing and outdoor cleanup work too',
+    text: 'Driveways, walkways, patios, brick, and exterior surfaces cleaned up properly. Mulch, trimming, bed refreshes, and light landscaping also available — quoted clearly before work starts.',
+    image: '/afterdriveway.webp',
+    kicker: 'Other Services',
   },
 ]
 
@@ -51,9 +54,9 @@ export default function ServicesPage() {
         <div className="blueprint-shell blueprint-hero-grid">
           <ScrollReveal direction="left">
             <div>
-              <p className="blueprint-kicker">Residential Outdoor Services</p>
-              <h1>Outdoor services for homes across Northwest Arkansas</h1>
-              <p>From pressure washing and brush removal to landscaping refreshes and junk hauling, Great Dane helps homeowners get their property back under control.</p>
+              <p className="blueprint-kicker">Junk Removal &amp; Brush Removal — Northwest Arkansas</p>
+              <h1>Haul it off. Clear it out. Get your property back.</h1>
+              <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get started now</Link>
                 <a href="tel:8709951166">Call or Text (870) 995-1166</a>
@@ -62,7 +65,7 @@ export default function ServicesPage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="blueprint-hero-image">
-              <Image src="/afterdriveway.webp" alt="Clean driveway after pressure washing" width={1600} height={1200} priority />
+              <Image src="/junk-removal.webp" alt="Great Dane truck and dump trailer ready for junk removal" width={900} height={1200} priority />
             </div>
           </ScrollReveal>
         </div>
@@ -76,8 +79,8 @@ export default function ServicesPage() {
           </p>
           <div className="blueprint-heading">
             <p className="blueprint-kicker">Service Menu</p>
-            <h2>What Great Dane handles</h2>
-            <p>Core services built around the real jobs homeowners ask for most.</p>
+            <h2>Junk removal, brush clearing, and more</h2>
+            <p>Every service is quoted before work starts. No surprise charges.</p>
           </div>
           <div className="blueprint-service-grid">
             {serviceCards.map((service) => (
@@ -103,7 +106,7 @@ export default function ServicesPage() {
               <article className="blueprint-detail-row">
                 <Image src={section.image} alt={section.title} width={1600} height={1200} loading="lazy" />
                 <div>
-                  <p className="blueprint-kicker">Service Detail</p>
+                  <p className="blueprint-kicker">{section.kicker}</p>
                   <h2>{section.title}</h2>
                   <p>{section.text}</p>
                   <Link href="/contact">Request an estimate</Link>
