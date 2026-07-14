@@ -177,10 +177,7 @@ export default function HomePage() {
           <ScrollReveal direction="right">
             <div className="home-story-copy">
               <p className="home-kicker">Local and Direct</p>
-              <h2>A small outdoor service company built around showing up</h2>
-              <p>
-                Great Dane is starting with the kind of work homeowners actually need: clean driveways, reclaimed yards, cleared brush, hauled junk, and yards that feel usable again.
-              </p>
+              <h2>An outdoor service company built on great service and big results</h2>
               <p>
                 You do not need a big maintenance contract to get professional communication. Call, text, or send photos and you will get a straightforward quote.
               </p>
