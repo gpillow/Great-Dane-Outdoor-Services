@@ -18,7 +18,7 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 }
 
 const serviceCards = [
-  { name: 'Junk Removal', image: '/junk-removal.webp', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
+  { name: 'Junk Removal', image: '/garage-before.webp', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.' },
   { name: 'Brush Removal', image: '/brushcompost.webp', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.' },
   { name: 'Pressure Washing', image: '/afterdriveway.webp', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.' },
   { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.' },
