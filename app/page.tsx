@@ -20,23 +20,6 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 }
 
 
-const serviceGroups = [
-  {
-    label: 'Homes',
-    title: 'Clean, usable outdoor spaces',
-    text: 'Driveways, beds, yards, and rough edges cleaned up so the property feels maintained again.',
-  },
-  {
-    label: 'Cleanups',
-    title: 'Overgrowth, debris, and seasonal mess',
-    text: 'Brush, leaves, junk, and yard waste removed with clear pricing before work begins.',
-  },
-  {
-    label: 'Seasonal Work',
-    title: 'Property help when the season changes',
-    text: 'Fall leaf removal, spring refreshes, and holiday light installs for local homes.',
-  },
-]
 
 const services = [
   { name: 'Pressure Washing', desc: 'Driveways, walkways, brick, decks, siding, and patios cleaned with care.' },
@@ -141,29 +124,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      <section className="home-section home-section-light">
-        <div className="home-shell">
-          <ScrollReveal>
-            <div className="home-section-heading">
-              <p className="home-kicker">What We Handle</p>
-              <h2>Practical outdoor work, done cleanly</h2>
-              <p>Start with one project or combine a few. Every quote is based on your property, your photos, and the actual scope of work.</p>
-            </div>
-          </ScrollReveal>
-
-          <div className="home-category-grid">
-            {serviceGroups.map((group) => (
-              <ScrollReveal key={group.label}>
-                <article className="home-category-card">
-                  <span>{group.label}</span>
-                  <h3>{group.title}</h3>
-                  <p>{group.text}</p>
-                </article>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
 
       <section className="home-section home-story-section">
         <div className="home-shell home-story-grid">
