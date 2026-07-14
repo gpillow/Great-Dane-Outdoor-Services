@@ -169,8 +169,8 @@ export default function HomePage() {
         <div className="home-shell home-story-grid">
           <ScrollReveal direction="left">
             <div className="home-image-stack">
-              <Image src="/overgrown.webp" alt="Overgrown property before cleanup" width={1600} height={1200} loading="lazy" />
-              <Image src="/cutdown.webp" alt="Property after brush and landscaping cleanup" width={1600} height={1200} loading="lazy" />
+              <Image src="/junk-removal.webp" alt="Garage full of junk and clutter before removal" width={525} height={700} loading="lazy" />
+              <Image src="/garage-after.webp" alt="Clean garage after junk removal" width={900} height={1200} loading="lazy" />
             </div>
           </ScrollReveal>
 
