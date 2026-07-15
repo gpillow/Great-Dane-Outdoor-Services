@@ -71,8 +71,8 @@ export default function HomePage() {
               <Image
                 src="/junk-removal.webp"
                 alt="Great Dane Outdoor Services truck and dump trailer ready for junk removal"
-                width={3024}
-                height={4032}
+                width={525}
+                height={700}
                 priority
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
@@ -129,8 +129,8 @@ export default function HomePage() {
         <div className="home-shell home-story-grid">
           <ScrollReveal direction="left">
             <div className="home-image-stack">
-              <Image src="/garage-before.webp" alt="Garage full of junk and clutter before removal" width={900} height={1200} loading="lazy" />
-              <Image src="/garage-after.webp" alt="Clean garage after junk removal" width={900} height={1200} loading="lazy" />
+              <Image src="/garage-before.webp" alt="Garage full of junk and clutter before removal" width={900} height={1200} loading="lazy" sizes="(max-width: 768px) 100vw, 40vw" />
+              <Image src="/garage-after.webp" alt="Clean garage after junk removal" width={900} height={1200} loading="lazy" sizes="(max-width: 768px) 100vw, 40vw" />
             </div>
           </ScrollReveal>
 

@@ -59,7 +59,7 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
           data-resources-url="https://widgets.leadconnectorhq.com/chat-widget/loader.js"
           data-widget-id="6a56931fc40835bdcd16b4a3"
           data-source="WEB_USER"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
         />
       </body>
     </html>
