@@ -73,7 +73,7 @@ export default function HomePage() {
                 alt="Great Dane Outdoor Services truck and dump trailer ready for junk removal"
                 width={525}
                 height={700}
-                priority
+                loading="eager"
                 sizes="(max-width: 768px) 100vw, 50vw"
               />
               <div className="home-hero-card-caption">
