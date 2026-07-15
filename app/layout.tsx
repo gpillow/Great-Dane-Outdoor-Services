@@ -43,8 +43,8 @@ export default function RootLayout({ children }: Readonly<{ children: React.Reac
         <link rel="preconnect" href="https://www.googletagmanager.com" />
       </head>
       <body className="min-h-full flex flex-col">
-        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18245231091" strategy="afterInteractive" />
-        <Script id="google-ads-tag" strategy="afterInteractive">{`
+        <Script src="https://www.googletagmanager.com/gtag/js?id=AW-18245231091" strategy="lazyOnload" />
+        <Script id="google-ads-tag" strategy="lazyOnload">{`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
