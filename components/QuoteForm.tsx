@@ -49,8 +49,8 @@ export default function QuoteForm() {
             currency: 'USD',
           })
         }
-      } else { setError('Something went wrong. Call (870) 995-1166.') }
-    } catch { setError('Something went wrong. Call (870) 995-1166.') }
+      } else { setError('Something went wrong. Call (479) 391-4462.') }
+    } catch { setError('Something went wrong. Call (479) 391-4462.') }
     setLoading(false)
   }
 
@@ -59,7 +59,7 @@ export default function QuoteForm() {
       <div style={{ textAlign: 'center', padding: '3rem 2rem', background: '#464646', border: '1px solid #3e4e3e', borderRadius: '12px' }}>
         <p style={{ color: '#7dff9e', fontSize: '2rem', marginBottom: '0.75rem' }}>✓</p>
         <h3 style={{ color: '#fff', fontWeight: 700, fontSize: '1.3rem', marginBottom: '0.5rem' }}>Quote Request Received!</h3>
-        <p style={{ color: '#b2b2b2' }}>We&apos;ll get back to you fast. Call or text: <a href="tel:8709951166" style={{ color: '#4a7c59', textDecoration: 'none', fontWeight: 600 }}>(870) 995-1166</a></p>
+        <p style={{ color: '#b2b2b2' }}>We&apos;ll get back to you fast. Call or text: <a href="tel:4793914462" style={{ color: '#4a7c59', textDecoration: 'none', fontWeight: 600 }}>(479) 391-4462</a></p>
       </div>
     )
   }

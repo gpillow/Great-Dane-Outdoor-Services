@@ -27,7 +27,7 @@ export default function SiteFooter() {
 
         {/* Contact */}
         <div className="footer-contact">
-          <a href="tel:8709951166">(870) 995-1166</a>
+          <a href="tel:4793914462">(479) 391-4462</a>
           <a href="mailto:gibson@greatdaneoutdoorservices.com">gibson@greatdaneoutdoorservices.com</a>
           <Link href="/contact">Get a Free Quote &rarr;</Link>
         </div>

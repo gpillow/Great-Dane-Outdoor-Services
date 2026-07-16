@@ -15,7 +15,7 @@ const localBusinessSchema = {
   description:
     'Locally owned outdoor services company in Northwest Arkansas offering pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
   url: 'https://www.greatdaneoutdoorservices.com/services',
-  telephone: '+18709951166',
+  telephone: '+14793914462',
   email: 'leads@greatdaneoutdoorservices.com',
   areaServed: [
     { '@type': 'City', name: 'Fayetteville', containedInPlace: { '@type': 'State', name: 'Arkansas' } },
@@ -125,7 +125,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How do I get a landscaping estimate in NWA?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Call or text (870) 995-1166 with photos of your yard. Great Dane provides quotes based on the actual scope of work — no hourly guesses, just a clear number before work starts.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Call or text (479) 391-4462 with photos of your yard. Great Dane provides quotes based on the actual scope of work — no hourly guesses, just a clear number before work starts.' },
     },
     // --- Brush Removal ---
     {

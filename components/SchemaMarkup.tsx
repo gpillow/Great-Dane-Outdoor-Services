@@ -7,7 +7,7 @@ const schemas = [
     description:
       'Locally owned outdoor services company serving Northwest Arkansas. Specializing in pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
     url: 'https://www.greatdaneoutdoorservices.com',
-    telephone: '+18709951166',
+    telephone: '+14793914462',
     email: 'gibson@greatdaneoutdoorservices.com',
     priceRange: '$$',
     currenciesAccepted: 'USD',
@@ -110,7 +110,7 @@ const schemas = [
     '@id': 'https://www.greatdaneoutdoorservices.com/#organization',
     name: 'Great Dane Outdoor Services',
     url: 'https://www.greatdaneoutdoorservices.com',
-    telephone: '+18709951166',
+    telephone: '+14793914462',
     email: 'gibson@greatdaneoutdoorservices.com',
     legalName: 'Great Dane Outdoor Services LLC',
     foundingDate: '2024',

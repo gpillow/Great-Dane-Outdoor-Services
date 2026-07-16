@@ -50,8 +50,8 @@ export default function ReviewsPage() {
           <a href="/contact" style={{ background: 'linear-gradient(135deg, #ebebeb, #b2b2b2)', color: '#303030', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 800, textDecoration: 'none', fontSize: '1rem' }}>
             Get a Free Quote
           </a>
-          <a href="tel:8709951166" style={{ border: '2px solid #4a7c59', color: '#7dff9e', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
-            Call or Text (870) 995-1166
+          <a href="tel:4793914462" style={{ border: '2px solid #4a7c59', color: '#7dff9e', padding: '1rem 2rem', borderRadius: '8px', fontWeight: 700, textDecoration: 'none', fontSize: '1rem' }}>
+            Call or Text (479) 391-4462
           </a>
         </div>
       </section>

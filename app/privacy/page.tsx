@@ -23,7 +23,7 @@ export default function PrivacyPage() {
               <li>Message and data rates may apply.</li>
               <li>We do not share your mobile number with third parties for marketing purposes.</li>
               <li>Reply STOP at any time to opt out of text messages.</li>
-              <li>Reply HELP for help or contact us at (870) 995-1166.</li>
+              <li>Reply HELP for help or contact us at (479) 391-4462.</li>
             </ul>
           </div>
 
@@ -47,7 +47,7 @@ export default function PrivacyPage() {
           <div className="legal-section">
             <h2>Contact</h2>
             <p>If you have questions about this privacy policy, contact us at:</p>
-            <p className="legal-contact">Great Dane Outdoor Services LLC<br />(870) 995-1166<br />gibson@greatdaneoutdoorservices.com</p>
+            <p className="legal-contact">Great Dane Outdoor Services LLC<br />(479) 391-4462<br />gibson@greatdaneoutdoorservices.com</p>
           </div>
         </div>
       </section>

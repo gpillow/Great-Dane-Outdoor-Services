@@ -2,7 +2,7 @@ export const faqs = [
   {
     category: 'Quotes',
     q: 'What is the fastest way to get an accurate quote?',
-    a: 'Text photos or videos to (870) 995-1166 with the address, the service you need, and any access notes. Photos help us see size, surface condition, overgrowth, disposal needs, water access, and how easy the area is to reach, which makes the estimate much more accurate.',
+    a: 'Text photos or videos to (479) 391-4462 with the address, the service you need, and any access notes. Photos help us see size, surface condition, overgrowth, disposal needs, water access, and how easy the area is to reach, which makes the estimate much more accurate.',
   },
   {
     category: 'Quotes',

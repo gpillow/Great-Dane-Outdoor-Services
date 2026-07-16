@@ -7,7 +7,7 @@
 // ─────────────────────────────────────────────────────────────────────────────
 
 const SITE_NAME = 'Great Dane Outdoor Services'
-const PHONE     = '(870) 995-1166'
+const PHONE     = '(479) 391-4462'
 const BASE_URL  = 'https://www.greatdaneoutdoorservices.com' // ← update once you have a domain
 
 export const pageMeta = {

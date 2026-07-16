@@ -4,7 +4,7 @@ import Link from 'next/link'
 import QuoteForm from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
-  title: 'Get a Free Quote | Great Dane Outdoor Services | (870) 995-1166',
+  title: 'Get a Free Quote | Great Dane Outdoor Services | (479) 391-4462',
   description:
     'Request a free, no-obligation quote from Great Dane Outdoor Services. Serving all of Northwest Arkansas. Call, text, or fill out our quick form.',
 }
@@ -18,7 +18,7 @@ export default function ContactPage() {
           <h1>Send the details. Get a clear quote.</h1>
           <p>Call, text, or fill out the form. Photos are welcome and usually help speed up the estimate.</p>
           <div className="blueprint-actions">
-            <a href="tel:8709951166">Call or Text (870) 995-1166</a>
+            <a href="tel:4793914462">Call or Text (479) 391-4462</a>
             <a href="mailto:gibson@greatdaneoutdoorservices.com">Email us</a>
           </div>
         </div>
@@ -30,7 +30,7 @@ export default function ContactPage() {
             <h2>Reach us directly</h2>
             <div>
               <span>Call or text</span>
-              <a href="tel:8709951166">(870) 995-1166</a>
+              <a href="tel:4793914462">(479) 391-4462</a>
             </div>
             <div>
               <span>Email</span>

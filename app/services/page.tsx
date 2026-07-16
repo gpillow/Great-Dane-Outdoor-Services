@@ -59,7 +59,7 @@ export default function ServicesPage() {
               <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get started now</Link>
-                <a href="tel:8709951166">Call or Text (870) 995-1166</a>
+                <a href="tel:4793914462">Call or Text (479) 391-4462</a>
               </div>
             </div>
           </ScrollReveal>
@@ -75,7 +75,7 @@ export default function ServicesPage() {
       <section className="blueprint-section blueprint-light">
         <div className="blueprint-shell">
           <p className="geo-direct-answer">
-            Great Dane Outdoor Services is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include pressure washing (starting at $149), junk removal (starting at $125), landscaping and mulching (starting at $149), brush removal (starting at $225), fall leaf cleanup (starting at $175), and Christmas light installation (starting at $499). Free quotes are available by calling or texting (870) 995-1166. Great Dane Outdoor Services is a licensed LLC operating in the state of Arkansas.
+            Great Dane Outdoor Services is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include pressure washing (starting at $149), junk removal (starting at $125), landscaping and mulching (starting at $149), brush removal (starting at $225), fall leaf cleanup (starting at $175), and Christmas light installation (starting at $499). Free quotes are available by calling or texting (479) 391-4462. Great Dane Outdoor Services is a licensed LLC operating in the state of Arkansas.
           </p>
           <div className="blueprint-heading">
             <p className="blueprint-kicker">Service Menu</p>
