@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Pressure Washing Fayetteville AR | Great Dane Outdoor Services | (479) 391-4462' },
   description:
-    'Pressure washing in Fayetteville, AR starting at $149. Driveways, patios, decks, brick, and siding cleaned with the right pressure for each surface. Free quotes.',
+    'Pressure washing in Fayetteville, AR starting at $125. Driveways, patios, decks, brick, and siding cleaned with the right pressure for each surface. Free quotes.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/pressure-washing-fayetteville-ar' },
 }
 
@@ -23,7 +23,7 @@ const included = [
 const faqs = [
   {
     q: 'How much does pressure washing cost in Fayetteville, AR?',
-    a: 'Pressure washing starts at $149. Small patios, walkways, and spot cleaning usually start near the minimum. Driveways, brick, decks, siding, and heavy buildup are quoted by size and surface condition. Photos help us estimate faster before scheduling.',
+    a: 'Pressure washing starts at $125. Small patios, walkways, and spot cleaning usually start near the minimum. Driveways, brick, decks, siding, and heavy buildup are quoted by size and surface condition. Photos help us estimate faster before scheduling.',
   },
   {
     q: 'Can pressure washing damage concrete, siding, brick, wood, or paint?',
@@ -70,7 +70,7 @@ const serviceSchema = {
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'USD',
-      description: 'Pressure washing starting at $149. Final quote depends on surface, size, and buildup.',
+      description: 'Pressure washing starting at $125. Final quote depends on surface, size, and buildup.',
     },
   },
 }
@@ -87,7 +87,7 @@ export default function PressureWashingFayettevillePage() {
             <p className="blueprint-kicker">Pressure Washing — Fayetteville, AR</p>
             <h1>Pressure Washing in Fayetteville, AR</h1>
             <p>
-              Great Dane Outdoor Services provides pressure washing in Fayetteville, AR and across Northwest Arkansas. We clean driveways, walkways, patios, decks, brick, and siding using the right pressure and technique for each surface. Pressure washing starts at $149, with free quotes based on photos of the area you want cleaned.
+              Great Dane Outdoor Services provides pressure washing in Fayetteville, AR and across Northwest Arkansas. We clean driveways, walkways, patios, decks, brick, and siding using the right pressure and technique for each surface. Pressure washing starts at $125, with free quotes based on photos of the area you want cleaned.
             </p>
             <div className="blueprint-actions">
               <Link href="#quote">Get a Free Quote</Link>
@@ -136,7 +136,7 @@ export default function PressureWashingFayettevillePage() {
               </div>
               <div className="pricing-card-footer">
                 <span>starting at</span>
-                <strong>$149</strong>
+                <strong>$125</strong>
                 <Link href="#quote">Get estimate</Link>
               </div>
             </article>

@@ -35,8 +35,8 @@ const localBusinessSchema = {
     '@type': 'OfferCatalog',
     name: 'Outdoor Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pressure Washing', description: 'Professional pressure washing for driveways, sidewalks, patios, brick, decks, siding, and exterior surfaces. Starting at $149.' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Junk Removal', description: 'Full-service junk hauling for furniture, yard debris, garage cleanouts, and unwanted items. Starting at $125.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pressure Washing', description: 'Professional pressure washing for driveways, sidewalks, patios, brick, decks, siding, and exterior surfaces. Starting at $125.' } },
+      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Junk Removal', description: 'Full-service junk hauling for furniture, yard debris, garage cleanouts, and unwanted items. Starting at $149.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landscaping', description: 'Mulching, weed removal, flower bed installation, bush trimming, and landscape refresh work. Starting at $149.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Brush Removal', description: 'Overgrowth clearing, fence line cleanup, sapling removal, and land clearing. Starting at $225.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Leaf Cleanup', description: 'Seasonal leaf removal and disposal for Northwest Arkansas yards. Starting at $175.' } },
@@ -53,7 +53,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How much does pressure washing cost in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Outdoor Services pressure washing starts at $149. Final pricing depends on the surface type, square footage, and level of buildup. Driveways, patios, brick, and multi-surface jobs are quoted based on photos or an on-site look.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Outdoor Services pressure washing starts at $125. Final pricing depends on the surface type, square footage, and level of buildup. Driveways, patios, brick, and multi-surface jobs are quoted based on photos or an on-site look.' },
     },
     {
       '@type': 'Question',
@@ -79,7 +79,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How much does junk removal cost in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane junk removal starts at $125 for small loads. Pricing scales by volume and disposal requirements. Text a photo of your pile for the fastest quote.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane junk removal starts at $149 for small loads. Pricing scales by volume and disposal requirements. Text a photo of your pile for the fastest quote.' },
     },
     {
       '@type': 'Question',

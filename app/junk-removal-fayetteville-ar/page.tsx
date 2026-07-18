@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Junk Removal Fayetteville AR | Great Dane Outdoor Services | (479) 391-4462' },
   description:
-    'Junk removal in Fayetteville, AR starting at $125. Furniture, garage cleanouts, appliances, and yard debris hauled away — usually the same week you call. Free quotes.',
+    'Junk removal in Fayetteville, AR starting at $149. Furniture, garage cleanouts, appliances, and yard debris hauled away — same day or next day service available. Free quotes.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/junk-removal-fayetteville-ar' },
 }
 
@@ -23,15 +23,15 @@ const included = [
 const faqs = [
   {
     q: 'How much does junk removal cost in Fayetteville, AR?',
-    a: 'Junk removal starts at $125. Pricing is based on volume, weight, disposal requirements, loading time, and access. A single-item pickup costs less than a garage cleanout, construction debris pile, or mixed outdoor cleanup. A photo of the pile is the fastest way to get an exact number.',
+    a: 'Junk removal starts at $149. Pricing is based on volume, weight, disposal requirements, loading time, and access. A single-item pickup costs less than a garage cleanout, construction debris pile, or mixed outdoor cleanup. A photo of the pile is the fastest way to get an exact number.',
   },
   {
     q: 'What items do you not accept?',
     a: 'Some items may need special disposal or may not be accepted, including hazardous chemicals, paint, fuel, oils, asbestos, medical waste, and certain tires or batteries. Send photos and a list of what you have, and we will confirm what can be hauled before booking.',
   },
   {
-    q: 'How fast can I get a junk removal quote?',
-    a: 'Text photos or videos to (479) 391-4462 with the address and what you need hauled. Photos help us see volume, access, and disposal needs, which makes the estimate accurate without a site visit.',
+    q: 'Do you offer same-day junk removal in Fayetteville, AR?',
+    a: 'Same day or next day service is available. Text photos or videos to (479) 391-4462 with the address and what you need hauled, and we will confirm the soonest available slot.',
   },
   {
     q: 'Are junk removal estimates really free?',
@@ -70,7 +70,7 @@ const serviceSchema = {
     priceSpecification: {
       '@type': 'PriceSpecification',
       priceCurrency: 'USD',
-      description: 'Junk removal starting at $125. Final quote depends on volume, access, and disposal needs.',
+      description: 'Junk removal starting at $149. Final quote depends on volume, access, and disposal needs.',
     },
   },
 }
@@ -87,7 +87,7 @@ export default function JunkRemovalFayettevillePage() {
             <p className="blueprint-kicker">Junk Removal — Fayetteville, AR</p>
             <h1>Junk Removal in Fayetteville, AR</h1>
             <p>
-              Great Dane Outdoor Services provides junk removal in Fayetteville, AR and across Northwest Arkansas. From single-item pickups to full garage, basement, and estate cleanouts, we haul away furniture, appliances, yard debris, and construction scraps — usually the same week you call. Junk removal starts at $125, with free quotes by phone, text, or photo.
+              Great Dane Outdoor Services provides junk removal in Fayetteville, AR and across Northwest Arkansas. From single-item pickups to full garage, basement, and estate cleanouts, we haul away furniture, appliances, yard debris, and construction scraps — same day or next day service available. Junk removal starts at $149, with free quotes by phone, text, or photo.
             </p>
             <div className="blueprint-actions">
               <Link href="#quote">Get a Free Quote</Link>
@@ -136,7 +136,7 @@ export default function JunkRemovalFayettevillePage() {
               </div>
               <div className="pricing-card-footer">
                 <span>starting at</span>
-                <strong>$125</strong>
+                <strong>$149</strong>
                 <Link href="#quote">Get estimate</Link>
               </div>
             </article>
@@ -164,7 +164,7 @@ export default function JunkRemovalFayettevillePage() {
       <section className="blueprint-cta" id="quote">
         <div className="blueprint-shell">
           <h2>Get a free junk removal quote</h2>
-          <p>Send a few photos and a quick description. We will haul it off — usually the same week you call.</p>
+          <p>Send a few photos and a quick description. Same day or next day service available.</p>
           <QuoteForm />
         </div>
       </section>

@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 const pricingItems = [
   {
     name: 'Pressure Washing',
-    startingAt: '$149',
+    startingAt: '$125',
     unit: 'starting at',
     bullets: [
       'Small patios, walkways, and spot cleaning usually start near the minimum.',
@@ -22,7 +22,7 @@ const pricingItems = [
   },
   {
     name: 'Junk Removal',
-    startingAt: '$125',
+    startingAt: '$149',
     unit: 'starting at',
     bullets: [
       'Single-item pickup and small loads start near the base rate.',
