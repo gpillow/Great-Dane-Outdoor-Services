@@ -108,6 +108,8 @@ const pricingSchema = {
 
 export default function PricingPage() {
   return (
+    <>
+      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
     <main id="main-content" className="pricing-page">
       <script
         type="application/ld+json"
@@ -197,5 +199,6 @@ export default function PricingPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

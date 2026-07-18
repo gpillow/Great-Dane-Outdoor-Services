@@ -49,6 +49,8 @@ const detailSections = [
 
 export default function ServicesPage() {
   return (
+    <>
+      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <section className="blueprint-hero">
         <div className="blueprint-shell blueprint-hero-grid">
@@ -128,5 +130,6 @@ export default function ServicesPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

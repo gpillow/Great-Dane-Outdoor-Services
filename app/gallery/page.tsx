@@ -31,6 +31,8 @@ const projects = [
 
 export default function GalleryPage() {
   return (
+    <>
+      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <section className="blueprint-hero">
         <div className="blueprint-shell blueprint-hero-grid">
@@ -96,5 +98,6 @@ export default function GalleryPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

@@ -11,6 +11,8 @@ export const metadata: Metadata = {
 
 export default function ContactPage() {
   return (
+    <>
+      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <section className="blueprint-hero contact-blueprint-hero">
         <div className="blueprint-shell">
@@ -54,5 +56,6 @@ export default function ContactPage() {
         </div>
       </section>
     </main>
+    </>
   )
 }

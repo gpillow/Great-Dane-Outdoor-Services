@@ -21,6 +21,8 @@ export default function FAQPage() {
   const [open, setOpen] = useState<number | null>(null)
 
   return (
+    <>
+      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
     <main id="main-content" className="blueprint-page faq-page">
 
       <section className="blueprint-hero faq-hero">
@@ -89,5 +91,6 @@ export default function FAQPage() {
       </ScrollReveal>
 
     </main>
+    </>
   )
 }
