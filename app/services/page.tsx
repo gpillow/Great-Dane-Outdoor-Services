@@ -59,7 +59,7 @@ export default function ServicesPage() {
               <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get started now</Link>
-                <a href="tel:4793914462">Call or Text (479) 391-4462</a>
+                <a href="tel:4793914462" style={{ background: '#7dff9e', color: '#0a1a0e', borderRadius: '999px', boxShadow: '0 8px 32px rgba(125,255,158,0.38)' }}>Call or Text (479) 391-4462</a>
               </div>
             </div>
           </ScrollReveal>

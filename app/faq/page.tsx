@@ -33,7 +33,7 @@ export default function FAQPage() {
             </p>
             <div className="blueprint-actions">
               <Link href="/contact">Get a free quote</Link>
-              <a href="tel:4793914462">Call or Text (479) 391-4462</a>
+              <a href="tel:4793914462" style={{ background: '#7dff9e', color: '#0a1a0e', borderRadius: '999px', boxShadow: '0 8px 32px rgba(125,255,158,0.38)' }}>Call or Text (479) 391-4462</a>
             </div>
           </ScrollReveal>
         </div>

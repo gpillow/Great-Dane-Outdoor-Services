@@ -210,7 +210,7 @@ export default function HomePage() {
           <p>Call, text, or use the quote form. Photos are welcome and can help speed up the estimate.</p>
           <div className="home-hero-actions">
             <a href="/contact" className="home-btn home-btn-primary">Get a Free Quote</a>
-            <a href="tel:4793914462" className="home-btn home-btn-secondary">Call or Text (479) 391-4462</a>
+            <a href="tel:4793914462" className="home-btn home-btn-call">Call or Text (479) 391-4462</a>
           </div>
         </div>
       </section>
