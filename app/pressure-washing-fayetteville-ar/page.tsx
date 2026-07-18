@@ -108,8 +108,8 @@ export default function PressureWashingFayettevillePage() {
           </div>
           <ul className="faq-list" style={{ maxWidth: '700px', margin: '0 auto', display: 'grid', gap: '0.75rem' }}>
             {included.map((item) => (
-              <li key={item} style={{ color: 'var(--muted, #b2b2b2)', paddingLeft: '1.5rem', position: 'relative' }}>
-                <span style={{ position: 'absolute', left: 0, color: '#7dff9e' }}>✓</span>
+              <li key={item} style={{ color: '#556052', paddingLeft: '1.5rem', position: 'relative' }}>
+                <span style={{ position: 'absolute', left: 0, color: '#315b3c' }}>✓</span>
                 {item}
               </li>
             ))}
