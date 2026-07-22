@@ -22,7 +22,7 @@ export default function FAQPage() {
 
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.jpg" fetchPriority="high" />
+      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page faq-page">
 
       <section className="blueprint-hero faq-hero">
