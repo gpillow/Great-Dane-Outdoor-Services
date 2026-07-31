@@ -3,7 +3,7 @@ const schemas = [
     '@context': 'https://schema.org',
     '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
     '@id': 'https://www.greatdaneoutdoorservices.com/#business',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     description:
       'Locally owned outdoor services company serving Northwest Arkansas. Specializing in pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
     url: 'https://www.greatdaneoutdoorservices.com',
@@ -99,7 +99,7 @@ const schemas = [
     '@type': 'WebSite',
     '@id': 'https://www.greatdaneoutdoorservices.com/#website',
     url: 'https://www.greatdaneoutdoorservices.com',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     description:
       'Northwest Arkansas outdoor services: pressure washing, junk removal, landscaping, and more.',
     publisher: { '@id': 'https://www.greatdaneoutdoorservices.com/#business' },
@@ -108,11 +108,11 @@ const schemas = [
     '@context': 'https://schema.org',
     '@type': 'Organization',
     '@id': 'https://www.greatdaneoutdoorservices.com/#organization',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     url: 'https://www.greatdaneoutdoorservices.com',
     telephone: '+14793914462',
     email: 'gibson@greatdaneoutdoorservices.com',
-    legalName: 'Great Dane Outdoor Services LLC',
+    legalName: 'Great Dane Junk & Brush Removal LLC',
     foundingDate: '2024',
     address: {
       '@type': 'PostalAddress',

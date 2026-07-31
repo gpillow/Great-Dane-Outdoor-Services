@@ -86,7 +86,7 @@ export default function QuoteForm() {
           style={{ marginTop: '3px', accentColor: '#7dff9e', width: '16px', height: '16px', flexShrink: 0, cursor: 'pointer' }}
         />
         <span style={{ color: '#b2b2b2', fontSize: '0.85rem', lineHeight: 1.5 }}>
-          I agree to receive SMS messages from Great Dane Outdoor Services LLC related to my upcoming job, including confirmations, reminders, crew updates, invoices, and review requests. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time. Reply HELP for help. View our{' '}
+          I agree to receive SMS messages from Great Dane Junk & Brush Removal LLC related to my upcoming job, including confirmations, reminders, crew updates, invoices, and review requests. Message frequency varies. Message and data rates may apply. Reply STOP to opt out at any time. Reply HELP for help. View our{' '}
           <a href="/privacy" style={{ color: '#7dff9e', textDecoration: 'underline' }}>Privacy Policy</a>
           {' '}and{' '}
           <a href="/terms" style={{ color: '#7dff9e', textDecoration: 'underline' }}>Terms of Service</a>.

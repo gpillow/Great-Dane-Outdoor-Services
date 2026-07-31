@@ -3,7 +3,7 @@ import type { Metadata } from 'next'
 import { faqs } from './faqs'
 
 export const metadata: Metadata = {
-  title: 'FAQ | Great Dane Outdoor Services',
+  title: 'FAQ | Great Dane Junk & Brush Removal',
   description: 'Detailed answers about pressure washing, junk removal, brush clearing, leaf cleanup, landscaping, Christmas lights, pricing, and scheduling in Northwest Arkansas.',
 }
 

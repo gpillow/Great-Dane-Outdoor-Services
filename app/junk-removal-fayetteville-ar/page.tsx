@@ -5,7 +5,7 @@ import Image from 'next/image'
 import QuoteForm from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Junk Removal Fayetteville AR | Great Dane Outdoor Services | (479) 391-4462' },
+  title: { absolute: 'Junk Removal Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
     'Junk removal in Fayetteville, AR starting at $149. Furniture, garage cleanouts, appliances, and yard debris hauled away — same day or next day service available. Free quotes.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/junk-removal-fayetteville-ar' },
@@ -61,7 +61,7 @@ const serviceSchema = {
   areaServed: { '@type': 'City', name: 'Fayetteville', containedInPlace: { '@type': 'State', name: 'Arkansas' } },
   provider: {
     '@type': 'LocalBusiness',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     telephone: '+14793914462',
   },
   offers: {
@@ -89,7 +89,7 @@ export default function JunkRemovalFayettevillePage() {
             <p className="blueprint-kicker">Junk Removal — Fayetteville, AR</p>
             <h1>Junk Removal in Fayetteville, AR</h1>
             <p>
-              Great Dane Outdoor Services provides junk removal in Fayetteville, AR and across Northwest Arkansas. From single-item pickups to full garage, basement, and estate cleanouts, we haul away furniture, appliances, yard debris, and construction scraps — same day or next day service available. Junk removal starts at $149, with free quotes by phone, text, or photo.
+              Great Dane Junk & Brush Removal provides junk removal in Fayetteville, AR and across Northwest Arkansas. From single-item pickups to full garage, basement, and estate cleanouts, we haul away furniture, appliances, yard debris, and construction scraps — same day or next day service available. Junk removal starts at $149, with free quotes by phone, text, or photo.
             </p>
             <div className="blueprint-actions">
               <Link href="#quote">Get a Free Quote</Link>

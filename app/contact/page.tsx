@@ -4,9 +4,9 @@ import Link from 'next/link'
 import QuoteForm from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Get a Free Quote | Great Dane Outdoor Services | (479) 391-4462' },
+  title: { absolute: 'Get a Free Quote | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Request a free, no-obligation quote from Great Dane Outdoor Services. Serving all of Northwest Arkansas. Call, text, or fill out our quick form.',
+    'Request a free, no-obligation quote from Great Dane Junk & Brush Removal. Serving all of Northwest Arkansas. Call, text, or fill out our quick form.',
 }
 
 export default function ContactPage() {

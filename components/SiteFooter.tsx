@@ -8,7 +8,7 @@ export default function SiteFooter() {
       <div className="footer-inner">
         {/* Brand */}
         <div className="footer-brand">
-          <p className="footer-name">Great Dane Outdoor Services</p>
+          <p className="footer-name">Great Dane Junk & Brush Removal</p>
           <p className="footer-tagline">Big Results, Great Service.</p>
           <p className="footer-location">Serving Northwest Arkansas</p>
         </div>
@@ -43,7 +43,7 @@ export default function SiteFooter() {
       </div>
 
       <div className="footer-bottom">
-        <p>&copy; {year} Great Dane Outdoor Services LLC. All rights reserved.</p>
+        <p>&copy; {year} Great Dane Junk & Brush Removal LLC. All rights reserved.</p>
         <div className="footer-legal">
           <Link href="/privacy">Privacy Policy</Link>
           <Link href="/terms">Terms of Service</Link>

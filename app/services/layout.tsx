@@ -11,7 +11,7 @@ const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': ['LocalBusiness', 'HomeAndConstructionBusiness'],
   '@id': 'https://www.greatdaneoutdoorservices.com/#business',
-  name: 'Great Dane Outdoor Services',
+  name: 'Great Dane Junk & Brush Removal',
   description:
     'Locally owned outdoor services company in Northwest Arkansas offering pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
   url: 'https://www.greatdaneoutdoorservices.com/services',
@@ -53,7 +53,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How much does pressure washing cost in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Outdoor Services pressure washing starts at $125. Final pricing depends on the surface type, square footage, and level of buildup. Driveways, patios, brick, and multi-surface jobs are quoted based on photos or an on-site look.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Junk & Brush Removal pressure washing starts at $125. Final pricing depends on the surface type, square footage, and level of buildup. Driveways, patios, brick, and multi-surface jobs are quoted based on photos or an on-site look.' },
     },
     {
       '@type': 'Question',
@@ -89,7 +89,7 @@ const faqSchema = {
     {
       '@type': 'Question',
       name: 'How fast can I get junk removed in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Outdoor Services aims for same-day or next-day availability on most junk removal jobs in Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.' },
+      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Junk & Brush Removal aims for same-day or next-day availability on most junk removal jobs in Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.' },
     },
     {
       '@type': 'Question',

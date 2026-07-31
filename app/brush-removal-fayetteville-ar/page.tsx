@@ -5,7 +5,7 @@ import Image from 'next/image'
 import QuoteForm from '@/components/QuoteForm'
 
 export const metadata: Metadata = {
-  title: { absolute: 'Brush Removal Fayetteville AR | Great Dane Outdoor Services | (479) 391-4462' },
+  title: { absolute: 'Brush Removal Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
     'Brush removal in Fayetteville, AR starting at $225. Overgrown fence lines, saplings, vines, and rough yard areas cleared and hauled off. Free quotes.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/brush-removal-fayetteville-ar' },
@@ -61,7 +61,7 @@ const serviceSchema = {
   areaServed: { '@type': 'City', name: 'Fayetteville', containedInPlace: { '@type': 'State', name: 'Arkansas' } },
   provider: {
     '@type': 'LocalBusiness',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     telephone: '+14793914462',
   },
   offers: {
@@ -89,7 +89,7 @@ export default function BrushRemovalFayettevillePage() {
             <p className="blueprint-kicker">Brush Removal — Fayetteville, AR</p>
             <h1>Brush Removal in Fayetteville, AR</h1>
             <p>
-              Great Dane Outdoor Services provides brush removal in Fayetteville, AR and across Northwest Arkansas. We clear overgrown fence lines, saplings, vines, and rough yard areas that have become hard to use, then haul off the debris. Brush removal starts at $225, with free quotes based on photos of the area.
+              Great Dane Junk & Brush Removal provides brush removal in Fayetteville, AR and across Northwest Arkansas. We clear overgrown fence lines, saplings, vines, and rough yard areas that have become hard to use, then haul off the debris. Brush removal starts at $225, with free quotes based on photos of the area.
             </p>
             <div className="blueprint-actions">
               <Link href="#quote">Get a Free Quote</Link>

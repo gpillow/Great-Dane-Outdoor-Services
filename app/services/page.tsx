@@ -77,7 +77,7 @@ export default function ServicesPage() {
       <section className="blueprint-section blueprint-light">
         <div className="blueprint-shell">
           <p className="geo-direct-answer">
-            Great Dane Outdoor Services is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include pressure washing (starting at $125), junk removal (starting at $149), landscaping and mulching (starting at $149), brush removal (starting at $225), fall leaf cleanup (starting at $175), and Christmas light installation (starting at $499). Free quotes are available by calling or texting (479) 391-4462. Great Dane Outdoor Services is a licensed LLC operating in the state of Arkansas.
+            Great Dane Junk & Brush Removal is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include pressure washing (starting at $125), junk removal (starting at $149), landscaping and mulching (starting at $149), brush removal (starting at $225), fall leaf cleanup (starting at $175), and Christmas light installation (starting at $499). Free quotes are available by calling or texting (479) 391-4462. Great Dane Junk & Brush Removal is a licensed LLC operating in the state of Arkansas.
           </p>
           <div className="blueprint-heading">
             <p className="blueprint-kicker">Service Menu</p>

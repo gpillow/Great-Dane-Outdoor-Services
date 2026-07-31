@@ -44,7 +44,7 @@ export default function HomePage() {
       <link rel="preload" as="image" href="/hero-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
       <link rel="preload" as="image" href="/cutdown.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
     <main id="main-content" className="home-page">
-      <section className="home-hero" aria-label="Great Dane Outdoor Services hero">
+      <section className="home-hero" aria-label="Great Dane Junk & Brush Removal hero">
         <div className="home-hero-overlay" />
         <div className="home-shell home-hero-grid">
           <ScrollReveal direction="left">
@@ -74,7 +74,7 @@ export default function HomePage() {
             <div className="home-hero-card">
               <Image
                 src="/junk-removal.webp"
-                alt="Great Dane Outdoor Services truck and dump trailer ready for junk removal"
+                alt="Great Dane Junk & Brush Removal truck and dump trailer ready for junk removal"
                 width={525}
                 height={700}
                 priority

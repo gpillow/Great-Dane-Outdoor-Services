@@ -4,9 +4,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 
 export const metadata: Metadata = {
-  title: 'Outdoor Service Pricing | Great Dane Outdoor Services Fayetteville AR',
+  title: 'Outdoor Service Pricing | Great Dane Junk & Brush Removal Fayetteville AR',
   description:
-    'Starting prices and estimate guidance for Great Dane Outdoor Services in Northwest Arkansas. Pressure washing, brush removal, junk hauling, landscaping, leaf cleanup, and Christmas lights.',
+    'Starting prices and estimate guidance for Great Dane Junk & Brush Removal in Northwest Arkansas. Pressure washing, brush removal, junk hauling, landscaping, leaf cleanup, and Christmas lights.',
 }
 
 const pricingItems = [
@@ -78,16 +78,16 @@ const pricingSchema = {
   name: 'Outdoor Service Pricing',
   url: 'https://www.greatdaneoutdoorservices.com/pricing',
   description:
-    'Starting price guidance for outdoor services from Great Dane Outdoor Services in Northwest Arkansas.',
+    'Starting price guidance for outdoor services from Great Dane Junk & Brush Removal in Northwest Arkansas.',
   provider: {
     '@type': 'LocalBusiness',
-    name: 'Great Dane Outdoor Services',
+    name: 'Great Dane Junk & Brush Removal',
     telephone: '+14793914462',
     areaServed: 'Northwest Arkansas',
   },
   mainEntity: {
     '@type': 'OfferCatalog',
-    name: 'Great Dane Outdoor Services Pricing',
+    name: 'Great Dane Junk & Brush Removal Pricing',
     itemListElement: pricingItems.map((item) => ({
       '@type': 'Offer',
       name: item.name,
@@ -100,7 +100,7 @@ const pricingSchema = {
         '@type': 'Service',
         name: item.name,
         areaServed: 'Northwest Arkansas',
-        provider: { '@type': 'LocalBusiness', name: 'Great Dane Outdoor Services' },
+        provider: { '@type': 'LocalBusiness', name: 'Great Dane Junk & Brush Removal' },
       },
     })),
   },
@@ -193,7 +193,7 @@ export default function PricingPage() {
         <div className="pricing-shell">
           <h2>Service Area</h2>
           <p>
-            Great Dane Outdoor Services provides pressure washing, brush removal, junk removal, landscaping refreshes, leaf cleanups, and seasonal outdoor work across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.
+            Great Dane Junk & Brush Removal provides pressure washing, brush removal, junk removal, landscaping refreshes, leaf cleanups, and seasonal outdoor work across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.
           </p>
           <Link href="/contact">Request a free quote</Link>
         </div>

@@ -1,8 +1,8 @@
 import React from 'react'
 
 export const metadata = {
-  title: 'Customer Reviews | Great Dane Outdoor Services Fayetteville AR',
-  description: 'See what NWA homeowners are saying about Great Dane Outdoor Services. Serving Fayetteville, Rogers, Bentonville, Springdale, and Farmington, AR.',
+  title: 'Customer Reviews | Great Dane Junk & Brush Removal Fayetteville AR',
+  description: 'See what NWA homeowners are saying about Great Dane Junk & Brush Removal. Serving Fayetteville, Rogers, Bentonville, Springdale, and Farmington, AR.',
 }
 
 export default function ReviewsPage() {
@@ -24,7 +24,7 @@ export default function ReviewsPage() {
             <p style={{ color: '#7dff9e', fontSize: '2.5rem', fontWeight: 900, lineHeight: 1, marginBottom: '0.75rem' }}>★ ★ ★ ★ ★</p>
             <h2 style={{ color: '#fff', fontSize: 'clamp(1.6rem, 3vw, 2.4rem)', fontWeight: 800, marginBottom: '1rem' }}>Google reviews coming soon</h2>
             <p style={{ color: '#b2b2b2', lineHeight: 1.7, maxWidth: '620px', margin: '0 auto' }}>
-              Great Dane Outdoor Services is still growing its public review profile, but the work is already happening across NWA. Photos, clear quotes, and straight communication come standard.
+              Great Dane Junk & Brush Removal is still growing its public review profile, but the work is already happening across NWA. Photos, clear quotes, and straight communication come standard.
             </p>
           </div>
 

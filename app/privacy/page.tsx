@@ -1,5 +1,5 @@
 export const metadata = {
-  title: 'Privacy Policy | Great Dane Outdoor Services',
+  title: 'Privacy Policy | Great Dane Junk & Brush Removal',
 }
 
 export default function PrivacyPage() {
@@ -17,7 +17,7 @@ export default function PrivacyPage() {
 
           <div className="legal-section">
             <h2>SMS / Text Messaging</h2>
-            <p>By checking the SMS consent box on our quote request form, you explicitly opt in to receive text messages from Great Dane Outdoor Services LLC at the number provided. These messages may include quote confirmations, appointment reminders, crew updates, invoices, and review requests. SMS consent is not required as a condition of purchasing any goods or services.</p>
+            <p>By checking the SMS consent box on our quote request form, you explicitly opt in to receive text messages from Great Dane Junk & Brush Removal LLC at the number provided. These messages may include quote confirmations, appointment reminders, crew updates, invoices, and review requests. SMS consent is not required as a condition of purchasing any goods or services.</p>
             <ul>
               <li>Message frequency varies based on your service requests.</li>
               <li>Message and data rates may apply.</li>
@@ -41,13 +41,13 @@ export default function PrivacyPage() {
 
           <div className="legal-section">
             <h2>Data Security</h2>
-            <p>We take reasonable steps to protect your personal information. Your data is stored securely and accessible only to Great Dane Outdoor Services personnel.</p>
+            <p>We take reasonable steps to protect your personal information. Your data is stored securely and accessible only to Great Dane Junk & Brush Removal personnel.</p>
           </div>
 
           <div className="legal-section">
             <h2>Contact</h2>
             <p>If you have questions about this privacy policy, contact us at:</p>
-            <p className="legal-contact">Great Dane Outdoor Services LLC<br />(479) 391-4462<br />gibson@greatdaneoutdoorservices.com</p>
+            <p className="legal-contact">Great Dane Junk & Brush Removal LLC<br />(479) 391-4462<br />gibson@greatdaneoutdoorservices.com</p>
           </div>
         </div>
       </section>

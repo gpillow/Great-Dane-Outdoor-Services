@@ -40,7 +40,7 @@ export default function GalleryPage() {
             <div>
               <p className="blueprint-kicker">Projects</p>
               <h1>Real outdoor service results from NWA properties</h1>
-              <p>Before-and-after examples, cleanup work, and pressure washing results from Great Dane Outdoor Services.</p>
+              <p>Before-and-after examples, cleanup work, and pressure washing results from Great Dane Junk & Brush Removal.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Start your project</Link>
                 <Link href="/pricing">View pricing</Link>

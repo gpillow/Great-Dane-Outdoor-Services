@@ -40,7 +40,7 @@ export default function Navbar() {
       <a href="#main-content" className="skip-link">Skip to main content</a>
 
       <div className="nav-inner">
-        <Link href="/" className="nav-logo" aria-label="Great Dane Outdoor Services home">
+        <Link href="/" className="nav-logo" aria-label="Great Dane Junk & Brush Removal home">
           <span className="nav-logo-mark" aria-hidden="true">
             <Image src="/logo.webp" alt="" width={42} height={42} sizes="42px" />
           </span>
