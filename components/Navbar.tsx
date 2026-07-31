@@ -46,7 +46,7 @@ export default function Navbar() {
           </span>
           <span className="nav-logo-copy">
             <span className="nav-logo-main">Great Dane</span>
-            <span className="nav-logo-sub">Outdoor Services</span>
+            <span className="nav-logo-sub">Junk &amp; Brush Removal</span>
           </span>
         </Link>
 
