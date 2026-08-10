@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${base}/pressure-washing-fayetteville-ar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/brush-removal-fayetteville-ar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/landscaping-fayetteville-ar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${base}/christmas-lights-fayetteville-ar`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.9 },
     { url: `${base}/pricing`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.85 },
     { url: `${base}/gallery`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.8 },
     { url: `${base}/about`, lastModified: new Date(), changeFrequency: 'monthly', priority: 0.7 },

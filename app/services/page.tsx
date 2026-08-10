@@ -23,7 +23,7 @@ const serviceCards = [
   { name: 'Pressure Washing', image: '/afterdriveway.webp', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.', link: '/pressure-washing-fayetteville-ar', linkText: 'Pressure washing in Fayetteville' },
   { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.', link: '/landscaping-fayetteville-ar', linkText: 'Landscaping in Fayetteville' },
   { name: 'Leaf Cleanups', image: '/leaf-cleanup.webp', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.', link: '/pricing', linkText: 'View pricing guide' },
-  { name: 'Christmas Lights', image: '/christmas-lights.webp', text: 'Holiday light installation and takedown for homes that want the season handled.', link: '/pricing', linkText: 'View pricing guide' },
+  { name: 'Christmas Lights', image: '/christmas-lights.webp', text: 'Holiday light installation and takedown for homes that want the season handled.', link: '/christmas-lights-fayetteville-ar', linkText: 'Christmas lights in Fayetteville' },
 ]
 
 const detailSections = [
