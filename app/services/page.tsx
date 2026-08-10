@@ -21,7 +21,7 @@ const serviceCards = [
   { name: 'Junk Removal', image: '/garage-before.webp', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.', link: '/junk-removal-fayetteville-ar', linkText: 'Junk removal in Fayetteville' },
   { name: 'Brush Removal', image: '/brushcompost.webp', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.', link: '/brush-removal-fayetteville-ar', linkText: 'Brush removal in Fayetteville' },
   { name: 'Pressure Washing', image: '/afterdriveway.webp', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.', link: '/pressure-washing-fayetteville-ar', linkText: 'Pressure washing in Fayetteville' },
-  { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.', link: '/pricing', linkText: 'View pricing guide' },
+  { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.', link: '/landscaping-fayetteville-ar', linkText: 'Landscaping in Fayetteville' },
   { name: 'Leaf Cleanups', image: '/leaf-cleanup.webp', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.', link: '/pricing', linkText: 'View pricing guide' },
   { name: 'Christmas Lights', image: '/christmas-lights.webp', text: 'Holiday light installation and takedown for homes that want the season handled.', link: '/pricing', linkText: 'View pricing guide' },
 ]
