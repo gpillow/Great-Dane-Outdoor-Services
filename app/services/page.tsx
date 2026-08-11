@@ -29,9 +29,19 @@ const serviceCards = [
 const detailSections = [
   {
     title: 'Junk removal done the same week you call',
-    text: 'Old furniture, appliances, yard debris, construction scraps, and general clutter — hauled off fast. We load it, we haul it, and we leave the space clean. No dumping fees passed to you.',
+    text: 'Old furniture, appliances, yard debris, construction scraps, and general clutter — hauled off fast. We load it, we haul it, and we leave the space clean. No dumping fees passed to you. We serve Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.',
     image: '/junk-removal.webp',
     kicker: 'Junk Removal',
+    hauledItems: [
+      'Furniture & mattresses',
+      'Appliances & electronics',
+      'Garage & basement cleanouts',
+      'Yard debris & brush',
+      'Construction & remodeling scraps',
+      'Hot tubs & swing sets',
+      'Estate cleanouts',
+      'General household clutter',
+    ],
   },
   {
     title: 'Brush and overgrowth cleared to the ground',
@@ -47,17 +57,59 @@ const detailSections = [
   },
 ]
 
+const junkPricingTiers = [
+  { label: 'Small load', desc: 'Single items, a few bags, or a small pile', price: '$149+' },
+  { label: 'Quarter truck', desc: 'A few pieces of furniture or appliances', price: '$225+' },
+  { label: 'Half truck', desc: 'Garage cleanout, shed contents, or a mid-size job', price: '$375+' },
+  { label: 'Full truck', desc: 'Full garage, large estate cleanout, or a big haul', price: '$575+' },
+]
+
+const junkFaqs = [
+  {
+    q: 'How much does junk removal cost in Northwest Arkansas?',
+    a: 'Junk removal in Northwest Arkansas starts at $149 for small loads. A full truck load runs $575 or more. The exact price depends on the volume, weight, loading time, and disposal requirements. Text a photo of your pile to (479) 391-4462 for the fastest quote.',
+  },
+  {
+    q: 'What items does Great Dane Junk & Brush Removal haul away?',
+    a: 'We haul furniture, mattresses, appliances, electronics, yard debris, construction scraps, and general household clutter. We also handle full garage, basement, and estate cleanouts. Hazardous materials like paint, chemicals, and certain batteries require special disposal and may not be accepted.',
+  },
+  {
+    q: 'Do you offer same-day junk removal in Northwest Arkansas?',
+    a: 'Yes. Same-day and next-day junk removal is available across Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson. Text photos and your address to (479) 391-4462 and we will confirm the earliest available slot.',
+  },
+  {
+    q: 'Do I need to move items to the curb before you arrive?',
+    a: 'No. We handle the lifting from wherever items are on your property — garage, backyard, upstairs rooms, or anywhere else on-site. Just point us to the pile.',
+  },
+  {
+    q: 'Are junk removal quotes really free?',
+    a: 'Yes. Quotes are free and there is no pressure to book. For most jobs a photo is enough to give an accurate number. For larger or unusual loads we may ask a few follow-up questions before confirming the price.',
+  },
+]
+
+const junkFaqSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'FAQPage',
+  mainEntity: junkFaqs.map((faq) => ({
+    '@type': 'Question',
+    name: faq.q,
+    acceptedAnswer: { '@type': 'Answer', text: faq.a },
+  })),
+}
+
 export default function ServicesPage() {
   return (
     <>
       <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(junkFaqSchema) }} />
+
       <section className="blueprint-hero">
         <div className="blueprint-shell blueprint-hero-grid">
           <ScrollReveal direction="left">
             <div>
               <p className="blueprint-kicker">Junk Removal &amp; Brush Removal — Northwest Arkansas</p>
-              <h1>Haul it off. Clear it out. Get your property back.</h1>
+              <h1>Junk Removal &amp; Outdoor Services in Northwest Arkansas</h1>
               <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get started now</Link>
@@ -111,11 +163,62 @@ export default function ServicesPage() {
                   <p className="blueprint-kicker">{section.kicker}</p>
                   <h2>{section.title}</h2>
                   <p>{section.text}</p>
+                  {'hauledItems' in section && section.hauledItems && (
+                    <ul className="blueprint-haul-list">
+                      {section.hauledItems.map((item) => (
+                        <li key={item}>{item}</li>
+                      ))}
+                    </ul>
+                  )}
                   <Link href="/contact">Request an estimate</Link>
                 </div>
               </article>
             </ScrollReveal>
           ))}
+        </div>
+      </section>
+
+      <section className="pricing-section">
+        <div className="pricing-shell">
+          <div className="pricing-heading">
+            <p className="pricing-kicker">Junk Removal Pricing</p>
+            <h2>How junk removal is priced in NW Arkansas</h2>
+            <p>Pricing is based on the amount of space your load takes in the truck. Text a photo of the pile and we will quote it before we come out.</p>
+          </div>
+          <div className="pricing-grid">
+            {junkPricingTiers.map((tier) => (
+              <article key={tier.label} className="pricing-card">
+                <div>
+                  <h3>{tier.label}</h3>
+                  <ul>
+                    <li>{tier.desc}</li>
+                  </ul>
+                </div>
+                <div className="pricing-card-footer">
+                  <span>starting at</span>
+                  <strong>{tier.price}</strong>
+                  <Link href="/contact">Get estimate</Link>
+                </div>
+              </article>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      <section className="faq-section">
+        <div className="faq-shell">
+          <div className="blueprint-heading faq-heading">
+            <p className="blueprint-kicker">FAQ</p>
+            <h2>Junk removal questions, answered</h2>
+          </div>
+          <div className="faq-list">
+            {junkFaqs.map((faq) => (
+              <details key={faq.q} className="faq-item">
+                <summary className="faq-question"><span>{faq.q}</span></summary>
+                <div className="faq-answer"><p>{faq.a}</p></div>
+              </details>
+            ))}
+          </div>
         </div>
       </section>
 

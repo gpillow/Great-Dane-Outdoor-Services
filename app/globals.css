@@ -1993,6 +1993,27 @@ main#main-content {
   color: #556052;
   line-height: 1.75;
 }
+.blueprint-haul-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1.5rem;
+  margin: 1rem 0 1.25rem;
+  padding: 0;
+  list-style: none;
+}
+.blueprint-haul-list li {
+  color: #556052;
+  font-size: 0.9rem;
+  padding-left: 1.25rem;
+  position: relative;
+}
+.blueprint-haul-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #315b3c;
+  font-weight: 600;
+}
 .blueprint-story-layout p {
   color: rgba(255,255,255,0.88);
   line-height: 1.75;
