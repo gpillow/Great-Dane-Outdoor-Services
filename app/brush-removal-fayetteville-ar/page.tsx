@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Brush Removal Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Brush removal in Fayetteville, AR starting at $225. Overgrown fence lines, saplings, vines, and rough yard areas cleared and hauled off. Free quotes.',
+    'Brush removal in Fayetteville, AR from $225. Overgrown yards, fence lines & saplings cleared and hauled off. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/brush-removal-fayetteville-ar' },
 }
 

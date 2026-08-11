@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Landscaping Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Landscaping in Fayetteville, AR starting at $149. Mulch installation, flower bed cleanup, trimming, weed removal, and property refresh work. Free quotes from a locally owned crew.',
+    'Landscaping in Fayetteville, AR from $149. Mulch, bed cleanup, trimming & weed removal for sharper curb appeal. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/landscaping-fayetteville-ar' },
 }
 

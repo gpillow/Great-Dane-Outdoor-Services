@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Privacy Policy | Great Dane Junk & Brush Removal',
+  description: 'Privacy policy for Great Dane Junk & Brush Removal in Fayetteville, AR. Outdoor services across NW Arkansas. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/privacy' },
 }
 

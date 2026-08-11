@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'About Us | Great Dane Junk & Brush Removal | Fayetteville AR',
-  description: 'Meet the team behind Great Dane Junk & Brush Removal. Locally owned and operated in Fayetteville, AR — proudly serving all of Northwest Arkansas.',
+  description: 'Locally owned junk removal & outdoor services in Fayetteville, AR. Meet the Great Dane crew. Free quotes on every job. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/about' },
 }
 

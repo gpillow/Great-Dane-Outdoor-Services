@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Terms & Conditions | Great Dane Junk & Brush Removal',
+  description: 'Terms & conditions for Great Dane Junk & Brush Removal — junk removal & outdoor services in Fayetteville, AR. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/terms' },
 }
 

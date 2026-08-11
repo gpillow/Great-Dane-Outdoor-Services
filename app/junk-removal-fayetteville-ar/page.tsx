@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Junk Removal Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Junk removal in Fayetteville, AR starting at $149. Furniture, garage cleanouts, appliances, and yard debris hauled away — same day or next day service available. Free quotes.',
+    'Junk removal in Fayetteville, AR from $149. Furniture, garage cleanouts & yard debris hauled same day. Free quotes — call (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/junk-removal-fayetteville-ar' },
 }
 

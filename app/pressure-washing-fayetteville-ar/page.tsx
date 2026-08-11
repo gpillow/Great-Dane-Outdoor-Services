@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Pressure Washing Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Pressure washing in Fayetteville, AR starting at $125. Driveways, patios, decks, brick, and siding cleaned with the right pressure for each surface. Free quotes.',
+    'Pressure washing in Fayetteville, AR from $125. Driveways, patios, brick & siding cleaned right. Same-day slots available. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/pressure-washing-fayetteville-ar' },
 }
 

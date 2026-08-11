@@ -2,7 +2,7 @@ import React from 'react'
 
 export const metadata = {
   title: 'Customer Reviews | Great Dane Junk & Brush Removal Fayetteville AR',
-  description: 'See what NWA homeowners are saying about Great Dane Junk & Brush Removal. Serving Fayetteville, Rogers, Bentonville, Springdale, and Farmington, AR.',
+  description: '5-star Google reviews for Great Dane Junk & Brush Removal in Fayetteville, AR. See what NWA customers say. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/reviews' },
 }
 

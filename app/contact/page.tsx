@@ -6,7 +6,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Get a Free Quote | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Request a free, no-obligation quote from Great Dane Junk & Brush Removal. Serving all of Northwest Arkansas. Call, text, or fill out our quick form.',
+    'Request a free quote for junk removal, pressure washing or brush clearing in Fayetteville, AR. Same-day service available. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/contact' },
 }
 

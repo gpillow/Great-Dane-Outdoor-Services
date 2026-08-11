@@ -6,7 +6,7 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Outdoor Service Pricing | Great Dane Junk & Brush Removal Fayetteville AR',
   description:
-    'Starting prices and estimate guidance for Great Dane Junk & Brush Removal in Northwest Arkansas. Pressure washing, brush removal, junk hauling, landscaping, leaf cleanup, and Christmas lights.',
+    'Outdoor service pricing in NW Arkansas — junk removal, pressure washing, brush clearing & more. Free quotes on every job. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/pricing' },
 }
 

@@ -4,7 +4,7 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
   title: 'Pressure Washing, Junk Removal & Landscaping NWA',
   description:
-    'Full-service outdoor company serving NWA. Pressure washing, junk removal, landscaping, brush removal, leaf cleanups & Christmas lights in Fayetteville, Springdale, Rogers, Bentonville, Farmington & Johnson.',
+    'Junk removal, brush clearing, pressure washing & landscaping in NW Arkansas. Same-day service available. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/services' },
 }
 

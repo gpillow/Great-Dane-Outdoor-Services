@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Before & After Gallery | Great Dane Junk & Brush Removal NWA',
-  description: 'Browse before and after photos from pressure washing, landscaping, and brush removal jobs across Northwest Arkansas.',
+  description: 'Before & after photos from junk removal, pressure washing & brush clearing jobs in Fayetteville, AR. Free quotes available. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/gallery' },
 }
 

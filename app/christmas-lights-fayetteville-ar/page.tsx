@@ -7,7 +7,7 @@ import QuoteForm from '@/components/QuoteForm'
 export const metadata: Metadata = {
   title: { absolute: 'Christmas Lights Fayetteville AR | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
-    'Christmas light installation and takedown in Fayetteville, AR starting at $499. Professional holiday lighting for homes across Northwest Arkansas. Free quotes.',
+    'Christmas light installation in Fayetteville, AR from $499. Pro install & takedown included. Book early — free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/christmas-lights-fayetteville-ar' },
 }
 
