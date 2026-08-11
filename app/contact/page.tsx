@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: { absolute: 'Get a Free Quote | Great Dane Junk & Brush Removal | (479) 391-4462' },
   description:
     'Request a free, no-obligation quote from Great Dane Junk & Brush Removal. Serving all of Northwest Arkansas. Call, text, or fill out our quick form.',
+  alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/contact' },
 }
 
 export default function ContactPage() {

@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Privacy Policy | Great Dane Junk & Brush Removal',
+  alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/privacy' },
 }
 
 export default function PrivacyPage() {

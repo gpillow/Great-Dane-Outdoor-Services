@@ -1,5 +1,6 @@
 export const metadata = {
   title: 'Terms & Conditions | Great Dane Junk & Brush Removal',
+  alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/terms' },
 }
 
 export default function TermsPage() {

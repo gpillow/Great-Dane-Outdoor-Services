@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Outdoor Service Pricing | Great Dane Junk & Brush Removal Fayetteville AR',
   description:
     'Starting prices and estimate guidance for Great Dane Junk & Brush Removal in Northwest Arkansas. Pressure washing, brush removal, junk hauling, landscaping, leaf cleanup, and Christmas lights.',
+  alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/pricing' },
 }
 
 const pricingItems = [
