@@ -1844,7 +1844,7 @@ main#main-content {
 .about-logo-circle {
   border: none !important;
   box-shadow: none !important;
-  max-width: min(480px, 42vw);
+  max-width: min(720px, 60vw);
   margin: 0 auto;
 }
 .about-logo-circle img {
