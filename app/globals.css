@@ -119,19 +119,14 @@
 }
 .nav-logo-mark {
   display: block;
-  width: 42px;
   height: 42px;
-  border: 1px solid rgba(125, 255, 158, 0.35);
-  border-radius: 14px 6px 14px 6px;
-  background: #202520;
-  overflow: hidden;
-  box-shadow: inset 0 1px 0 rgba(255,255,255,0.08), 0 10px 30px rgba(0,0,0,0.3);
+  width: 63px;
 }
 .nav-logo-mark img {
   width: 100%;
   height: 100%;
   display: block;
-  object-fit: cover;
+  object-fit: contain;
 }
 .nav-logo-copy {
   display: flex;
@@ -1034,7 +1029,7 @@
     padding: 0 1rem;
   }
   .nav-logo-mark {
-    width: 38px;
+    width: 57px;
     height: 38px;
   }
   .nav-logo-main {
@@ -1775,6 +1770,9 @@ main#main-content {
   gap: clamp(2rem, 5vw, 4rem);
   align-items: center;
 }
+.blueprint-hero-grid:has(.about-logo-circle) {
+  grid-template-columns: minmax(0, 0.7fr) minmax(320px, 1fr);
+}
 .blueprint-kicker {
   color: #9bd3a5;
   font-size: 0.76rem;
@@ -1844,7 +1842,7 @@ main#main-content {
 .about-logo-circle {
   border: none !important;
   box-shadow: none !important;
-  max-width: min(720px, 60vw);
+  max-width: min(820px, 66vw);
   margin: 0 auto;
 }
 .about-logo-circle img {

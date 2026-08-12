@@ -42,7 +42,7 @@ export default function Navbar() {
       <div className="nav-inner">
         <Link href="/" className="nav-logo" aria-label="Great Dane Junk & Brush Removal home">
           <span className="nav-logo-mark" aria-hidden="true">
-            <Image src="/logo.webp" alt="" width={42} height={42} sizes="42px" />
+            <Image src="/logo3.webp" alt="" width={750} height={500} sizes="63px" />
           </span>
           <span className="nav-logo-copy">
             <span className="nav-logo-main">Great Dane</span>
