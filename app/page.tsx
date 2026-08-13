@@ -41,8 +41,8 @@ export default function HomePage() {
   return (
     <>
       {/* Preload the correct hero background per screen width — homepage only */}
-      <link rel="preload" as="image" href="/hero-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
-      <link rel="preload" as="image" href="/cutdown.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
+      <link rel="preload" as="image" href="/hero-truck-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
+      <link rel="preload" as="image" href="/hero-truck.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
     <main id="main-content" className="home-page">
       <section className="home-hero" aria-label="Great Dane Junk & Brush Removal hero">
         <div className="home-hero-overlay" />
@@ -70,22 +70,6 @@ export default function HomePage() {
             </div>
           </ScrollReveal>
 
-          <ScrollReveal direction="right">
-            <div className="home-hero-card">
-              <Image
-                src="/junk-removal.webp"
-                alt="Great Dane Junk & Brush Removal truck and dump trailer ready for junk removal"
-                width={525}
-                height={700}
-                priority
-                sizes="(max-width: 768px) 100vw, 50vw"
-              />
-              <div className="home-hero-card-caption">
-                <span>Recent work</span>
-                <strong>Junk removal and hauling</strong>
-              </div>
-            </div>
-          </ScrollReveal>
         </div>
       </section>
 

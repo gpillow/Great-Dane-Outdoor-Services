@@ -1121,7 +1121,7 @@
   inset: 0;
   background:
     linear-gradient(90deg, rgba(22, 27, 22, 0.92) 0%, rgba(22, 27, 22, 0.74) 44%, rgba(22, 27, 22, 0.36) 100%),
-    url("/cutdown.webp") center / cover;
+    url("/hero-truck.webp") center / cover;
   opacity: 1;
 }
 .home-hero-overlay {
@@ -1129,7 +1129,7 @@
 }
 @media (min-width: 981px) {
   .home-hero-grid {
-    grid-template-columns: minmax(0, 0.95fr) minmax(320px, 0.62fr);
+    grid-template-columns: minmax(0, 1fr);
   }
 }
 .home-kicker {
@@ -1317,7 +1317,7 @@
   .home-hero::before {
     background:
       linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
-      url("/hero-mobile.webp") center top / cover;
+      url("/hero-truck-mobile.webp") center top / cover;
   }
   .home-hero-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
