@@ -58,7 +58,11 @@ export default function HomePage() {
               </div>
             </div>
           </ScrollReveal>
-          <div className="home-hero-right" />
+          <ScrollReveal direction="right">
+            <div className="home-hero-right">
+              <Image src="/logo3.webp" alt="Great Dane Junk & Brush Removal" width={750} height={500} priority sizes="(max-width: 980px) 0px, 45vw" />
+            </div>
+          </ScrollReveal>
         </div>
       </section>
 
