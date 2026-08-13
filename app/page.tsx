@@ -49,27 +49,16 @@ export default function HomePage() {
         <div className="home-shell home-hero-grid">
           <ScrollReveal direction="left">
             <div className="home-hero-copy">
-              <p className="home-kicker">Fayetteville • Northwest Arkansas</p>
-              <p className="home-hero-stars">⭐⭐⭐⭐⭐ 5-Star Rated on Google</p>
-              <h1>Outdoor services for cleaner, better-kept properties</h1>
-              <p className="home-hero-trust-line">Same-day service available · Free quotes in minutes</p>
-              <div className="home-hero-services">
-                <span>Junk Removal</span>
-                <span>Brush Removal</span>
-                <span>Pressure Washing</span>
-                <span>Landscaping</span>
-              </div>
-              <p className="home-hero-lede">
-                Locally owned and operated in NW Arkansas. Free quotes, fair pricing, and work that gets done right.
-              </p>
+              <p className="home-kicker">Junk Removal &amp; Brush Removal — Northwest Arkansas</p>
+              <h1>Junk Removal &amp; Outdoor Services in Northwest Arkansas</h1>
+              <p className="home-hero-lede">Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
               <div className="home-hero-actions">
+                <a href="/contact" className="home-btn home-btn-secondary">Get started now</a>
                 <a href="tel:4793914462" className="home-btn home-btn-call">Call or Text (479) 391-4462</a>
-                <a href="/contact" className="home-btn home-btn-secondary">Get a Free Quote</a>
               </div>
-              <p className="home-hero-services-text">Junk Removal · Pressure Washing · Landscaping · Brush Removal</p>
             </div>
           </ScrollReveal>
-
+          <div className="home-hero-right" />
         </div>
       </section>
 
