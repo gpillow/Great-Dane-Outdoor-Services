@@ -979,8 +979,9 @@
     width: min(100% - 28px, 1160px);
   }
   .home-hero {
-    height: 100svh;
-    padding: 2rem 0;
+    height: auto;
+    min-height: auto;
+    padding: 4.5rem 0;
   }
   .home-hero-right {
     display: none;
