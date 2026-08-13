@@ -1117,10 +1117,12 @@
   background: #2d312d;
   color: #f6f7f3;
 }
-.home-hero {
-  height: calc(100vh - var(--nav-height));
-  background: #232823;
-  padding: 2rem 0;
+@media (min-width: 641px) {
+  .home-hero {
+    height: calc(100vh - var(--nav-height));
+    background: #232823;
+    padding: 2rem 0;
+  }
 }
 .home-hero::before {
   content: "";
