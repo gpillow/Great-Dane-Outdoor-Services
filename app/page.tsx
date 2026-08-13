@@ -41,8 +41,8 @@ export default function HomePage() {
   return (
     <>
       {/* Preload the correct hero background per screen width — homepage only */}
-      <link rel="preload" as="image" href="/hero-truck-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
-      <link rel="preload" as="image" href="/hero-truck.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
+      <link rel="preload" as="image" href="/hero-section-mobile.webp" fetchPriority="high" type="image/webp" media="(max-width: 640px)" />
+      <link rel="preload" as="image" href="/hero-section.webp" fetchPriority="high" type="image/webp" media="(min-width: 641px)" />
     <main id="main-content" className="home-page">
       <section className="home-hero" aria-label="Great Dane Junk & Brush Removal hero">
         <div className="home-hero-overlay" />
