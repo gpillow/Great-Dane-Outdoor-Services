@@ -95,9 +95,9 @@ export default function HomePage() {
             <ScrollReveal direction="right">
               <article className="home-review-card">
                 <div className="home-review-stars">★★★★★</div>
-                <p className="home-review-text">&ldquo;Gibson did a great job of ordering and installing and removing my Christmas lights! He also did power washing for me and some yard maintenance. I will be using Great Dane in the future for sure.&rdquo;</p>
+                <p className="home-review-text">&ldquo;Quick, easy, and professional with extremely reasonable prices. Gibson removing our junk for us was the easiest part of our move! Highly recommend!&rdquo;</p>
                 <div className="home-review-author">
-                  <span className="home-review-name">Becky Maxwell</span>
+                  <span className="home-review-name">Nicole</span>
                   <span className="home-review-source">Google Review</span>
                 </div>
               </article>
