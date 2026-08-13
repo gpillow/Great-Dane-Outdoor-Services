@@ -49,6 +49,7 @@ export default function HomePage() {
         <div className="home-shell home-hero-grid">
           <ScrollReveal direction="left">
             <div className="home-hero-copy">
+              <p className="home-hero-stars">⭐⭐⭐⭐⭐ 100% 5-Star Rated on Google</p>
               <p className="home-kicker">Junk Removal &amp; Brush Removal — Northwest Arkansas</p>
               <h1>Junk Removal &amp; Outdoor Services in Northwest Arkansas</h1>
               <p className="home-hero-lede">Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
