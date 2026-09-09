@@ -1350,7 +1350,7 @@
   .home-hero::before {
     background:
       linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
-      url("/hero-v2-mobile.webp") center / cover;
+      url("/hero-v2-mob2.webp") center / cover;
   }
   .home-hero-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
