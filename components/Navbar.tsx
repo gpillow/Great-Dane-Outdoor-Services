@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import TickerBar from './TickerBar'
 
 const navLinks = [
   { label: 'Services', href: '/services' },
@@ -38,6 +39,8 @@ export default function Navbar() {
       className={`site-header${scrolled ? ' scrolled' : ''}`}
     >
       <a href="#main-content" className="skip-link">Skip to main content</a>
+
+      <TickerBar />
 
       <div className="nav-inner">
         <Link href="/" className="nav-logo" aria-label="Great Dane Junk & Brush Removal home">
