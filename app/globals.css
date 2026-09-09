@@ -1136,7 +1136,7 @@
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(22, 27, 22, 0.62) 0%, rgba(22, 27, 22, 0.36) 44%, rgba(22, 27, 22, 0.08) 100%),
+    linear-gradient(90deg, rgba(22, 27, 22, 0.45) 0%, rgba(22, 27, 22, 0.22) 44%, rgba(22, 27, 22, 0.04) 100%),
     url("/hero-v2.webp") center / cover;
   opacity: 1;
 }
