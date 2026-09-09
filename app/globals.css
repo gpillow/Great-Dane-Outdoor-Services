@@ -1196,13 +1196,16 @@
   background: linear-gradient(180deg, rgba(0,0,0,0.08), rgba(0,0,0,0.38));
 }
 @media (min-width: 981px) {
+  .home-hero > .home-shell {
+    width: min(1440px, calc(100% - 80px));
+  }
   .home-hero-grid {
     grid-template-columns: 1fr 1fr;
   }
   .home-hero-right {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
     align-self: stretch;
   }
   .home-hero-right img {
