@@ -486,8 +486,8 @@
   height: calc(100vh - var(--nav-height) - var(--ticker-height));
   overflow: hidden;
   display: grid;
-  align-items: start;
-  padding: clamp(3rem, 7vh, 5rem) 0 2rem;
+  align-items: center;
+  padding: 2rem 0;
   background:
     linear-gradient(135deg, rgba(48,48,48,0.92), rgba(62,78,62,0.86)),
     #303030;
@@ -1179,8 +1179,8 @@
   .home-hero {
     height: calc(100vh - var(--nav-height) - var(--ticker-height));
     background: #232823;
-    padding: clamp(3rem, 7vh, 5rem) 0 2rem;
-    align-items: start;
+    padding: 2rem 0;
+    align-items: center;
   }
 }
 .home-hero::before {
