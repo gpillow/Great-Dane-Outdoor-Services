@@ -1022,8 +1022,8 @@
     width: min(100% - 28px, 1160px);
   }
   .home-hero {
-    height: calc(100svh - var(--ticker-height));
-    min-height: calc(100svh - var(--ticker-height));
+    height: 72svh;
+    min-height: 480px;
     padding: 4.5rem 0;
   }
   .home-hero-right {
