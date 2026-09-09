@@ -2418,7 +2418,7 @@ main#main-content {
 }
 .reviews-page-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 .reviews-page-cta-row {
@@ -2460,6 +2460,11 @@ main#main-content {
 .reviews-cta .blueprint-kicker {
   color: #7dff9e;
   text-shadow: none;
+}
+@media (max-width: 900px) {
+  .reviews-page-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
 @media (max-width: 640px) {
   .reviews-page-grid {

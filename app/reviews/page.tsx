@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Customer Reviews | Great Dane Junk & Brush Removal',
-  description: '100% 5-star rated on Google. Read verified reviews from Great Dane Junk & Brush Removal customers across Northwest Arkansas. Free quotes. (479) 391-4462.',
+  description: '15 five-star Google reviews for Great Dane Junk & Brush Removal in Northwest Arkansas. Junk removal, landscaping, pressure washing, and more. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/reviews' },
 }
 
@@ -20,14 +20,64 @@ function GoogleIcon() {
 
 const reviews = [
   {
-    name: 'Vanessa Hardin Branch',
-    timeframe: '6 weeks ago',
-    text: 'We have been extremely pleased with Gibson’s work. He helps us with flower-bed maintenance and a wide variety of yard projects, including mulching, weeding, planting, and general cleanup. He is dependable, hardworking, and pays close attention to detail. Our landscaping always looks noticeably better after he has been here, and we appreciate his willingness to handle whatever needs to be done. We highly recommend him to anyone looking for reliable, high-quality outdoor services.',
+    name: 'Chandler',
+    timeframe: '2 days ago',
+    text: 'Great Dane responded within 10 minutes and had my junk hauled off and I didn\'t have to do a thing. I would recommend them to anyone and everyone. 10/10 service!',
   },
   {
-    name: 'Michelle Rofkahr',
-    timeframe: '11 weeks ago',
-    text: 'Gibson has been a hard-working help to me, with maintaining my properties with power washing and yard work. He communicates well and is professional in his interactions; he is punctual and fair in pricing. He and his teammate completed all the tasks within the timeframe we agreed upon.',
+    name: 'Michelle Price',
+    timeframe: '1 week ago',
+    text: 'Excellent job power washing and getting my patio and driveway cleaned. Fast, prompt dependable, hard working and extremely efficient!! Would absolutely recommend and have!',
+  },
+  {
+    name: 'Ken Haxel',
+    timeframe: '1 week ago',
+    text: 'Did a great job trimming and shaping up our 4 holly trees.',
+  },
+  {
+    name: 'Hailey Hill',
+    timeframe: '1 week ago',
+    text: 'They responded quickly and were able to come get my items very quickly. They showed up on time and were quick and efficient!',
+  },
+  {
+    name: 'Tifanie Van Laar-Wagner',
+    timeframe: '2 weeks ago',
+    text: 'Gibson is very professional and reasonable, 10/10 recommend.',
+  },
+  {
+    name: 'Dyann Shade',
+    timeframe: '3 weeks ago',
+    text: 'Extremely impressed with the landscaping job that was done! Fair pricing, came out on the hottest day of the year, and got to WORK! It wasn\'t easy at all, and really appreciate the hard work and positivity! Will be using them for as long as they are available 💗',
+  },
+  {
+    name: 'Nicole Helms',
+    timeframe: '6 weeks ago',
+    text: 'Quick, easy, and professional with extremely reasonable prices. Gibson removing our junk for us was the easiest part of our move! Highly recommend!',
+  },
+  {
+    name: 'Vanessa Hardin Branch',
+    timeframe: '6 weeks ago',
+    text: 'We have been extremely pleased with Gibson\'s work. He helps us with flower-bed maintenance and a wide variety of yard projects, including mulching, weeding, planting, and general cleanup. He is dependable, hardworking, and pays close attention to detail. Our landscaping always looks noticeably better after he has been here, and we appreciate his willingness to handle whatever needs to be done. We highly recommend him to anyone looking for reliable, high-quality outdoor services.',
+  },
+  {
+    name: 'Justin Underwood',
+    timeframe: '6 weeks ago',
+    text: 'Great Dane did a wonderful job with my junk removal in Springdale. He was very easy to work with, responded quickly, and his prices were very affordable. I needed everything removed from my residence within seven days, and he was able to get it done within just one day. I couldn\'t have asked for better service. I would 100% recommend Great Dane to anyone needing junk removal!',
+  },
+  {
+    name: 'Blake Rogers',
+    timeframe: '7 weeks ago',
+    text: 'Gibson with Great Dane Outdoors is really strong and removed all my trash the other day. He is so nice and helpful too. Highly reccomend Gihson.',
+  },
+  {
+    name: 'Chris Hill',
+    timeframe: '8 weeks ago',
+    text: 'Needed junk removed from my garage in Fayetteville and came across Great Dane outdoor. Gibson gave me a fast, competitive quote for the work and got it done that afternoon. Highly recommend',
+  },
+  {
+    name: 'Jackson Patterson',
+    timeframe: '8 weeks ago',
+    text: 'Hired them to remove junk from my house and garage in Fayetteville. Did a very efficient job and cleaned up the house after the job was finished. Would recommend for any job.',
   },
   {
     name: 'Amy Moore',
@@ -35,9 +85,14 @@ const reviews = [
     text: 'Five stars!!!! Gibson was very helpful with my move. He is very respectful, timely, and has a great work ethic! He also went above and beyond doing some extra things that I had not initially requested when I hired him. I have moved MANY times and Gibson was by far the best help I have ever had. Highly recommend!!!',
   },
   {
-    name: 'Nicole',
-    timeframe: 'Recent',
-    text: 'Quick, easy, and professional with extremely reasonable prices. Gibson removing our junk for us was the easiest part of our move! Highly recommend!',
+    name: 'Michelle Rofkahr',
+    timeframe: '11 weeks ago',
+    text: 'Gibson has been a hard-working help to me, with maintaining my properties with power washing and yard work. He communicates well and is professional in his interactions; he is punctual and fair in pricing. He and his teammate completed all the tasks within the timeframe we agreed upon.',
+  },
+  {
+    name: 'Becky Maxwell',
+    timeframe: '11 weeks ago',
+    text: 'Gibson did a great job of ordering and installing and removing my Christmas lights! He also did power washing for me and some yard maintenance. I will be using Great Dane in the future for sure.',
   },
 ]
 
@@ -66,7 +121,7 @@ export default function ReviewsPage() {
 
           <div className="reviews-page-grid">
             {reviews.map((r) => (
-              <article key={r.name} className="home-review-card">
+              <article key={r.name + r.timeframe} className="home-review-card">
                 <div className="home-review-header">
                   <div className="home-review-stars">★★★★★</div>
                   <GoogleIcon />
