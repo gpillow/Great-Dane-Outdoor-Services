@@ -1028,7 +1028,7 @@
   }
   .home-hero {
     height: 72svh;
-    min-height: 480px;
+    min-height: 540px;
     align-items: start;
     padding: 2.5rem 0 1.5rem;
   }
@@ -1405,7 +1405,7 @@
   .home-hero::before {
     background:
       linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
-      url("/hero-mob-v4.webp") center 20% / cover;
+      url("/hero-mob-v5.webp") center 40% / cover;
   }
   .home-hero-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
