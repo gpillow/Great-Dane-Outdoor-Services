@@ -137,7 +137,7 @@ export default function ReviewsPage() {
 
           <div className="reviews-page-cta-row">
             <a
-              href="https://www.google.com/maps/place/Great+Dane+Junk+%26+Brush+Removal"
+              href="https://www.google.com/search?q=great+dane+junk+%26+brush+removal#mpd=~3139101099386799489/customers/reviews"
               target="_blank"
               rel="noopener noreferrer"
               className="reviews-page-google-link"
@@ -146,7 +146,7 @@ export default function ReviewsPage() {
               See all reviews on Google
             </a>
             <a
-              href="https://www.google.com/maps/place/Great+Dane+Junk+%26+Brush+Removal"
+              href="https://g.page/r/CaP5vBUDp-ZyEBM/review"
               target="_blank"
               rel="noopener noreferrer"
               className="reviews-page-google-link reviews-page-leave-link"
