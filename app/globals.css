@@ -1027,8 +1027,9 @@
     width: min(100% - 28px, 1160px);
   }
   .home-hero {
-    height: 72svh;
-    min-height: 540px;
+    height: auto;
+    min-height: unset;
+    aspect-ratio: 780 / 1258;
     align-items: start;
     padding: 2.5rem 0 1.5rem;
   }
@@ -1399,13 +1400,16 @@
 
 @media (max-width: 640px) {
   .home-hero {
+    height: auto;
+    min-height: unset;
+    aspect-ratio: 780 / 1258;
     padding: 2.5rem 0 1.5rem;
     align-items: start;
   }
   .home-hero::before {
     background:
       linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
-      url("/hero-mob-v5.webp") center 40% / cover;
+      url("/hero-mob-v5.webp") top center / 100% auto;
   }
   .home-hero-overlay {
     background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
