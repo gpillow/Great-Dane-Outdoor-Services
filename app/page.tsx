@@ -135,7 +135,7 @@ export default function HomePage() {
             </ScrollReveal>
           </div>
           <div className="home-center-action">
-            <a href="https://www.google.com/maps/place/Great+Dane+Junk+%26+Brush+Removal" target="_blank" rel="noopener noreferrer" className="home-btn home-btn-secondary">Read All Reviews</a>
+            <a href="/reviews" className="home-btn home-btn-secondary">Read All Reviews</a>
           </div>
         </div>
       </section>

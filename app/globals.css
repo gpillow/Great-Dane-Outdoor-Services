@@ -2387,6 +2387,89 @@ main#main-content {
   }
 }
 
+/* ─── Reviews Page ─── */
+.reviews-hero {
+  background:
+    linear-gradient(90deg, rgba(14,20,14,0.88), rgba(14,20,14,0.55)),
+    url("/hero-v2.webp") center 65% / cover;
+}
+.reviews-page-section {
+  padding: clamp(3.5rem, 6vw, 5rem) 0;
+}
+.reviews-page-summary {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 2.5rem;
+}
+.reviews-page-stars {
+  color: #f5a623;
+  font-size: 1.3rem;
+  letter-spacing: 2px;
+}
+.reviews-page-rating {
+  font-size: 1.4rem;
+  font-weight: 800;
+  color: #1f271f;
+}
+.reviews-page-count {
+  font-size: 0.9rem;
+  color: #556052;
+}
+.reviews-page-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+}
+.reviews-page-cta-row {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+  margin-top: 2.5rem;
+  flex-wrap: wrap;
+}
+.reviews-page-google-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #2a5c3a;
+  text-decoration: none;
+  border: 1.5px solid rgba(42,92,58,0.3);
+  border-radius: 999px;
+  padding: 0.6rem 1.25rem;
+  transition: background 0.2s, border-color 0.2s;
+}
+.reviews-page-google-link:hover {
+  background: rgba(42,92,58,0.07);
+  border-color: rgba(42,92,58,0.5);
+}
+.reviews-page-leave-link {
+  color: #4a7c59;
+  border-color: rgba(74,124,89,0.25);
+}
+.reviews-cta {
+  background: #1e2b1e;
+  color: #f3f5ef;
+}
+.reviews-cta h2,
+.reviews-cta p {
+  color: #f3f5ef;
+}
+.reviews-cta .blueprint-kicker {
+  color: #7dff9e;
+  text-shadow: none;
+}
+@media (max-width: 640px) {
+  .reviews-page-grid {
+    grid-template-columns: 1fr;
+  }
+  .reviews-page-summary {
+    flex-wrap: wrap;
+  }
+}
+
 .legal-page {
   max-width: 740px;
 }
