@@ -1027,9 +1027,8 @@
     width: min(100% - 28px, 1160px);
   }
   .home-hero {
-    height: auto;
-    min-height: unset;
-    aspect-ratio: 780 / 1258;
+    height: calc(100svh - var(--nav-height) - var(--ticker-height));
+    min-height: 500px;
     align-items: start;
     padding: 2.5rem 0 1.5rem;
   }
@@ -1400,19 +1399,18 @@
 
 @media (max-width: 640px) {
   .home-hero {
-    height: auto;
-    min-height: unset;
-    aspect-ratio: 780 / 1258;
+    height: calc(100svh - var(--nav-height) - var(--ticker-height));
+    min-height: 500px;
     padding: 2.5rem 0 1.5rem;
     align-items: start;
   }
   .home-hero::before {
     background:
-      linear-gradient(180deg, rgba(22, 27, 22, 0.62), rgba(22, 27, 22, 0.42)),
-      url("/hero-mob-v5.webp") top center / 100% auto;
+      linear-gradient(180deg, rgba(22, 27, 22, 0.32) 0%, rgba(22, 27, 22, 0.12) 100%),
+      url("/hero-mob-v5.webp") center bottom / cover;
   }
   .home-hero-overlay {
-    background: linear-gradient(180deg, rgba(0,0,0,0.04), rgba(0,0,0,0.18));
+    background: linear-gradient(180deg, rgba(0,0,0,0.02), rgba(0,0,0,0.08));
   }
   .home-hero-card {
     display: none;
