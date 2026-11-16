@@ -21,18 +21,17 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 }
 
 const projects = [
-  { title: 'Driveway Pressure Washing', tag: 'Pressure Washing', image: '/afterdriveway.webp' },
-  { title: 'Brick Surface Cleaning', tag: 'Surface Cleaning', image: '/afterbrick.webp' },
-  { title: 'Walkway Restoration', tag: 'Pressure Washing', image: '/afterwalkway.webp' },
+  { title: 'Garage Cleanout', tag: 'Junk Removal', image: '/garage-after.webp' },
   { title: 'Brush and Bed Cleanup', tag: 'Brush Removal', image: '/cutdown.webp' },
   { title: 'Yard Debris Cleanup', tag: 'Property Cleanup', image: '/brushcompost.webp' },
-  { title: 'Overgrowth Removal', tag: 'Landscaping', image: '/IMG_8222.webp' },
+  { title: 'Overgrowth Removal', tag: 'Brush Removal', image: '/IMG_8222.webp' },
+  { title: 'Junk Removal', tag: 'Junk Removal', image: '/junk-removal.webp' },
+  { title: 'Landscaping Cleanup', tag: 'Landscaping', image: '/leaf-cleanup.webp' },
 ]
 
 export default function GalleryPage() {
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <section className="blueprint-hero">
         <div className="blueprint-shell blueprint-hero-grid">
@@ -40,7 +39,7 @@ export default function GalleryPage() {
             <div>
               <p className="blueprint-kicker">Projects</p>
               <h1>Real outdoor service results from NWA properties</h1>
-              <p>Before-and-after examples, cleanup work, and pressure washing results from Great Dane Junk & Brush Removal.</p>
+              <p>Before-and-after examples and cleanup results from Great Dane Junk & Brush Removal in Northwest Arkansas.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Start your project</Link>
                 <Link href="/pricing">View pricing</Link>
@@ -49,7 +48,7 @@ export default function GalleryPage() {
           </ScrollReveal>
           <ScrollReveal direction="right">
             <div className="blueprint-hero-image">
-              <Image src="/afterbrick.webp" alt="Clean brick after pressure washing" width={1600} height={1200} priority />
+              <Image src="/garage-after.webp" alt="Clean garage after junk removal in Northwest Arkansas" width={900} height={1200} priority />
             </div>
           </ScrollReveal>
         </div>
@@ -60,7 +59,7 @@ export default function GalleryPage() {
           <div className="blueprint-heading">
             <p className="blueprint-kicker">Project Gallery</p>
             <h2>Click-worthy proof, built from real work</h2>
-            <p>Use the gallery to get a feel for surface cleaning, brush removal, and cleanup results.</p>
+            <p>Use the gallery to get a feel for junk removal, brush removal, and cleanup results.</p>
           </div>
           <div className="blueprint-project-grid">
             {projects.map((project) => (
@@ -87,8 +86,8 @@ export default function GalleryPage() {
           </div>
           <div className="blueprint-slider-stack">
             <div className="gallery-frame">
-              <p className="home-project-label">Driveway Restoration</p>
-              <BeforeAfterSlider before="/beforedriveway.webp" after="/afterdriveway.webp" beforeAlt="Before driveway pressure washing" afterAlt="After driveway pressure washing" />
+              <p className="home-project-label">Garage Cleanout</p>
+              <BeforeAfterSlider before="/garage-before.webp" after="/garage-after.webp" beforeAlt="Garage before junk removal" afterAlt="Garage after junk removal" />
             </div>
             <div className="gallery-frame">
               <p className="home-project-label">Brush Cleanup</p>

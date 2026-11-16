@@ -2,9 +2,9 @@ import React from 'react'
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Pressure Washing, Junk Removal & Landscaping NWA',
+  title: 'Junk Removal & Brush Removal Services in NWA | Great Dane',
   description:
-    'Junk removal, brush clearing, pressure washing & landscaping in NW Arkansas. Same-day service available. Free quotes. (479) 391-4462.',
+    'Junk removal, brush clearing, landscaping & leaf cleanups in NW Arkansas. Same-day service available. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/services' },
 }
 
@@ -14,7 +14,7 @@ const localBusinessSchema = {
   '@id': 'https://www.greatdaneoutdoorservices.com/#business',
   name: 'Great Dane Junk & Brush Removal',
   description:
-    'Locally owned outdoor services company in Northwest Arkansas offering pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
+    'Locally owned outdoor services company in Northwest Arkansas offering junk removal, brush removal, landscaping, and leaf cleanups.',
   url: 'https://www.greatdaneoutdoorservices.com/services',
   telephone: '+14793914462',
   email: 'leads@greatdaneoutdoorservices.com',
@@ -36,12 +36,10 @@ const localBusinessSchema = {
     '@type': 'OfferCatalog',
     name: 'Outdoor Services',
     itemListElement: [
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Pressure Washing', description: 'Professional pressure washing for driveways, sidewalks, patios, brick, decks, siding, and exterior surfaces. Starting at $125.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Junk Removal', description: 'Full-service junk hauling for furniture, yard debris, garage cleanouts, and unwanted items. Starting at $149.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Landscaping', description: 'Mulching, weed removal, flower bed installation, bush trimming, and landscape refresh work. Starting at $149.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Brush Removal', description: 'Overgrowth clearing, fence line cleanup, sapling removal, and land clearing. Starting at $225.' } },
       { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Leaf Cleanup', description: 'Seasonal leaf removal and disposal for Northwest Arkansas yards. Starting at $175.' } },
-      { '@type': 'Offer', itemOffered: { '@type': 'Service', name: 'Christmas Light Installation', description: 'Professional holiday light installation and takedown for homes in Northwest Arkansas. Starting at $499.' } },
     ],
   },
 }
@@ -50,32 +48,6 @@ const faqSchema = {
   '@context': 'https://schema.org',
   '@type': 'FAQPage',
   mainEntity: [
-    // --- Pressure Washing ---
-    {
-      '@type': 'Question',
-      name: 'How much does pressure washing cost in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Junk & Brush Removal pressure washing starts at $125. Final pricing depends on the surface type, square footage, and level of buildup. Driveways, patios, brick, and multi-surface jobs are quoted based on photos or an on-site look.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'What surfaces does Great Dane pressure wash?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane pressure washes driveways, sidewalks, patios, brick exteriors, decks, siding, fences, and walkways. Most hard exterior surfaces can be cleaned with professional-grade equipment.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'How long does a pressure washing job take?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Most residential pressure washing jobs in Northwest Arkansas take one to three hours depending on the size and surface condition. Larger properties or heavily soiled surfaces may take longer.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Do I need to be home for pressure washing?',
-      acceptedAnswer: { '@type': 'Answer', text: 'No. As long as Great Dane has access to the area and a water source on the property, the job can be completed without the homeowner present.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'How often should I pressure wash my driveway in NWA?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Once a year is standard for most Northwest Arkansas homes. Driveways with heavy tree coverage, oil stains, or high traffic may benefit from cleaning twice a year.' },
-    },
     // --- Junk Removal ---
     {
       '@type': 'Question',
@@ -179,32 +151,6 @@ const faqSchema = {
       '@type': 'Question',
       name: 'Does Great Dane do leaf cleanup in Fayetteville and Springdale?',
       acceptedAnswer: { '@type': 'Answer', text: 'Yes. Great Dane provides leaf cleanup throughout Northwest Arkansas including Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.' },
-    },
-    // --- Christmas Lights ---
-    {
-      '@type': 'Question',
-      name: 'How much does Christmas light installation cost in Northwest Arkansas?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane Christmas light installation starts at $499. Pricing varies based on home size, roofline complexity, and whether trees or additional features are included.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does Great Dane supply Christmas lights?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane installs customer-supplied lights. If you have your own lights, we handle the installation and takedown. Contact us to discuss options for your home.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'What does the Christmas light service include?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Great Dane handles professional installation and post-season takedown. You enjoy the lights without dealing with ladders, clips, or tangles. Takedown is included in the service.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'When should I book Christmas light installation in NWA?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Book in October or early November. Holiday installation slots fill quickly across Northwest Arkansas. Early booking gives you the best selection of installation dates.' },
-    },
-    {
-      '@type': 'Question',
-      name: 'Does Great Dane take down Christmas lights after the season?',
-      acceptedAnswer: { '@type': 'Answer', text: 'Yes. Takedown after the holiday season is included in the Christmas light installation service. Great Dane removes and stores or returns all lights after the holidays.' },
     },
   ],
 }

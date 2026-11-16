@@ -3,7 +3,7 @@ import Link from 'next/link'
 
 export const metadata = {
   title: 'Customer Reviews | Great Dane Junk & Brush Removal',
-  description: '15 five-star Google reviews for Great Dane Junk & Brush Removal in Northwest Arkansas. Junk removal, landscaping, pressure washing, and more. Free quotes. (479) 391-4462.',
+  description: '15 five-star Google reviews for Great Dane Junk & Brush Removal in Northwest Arkansas. Junk removal, brush removal, landscaping, and more. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/reviews' },
 }
 
@@ -161,7 +161,7 @@ export default function ReviewsPage() {
         <div className="blueprint-shell" style={{ textAlign: 'center' }}>
           <p className="blueprint-kicker">Ready to Work Together?</p>
           <h2>Get a Free Quote Today</h2>
-          <p>Junk removal, brush clearing, pressure washing, landscaping, and more — serving Fayetteville, Rogers, Bentonville, Springdale, and NW Arkansas.</p>
+          <p>Junk removal, brush clearing, landscaping, leaf cleanups, and more — serving Fayetteville, Rogers, Bentonville, Springdale, and NW Arkansas.</p>
           <div className="blueprint-actions" style={{ justifyContent: 'center' }}>
             <Link href="/contact">Request a Free Quote</Link>
             <a href="tel:4793914462" style={{ background: '#7dff9e', color: '#0a1a0e', borderRadius: '999px', boxShadow: '0 8px 32px rgba(125,255,158,0.38)' }}>Call or Text (479) 391-4462</a>

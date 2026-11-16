@@ -11,23 +11,23 @@ const geistSans = Geist({ variable: "--font-geist-sans", subsets: ["latin"] })
 
 export const metadata: Metadata = {
   title: {
-    default: "Great Dane Junk & Brush Removal | NWA Pressure Washing, Junk Removal & Landscaping",
+    default: "Great Dane Junk & Brush Removal | Junk Removal & Brush Removal in NWA",
     template: "%s | Great Dane Junk & Brush Removal",
   },
-  description: "Junk removal & outdoor services in Fayetteville, AR. Same-day hauls, brush clearing, pressure washing & landscaping. Free quotes. (479) 391-4462.",
+  description: "Junk removal & brush removal in Fayetteville, AR. Same-day hauls, brush clearing, landscaping & leaf cleanups. Free quotes. (479) 391-4462.",
   metadataBase: new URL("https://www.greatdaneoutdoorservices.com"),
   alternates: { canonical: "https://www.greatdaneoutdoorservices.com" },
   openGraph: {
     type: "website",
     siteName: "Great Dane Junk & Brush Removal",
     title: "Great Dane Junk & Brush Removal | NWA Outdoor Services",
-    description: "Great Dane Junk & Brush Removal — junk removal, brush clearing, pressure washing & landscaping in Northwest Arkansas. Free quotes. (479) 391-4462.",
+    description: "Great Dane Junk & Brush Removal — junk removal, brush clearing, landscaping & leaf cleanups in Northwest Arkansas. Free quotes. (479) 391-4462.",
     url: "https://www.greatdaneoutdoorservices.com",
     locale: "en_US",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Great Dane Junk & Brush Removal | NWA Pressure Washing, Junk Removal & Landscaping",
+    title: "Great Dane Junk & Brush Removal | Junk Removal & Brush Removal in NWA",
     description: "Locally owned outdoor services in Northwest Arkansas. Free quotes. (479) 391-4462.",
   },
   robots: { index: true, follow: true },

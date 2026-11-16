@@ -15,21 +15,6 @@ export const faqs = [
     a: 'Outdoor work depends on the details. Square footage, buildup, slope, access, hauling distance, dump fees, density of brush, surface condition, and whether debris needs to be removed all affect the final price. We quote the job clearly before work starts.',
   },
   {
-    category: 'Pressure Washing',
-    q: 'Can pressure washing damage concrete, siding, brick, wood, or paint?',
-    a: 'It can if the wrong pressure, tip, or distance is used. That is why the surface matters. Concrete can usually handle more pressure than siding, painted surfaces, older brick, or wood. We look at the material and condition before cleaning and avoid treating every surface the same way.',
-  },
-  {
-    category: 'Pressure Washing',
-    q: 'Do you need to use my water for pressure washing?',
-    a: 'Most residential pressure washing uses the customer\'s outdoor water spigot. If water access is limited, tell us before scheduling so we can plan around it or confirm whether the job is a good fit.',
-  },
-  {
-    category: 'Pressure Washing',
-    q: 'How should I prepare before a pressure washing job?',
-    a: 'Move vehicles, furniture, planters, doormats, and fragile items away from the work area. Make sure gates are unlocked, pets are inside, and outside outlets or items that should stay dry are pointed out ahead of time.',
-  },
-  {
     category: 'Junk Removal',
     q: 'How is junk removal priced?',
     a: 'Junk removal is usually based on volume, weight, disposal requirements, loading time, and access. A small single-item pickup is different from a garage cleanout, construction debris pile, or mixed outdoor cleanup. A photo of the pile is the fastest way to estimate it.',
@@ -62,17 +47,7 @@ export const faqs = [
   {
     category: 'Weather',
     q: 'Can rain or wet ground delay outdoor work?',
-    a: 'Yes. Wet weather can affect pressure washing, leaf cleanup, brush work, and landscaping. We try to schedule efficiently, but muddy ground, active rain, high wind, or unsafe conditions may require rescheduling so the job is done properly.',
-  },
-  {
-    category: 'Christmas Lights',
-    q: 'Do you install customer-provided Christmas lights?',
-    a: 'Yes, depending on the lights and layout. Customer-provided lights should be outdoor-rated, tested, untangled, and ready before the appointment. If strands are damaged or not long enough, we will point that out before installing.',
-  },
-  {
-    category: 'Christmas Lights',
-    q: 'When should I book Christmas light installation?',
-    a: 'Book as early as you can in the fall. Installation windows tighten as the season gets closer, and weather can slow down roofline work. Early scheduling gives more flexibility for layout, install timing, and takedown planning.',
+    a: 'Yes. Wet weather can affect leaf cleanup, brush work, and landscaping. We try to schedule efficiently, but muddy ground, active rain, high wind, or unsafe conditions may require rescheduling so the job is done properly.',
   },
   {
     category: 'Service Area',

@@ -4,7 +4,7 @@ import { faqs } from './faqs'
 
 export const metadata: Metadata = {
   title: 'FAQ | Great Dane Junk & Brush Removal',
-  description: 'Answers to common questions about junk removal, pressure washing & outdoor services in NW Arkansas. Free quotes. (479) 391-4462.',
+  description: 'Answers to common questions about junk removal, brush removal & outdoor services in NW Arkansas. Free quotes. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/faq' },
 }
 

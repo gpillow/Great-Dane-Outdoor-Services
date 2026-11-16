@@ -6,21 +6,11 @@ import Image from 'next/image'
 export const metadata: Metadata = {
   title: 'Outdoor Service Pricing | Great Dane Junk & Brush Removal Fayetteville AR',
   description:
-    'Outdoor service pricing in NW Arkansas — junk removal, pressure washing, brush clearing & more. Free quotes on every job. (479) 391-4462.',
+    'Outdoor service pricing in NW Arkansas — junk removal, brush removal, landscaping & leaf cleanups. Free quotes on every job. (479) 391-4462.',
   alternates: { canonical: 'https://www.greatdaneoutdoorservices.com/pricing' },
 }
 
 const pricingItems = [
-  {
-    name: 'Pressure Washing',
-    startingAt: '$125',
-    unit: 'starting at',
-    bullets: [
-      'Small patios, walkways, and spot cleaning usually start near the minimum.',
-      'Driveways, brick, decks, siding, and heavy buildup are quoted by size and surface condition.',
-      'Photos help us estimate faster before scheduling.',
-    ],
-  },
   {
     name: 'Junk Removal',
     startingAt: '$149',
@@ -59,16 +49,6 @@ const pricingItems = [
       'Small residential leaf cleanups start near the base rate.',
       'Large yards, heavy fall buildup, and haul-off increase the estimate.',
       'Seasonal scheduling fills quickly during peak leaf drop.',
-    ],
-  },
-  {
-    name: 'Christmas Lights',
-    startingAt: '$499',
-    unit: 'starting at',
-    bullets: [
-      'Basic roofline installs start near the base rate.',
-      'Larger homes, custom layouts, trees, and takedown/storage needs change pricing.',
-      'Early booking helps lock in a better installation window.',
     ],
   },
 ]
@@ -110,7 +90,6 @@ const pricingSchema = {
 export default function PricingPage() {
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="pricing-page">
       <script
         type="application/ld+json"
@@ -132,12 +111,11 @@ export default function PricingPage() {
           </div>
           <div className="pricing-hero-photo">
             <Image
-              src="/afterbrick.webp"
-              alt="Clean brick surface after pressure washing"
-              width={1600}
-              height={1200}
+              src="/junk-removal.webp"
+              alt="Great Dane truck and trailer ready for junk removal in Northwest Arkansas"
+              width={525}
+              height={700}
               priority
-             
             />
           </div>
         </div>
@@ -194,7 +172,7 @@ export default function PricingPage() {
         <div className="pricing-shell">
           <h2>Service Area</h2>
           <p>
-            Great Dane Junk & Brush Removal provides pressure washing, brush removal, junk removal, landscaping refreshes, leaf cleanups, and seasonal outdoor work across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.
+            Great Dane Junk & Brush Removal provides junk removal, brush removal, landscaping refreshes, and leaf cleanups across Northwest Arkansas, including Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson.
           </p>
           <Link href="/contact">Request a free quote</Link>
         </div>

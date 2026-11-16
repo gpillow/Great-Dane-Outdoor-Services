@@ -22,7 +22,6 @@ export default function FAQPage() {
 
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page faq-page">
 
       <section className="blueprint-hero faq-hero">
@@ -31,7 +30,7 @@ export default function FAQPage() {
             <p className="blueprint-kicker">Frequently Asked Questions</p>
             <h1>Clear answers before you book outdoor work</h1>
             <p>
-              Pressure washing, junk removal, brush clearing, leaf cleanup, landscaping refreshes, and Christmas lights all come with real questions. Here is what homeowners usually want to know before getting on the schedule.
+              Junk removal, brush clearing, leaf cleanup, and landscaping refreshes all come with real questions. Here is what homeowners usually want to know before getting on the schedule.
             </p>
             <div className="blueprint-actions">
               <Link href="/contact">Get a free quote</Link>

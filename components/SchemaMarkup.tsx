@@ -5,7 +5,7 @@ const schemas = [
     '@id': 'https://www.greatdaneoutdoorservices.com/#business',
     name: 'Great Dane Junk & Brush Removal',
     description:
-      'Locally owned outdoor services company serving Northwest Arkansas. Specializing in pressure washing, junk removal, landscaping, brush removal, leaf cleanups, and Christmas light installation.',
+      'Locally owned outdoor services company serving Northwest Arkansas. Specializing in junk removal, brush removal, landscaping, and leaf cleanups.',
     url: 'https://www.greatdaneoutdoorservices.com',
     telephone: '+14793914462',
     email: 'gibson@greatdaneoutdoorservices.com',
@@ -45,15 +45,6 @@ const schemas = [
           '@type': 'Offer',
           itemOffered: {
             '@type': 'Service',
-            name: 'Pressure Washing',
-            description:
-              'Professional pressure washing for driveways, decks, siding, patios, walkways, and brick surfaces in Northwest Arkansas.',
-          },
-        },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
             name: 'Junk Removal',
             description: 'Fast, affordable junk removal and hauling services across NWA.',
           },
@@ -83,14 +74,6 @@ const schemas = [
             description: 'Thorough fall leaf removal and disposal in Northwest Arkansas.',
           },
         },
-        {
-          '@type': 'Offer',
-          itemOffered: {
-            '@type': 'Service',
-            name: 'Christmas Light Installation',
-            description: 'Professional holiday light installation and removal for homes in NWA.',
-          },
-        },
       ],
     },
   },
@@ -101,7 +84,7 @@ const schemas = [
     url: 'https://www.greatdaneoutdoorservices.com',
     name: 'Great Dane Junk & Brush Removal',
     description:
-      'Northwest Arkansas outdoor services: pressure washing, junk removal, landscaping, and more.',
+      'Junk removal & brush removal in Northwest Arkansas. Landscaping, leaf cleanups, and free quotes.',
     publisher: { '@id': 'https://www.greatdaneoutdoorservices.com/#business' },
   },
   {

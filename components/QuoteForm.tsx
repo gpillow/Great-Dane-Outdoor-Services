@@ -2,7 +2,7 @@
 
 import React, { useState } from 'react'
 
-const SERVICES = ['Pressure Washing', 'Junk Removal', 'Landscaping', 'Brush Removal', 'Leaf Cleanup', 'Christmas Light Installation', 'Other']
+const SERVICES = ['Junk Removal', 'Brush Removal', 'Landscaping', 'Leaf Cleanup', 'Other']
 
 export default function QuoteForm() {
   const [submitted, setSubmitted] = useState(false)

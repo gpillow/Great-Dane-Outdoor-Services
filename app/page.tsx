@@ -35,10 +35,8 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 const services = [
   { name: 'Junk Removal', desc: 'Old furniture, yard debris, clutter, and unwanted items hauled off fast.' },
   { name: 'Brush Removal', desc: 'Dense overgrowth, fence lines, saplings, and rough areas cleared out.' },
-  { name: 'Pressure Washing', desc: 'Driveways, walkways, brick, decks, siding, and patios cleaned with care.' },
   { name: 'Landscaping', desc: 'Mulch, trimming, flower beds, weed removal, and property refresh work.' },
   { name: 'Leaf Cleanups', desc: 'Seasonal leaf removal and disposal so your yard stays under control.' },
-  { name: 'Christmas Lights', desc: 'Holiday light installation and takedown without the ladder headache.' },
 ]
 
 const trustPoints = [
@@ -63,7 +61,7 @@ export default function HomePage() {
               <p className="home-hero-stars">⭐⭐⭐⭐⭐ 100% 5-Star Rated on Google</p>
               <p className="home-kicker">Junk Removal & Brush Removal — Northwest Arkansas</p>
               <h1>Junk Removal & Outdoor Services in Northwest Arkansas</h1>
-              <p className="home-hero-lede">Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
+              <p className="home-hero-lede">Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle landscaping and leaf cleanups.</p>
               <div className="home-hero-actions">
                 <a href="/contact" className="home-btn home-btn-secondary">Get started now</a>
                 <a href="tel:4793914462" className="home-btn home-btn-call">Call or Text (479) 391-4462</a>
@@ -113,10 +111,10 @@ export default function HomePage() {
                   <div className="home-review-stars">★★★★★</div>
                   <GoogleIcon />
                 </div>
-                <p className="home-review-text">&ldquo;Gibson has been a hard-working help to me, with maintaining my properties with power washing and yard work. He communicates well and is professional in his interactions; he is punctual and fair in pricing. He and his teammate completed all the tasks within the timeframe we agreed upon.&rdquo;</p>
+                <p className="home-review-text">&ldquo;Great Dane responded within 10 minutes and had my junk hauled off and I didn&apos;t have to do a thing. I would recommend them to anyone and everyone. 10/10 service!&rdquo;</p>
                 <div className="home-review-author">
-                  <span className="home-review-name">Michelle Rofkahr</span>
-                  <span className="home-review-timeframe">11 weeks ago</span>
+                  <span className="home-review-name">Chandler</span>
+                  <span className="home-review-timeframe">2 days ago</span>
                 </div>
               </article>
             </ScrollReveal>
@@ -201,8 +199,8 @@ export default function HomePage() {
           <div className="home-project-grid">
             <ScrollReveal direction="left">
               <div className="gallery-frame">
-                <p className="home-project-label">Driveway Restoration</p>
-                <BeforeAfterSlider before="/beforedriveway.webp" after="/afterdriveway.webp" beforeAlt="Before driveway pressure washing in Northwest Arkansas" afterAlt="After driveway pressure washing in Northwest Arkansas" />
+                <p className="home-project-label">Garage Cleanout</p>
+                <BeforeAfterSlider before="/garage-before.webp" after="/garage-after.webp" beforeAlt="Garage full of junk before removal in Northwest Arkansas" afterAlt="Clean garage after junk removal in Northwest Arkansas" />
               </div>
             </ScrollReveal>
             <ScrollReveal direction="right">

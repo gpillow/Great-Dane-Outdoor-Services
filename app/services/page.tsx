@@ -20,10 +20,8 @@ function ScrollReveal({ children, direction = 'up' }: { children: React.ReactNod
 const serviceCards = [
   { name: 'Junk Removal', image: '/garage-before.webp', text: 'Furniture, debris, clutter, yard waste, and unwanted items hauled away.', link: '/junk-removal-fayetteville-ar', linkText: 'Junk removal in Fayetteville' },
   { name: 'Brush Removal', image: '/brushcompost.webp', text: 'Overgrowth, fence lines, saplings, and rough areas cleared so the property is usable again.', link: '/brush-removal-fayetteville-ar', linkText: 'Brush removal in Fayetteville' },
-  { name: 'Pressure Washing', image: '/afterdriveway.webp', text: 'Driveways, sidewalks, brick, patios, decks, and exterior surfaces cleaned up properly.', link: '/pressure-washing-fayetteville-ar', linkText: 'Pressure washing in Fayetteville' },
   { name: 'Landscaping', image: '/cutdown.webp', text: 'Mulch, trimming, bed refreshes, weed removal, and cleanup work for sharper curb appeal.', link: '/landscaping-fayetteville-ar', linkText: 'Landscaping in Fayetteville' },
   { name: 'Leaf Cleanups', image: '/leaf-cleanup.webp', text: 'Seasonal leaf removal and disposal for Northwest Arkansas yards.', link: '/pricing', linkText: 'View pricing guide' },
-  { name: 'Christmas Lights', image: '/christmas-lights.webp', text: 'Holiday light installation and takedown for homes that want the season handled.', link: '/christmas-lights-fayetteville-ar', linkText: 'Christmas lights in Fayetteville' },
 ]
 
 const detailSections = [
@@ -48,12 +46,6 @@ const detailSections = [
     text: 'Dense fence lines, overgrown back yards, saplings taking over, and rough areas that haven\'t been touched in years. We clear it out and haul off the debris so the property is usable again.',
     image: '/overgrown.webp',
     kicker: 'Brush Removal',
-  },
-  {
-    title: 'Pressure washing and outdoor cleanup work too',
-    text: 'Driveways, walkways, patios, brick, and exterior surfaces cleaned up properly. Mulch, trimming, bed refreshes, and light landscaping also available — quoted clearly before work starts.',
-    image: '/afterdriveway.webp',
-    kicker: 'Other Services',
   },
 ]
 
@@ -100,7 +92,6 @@ const junkFaqSchema = {
 export default function ServicesPage() {
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(junkFaqSchema) }} />
 
@@ -110,7 +101,7 @@ export default function ServicesPage() {
             <div>
               <p className="blueprint-kicker">Junk Removal &amp; Brush Removal — Northwest Arkansas</p>
               <h1>Junk Removal &amp; Outdoor Services in Northwest Arkansas</h1>
-              <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle pressure washing, landscaping, leaf cleanups, and Christmas lights.</p>
+              <p>Great Dane specializes in junk removal and brush clearing for homeowners across NW Arkansas. We also handle landscaping and leaf cleanups.</p>
               <div className="blueprint-actions">
                 <Link href="/contact">Get started now</Link>
                 <a href="tel:4793914462" style={{ background: '#7dff9e', color: '#0a1a0e', borderRadius: '999px', boxShadow: '0 8px 32px rgba(125,255,158,0.38)' }}>Call or Text (479) 391-4462</a>
@@ -129,7 +120,7 @@ export default function ServicesPage() {
       <section className="blueprint-section blueprint-light">
         <div className="blueprint-shell">
           <p className="geo-direct-answer">
-            Great Dane Junk & Brush Removal is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include pressure washing (starting at $125), junk removal (starting at $149), landscaping and mulching (starting at $149), brush removal (starting at $225), fall leaf cleanup (starting at $175), and Christmas light installation (starting at $499). Free quotes are available by calling or texting (479) 391-4462. Great Dane Junk & Brush Removal is a licensed LLC operating in the state of Arkansas.
+            Great Dane Junk & Brush Removal is a locally owned outdoor services company serving Fayetteville, Springdale, Rogers, Bentonville, Farmington, and Johnson in Northwest Arkansas. Services include junk removal (starting at $149), brush removal (starting at $225), landscaping and mulching (starting at $149), and fall leaf cleanup (starting at $175). Free quotes are available by calling or texting (479) 391-4462. Great Dane Junk & Brush Removal is a licensed LLC operating in the state of Arkansas.
           </p>
           <div className="blueprint-heading">
             <p className="blueprint-kicker">Service Menu</p>

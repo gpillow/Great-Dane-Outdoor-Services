@@ -4,6 +4,12 @@ const nextConfig: NextConfig = {
   experimental: {
     inlineCss: true,
   },
+  async redirects() {
+    return [
+      { source: '/pressure-washing-fayetteville-ar', destination: '/services', permanent: true },
+      { source: '/christmas-lights-fayetteville-ar', destination: '/services', permanent: true },
+    ]
+  },
   async headers() {
     return [
       {

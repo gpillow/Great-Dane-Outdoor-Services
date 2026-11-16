@@ -178,7 +178,6 @@ export default function JunkRemovalFayettevillePage() {
             <h2>More ways Great Dane can help</h2>
           </div>
           <div className="blueprint-actions" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
-            <Link href="/pressure-washing-fayetteville-ar" style={{ background: '#f3f5ef', color: '#1d211d' }}>Pressure Washing</Link>
             <Link href="/brush-removal-fayetteville-ar" style={{ background: '#f3f5ef', color: '#1d211d' }}>Brush Removal</Link>
             <Link href="/services" style={{ background: '#f3f5ef', color: '#1d211d' }}>All Services</Link>
             <Link href="/pricing" style={{ background: '#f3f5ef', color: '#1d211d' }}>Pricing Guide</Link>

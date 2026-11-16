@@ -179,7 +179,6 @@ export default function BrushRemovalFayettevillePage() {
           </div>
           <div className="blueprint-actions" style={{ justifyContent: 'center', flexWrap: 'wrap' }}>
             <Link href="/junk-removal-fayetteville-ar" style={{ background: '#f3f5ef', color: '#1d211d' }}>Junk Removal</Link>
-            <Link href="/pressure-washing-fayetteville-ar" style={{ background: '#f3f5ef', color: '#1d211d' }}>Pressure Washing</Link>
             <Link href="/services" style={{ background: '#f3f5ef', color: '#1d211d' }}>All Services</Link>
             <Link href="/pricing" style={{ background: '#f3f5ef', color: '#1d211d' }}>Pricing Guide</Link>
           </div>
