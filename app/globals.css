@@ -1390,7 +1390,7 @@
   border-radius: 8px;
   background:
     linear-gradient(90deg, rgba(31, 39, 31, 0.94), rgba(31, 39, 31, 0.78)),
-    url("/afterbrick-optimized.webp") center / cover;
+    url("/overgrown.webp") center / cover;
   border-color: rgba(255,255,255,0.12);
 }
 
@@ -1438,7 +1438,7 @@ main#main-content {
   padding: clamp(5rem, 8vw, 7rem) 20px clamp(4rem, 7vw, 5.5rem) !important;
   background:
     linear-gradient(90deg, rgba(24, 30, 24, 0.9), rgba(24, 30, 24, 0.64)),
-    url("/afterdriveway-optimized.webp") center / cover !important;
+    url("/hero-v2.webp") center 65% / cover !important;
   border-bottom: 0 !important;
   text-align: center;
 }
@@ -1540,7 +1540,7 @@ main#main-content {
 .cta-shaped {
   background:
     linear-gradient(90deg, rgba(31, 39, 31, 0.94), rgba(31, 39, 31, 0.78)),
-    url("/afterbrick-optimized.webp") center / cover !important;
+    url("/overgrown.webp") center / cover !important;
   border-top: 0 !important;
 }
 .cta-shaped h2 {
@@ -1598,7 +1598,7 @@ main#main-content {
   .hero-shaped {
     background:
       linear-gradient(180deg, rgba(24, 30, 24, 0.92), rgba(24, 30, 24, 0.76)),
-      url("/afterdriveway-optimized.webp") center / cover !important;
+      url("/hero-v2.webp") center 65% / cover !important;
   }
 }
 
@@ -1615,7 +1615,7 @@ main#main-content {
 .pricing-hero {
   background:
     linear-gradient(90deg, rgba(25,31,25,0.92), rgba(25,31,25,0.72)),
-    url("/afterdriveway-optimized.webp") center / cover;
+    url("/hero-v2.webp") center 65% / cover;
   padding: clamp(5rem, 8vw, 7rem) 0;
   color: #fff;
 }
@@ -1853,7 +1853,7 @@ main#main-content {
 .blueprint-hero {
   background:
     linear-gradient(90deg, rgba(24,30,24,0.92), rgba(24,30,24,0.66)),
-    url("/afterdriveway-optimized.webp") center / cover;
+    url("/hero-v2.webp") center 65% / cover;
   color: #fff;
   padding: clamp(5rem, 8vw, 7rem) 0;
 }
@@ -2114,7 +2114,7 @@ main#main-content {
 .blueprint-cta {
   background:
     linear-gradient(90deg, rgba(31,39,31,0.94), rgba(31,39,31,0.78)),
-    url("/afterbrick-optimized.webp") center / cover;
+    url("/overgrown.webp") center / cover;
   color: #fff;
   padding: clamp(4rem, 7vw, 6rem) 0;
 }
@@ -2169,7 +2169,7 @@ main#main-content {
 .faq-hero {
   background:
     linear-gradient(90deg, rgba(24,30,24,0.9), rgba(24,30,24,0.58)),
-    url("/afterdriveway-optimized.webp") center / cover;
+    url("/hero-v2.webp") center 65% / cover;
 }
 .faq-hero .blueprint-shell {
   max-width: 880px;

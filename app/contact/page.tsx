@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function ContactPage() {
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
+      <link rel="preload" as="image" href="/hero-v2.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <section className="blueprint-hero contact-blueprint-hero">
         <div className="blueprint-shell">

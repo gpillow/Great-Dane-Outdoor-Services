@@ -82,7 +82,7 @@ const serviceSchema = {
 export default function LandscapingFayettevillePage() {
   return (
     <>
-      <link rel="preload" as="image" href="/afterdriveway-optimized.webp" fetchPriority="high" />
+      <link rel="preload" as="image" href="/hero-v2.webp" fetchPriority="high" />
     <main id="main-content" className="blueprint-page">
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(serviceSchema) }} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }} />
